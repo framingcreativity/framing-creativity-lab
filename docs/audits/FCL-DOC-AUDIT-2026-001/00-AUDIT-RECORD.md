@@ -36,7 +36,7 @@ The report records the baseline as **3.7/5**, with **0 Critical, 3 High, 6 Mediu
 - **Collection:** Audits and assessments.
 - **Record type:** Repository documentation audit.
 - **Intended repository location:** `docs/audits/FCL-DOC-AUDIT-2026-001/`.
-- **Publication status:** Prepared as a public-safe documentation package. Maintainer review is required before committing it to the public repository.
+- **Publication status:** Prepared as a public-safe candidate package. Approval for inclusion in the default branch is recorded by the associated pull request and its merge outcome; this baseline record does not itself certify that approval.
 - **Confidentiality rule:** Do not add proprietary project names, source code, prompts, assets, credentials, private architecture, client information, or restricted operational details to this collection.
 - **Integrity rule:** Preserve the original report's conclusions as the baseline. Record subsequent corrections in the remediation register and follow-up validation report; do not silently rewrite the historical baseline.
 
