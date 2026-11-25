@@ -106,13 +106,20 @@ An experimental prototype is not expected to satisfy every requirement of a prod
 
 ---
 
-## 4. Project Quality Levels
+## 4. Technical Maturity and Operational Readiness
 
-Quality expectations should increase as a project becomes more mature and more widely used.
+Quality assessment must distinguish the maturity of the technical work from the context in which it may be used. 
+Publication approval is a separate decision governed by `PUBLICATION-POLICY.md`.
 
-The following levels provide a reference framework.
+### 4.1 Technical Maturity
 
-### Level 1 — Exploratory
+Use the following technical maturity values:
+
+#### Not Assessed
+
+No maturity assessment has been recorded, or available evidence is insufficient to assign a level.
+
+#### Exploratory
 
 Intended for early investigation, technical feasibility checks, and short experiments.
 
@@ -125,11 +132,10 @@ Expected practices:
 - Minimal but useful documentation.
 - Honest communication of known limitations.
 
-Exploratory work may contain temporary implementation choices and incomplete functionality.
+Exploratory work may contain temporary implementation choices and incomplete functionality. 
+Such limitations must not be misrepresented as completed or validated capabilities.
 
-Such limitations should not be misrepresented as completed or validated capabilities.
-
-### Level 2 — Prototype
+#### Prototype
 
 Intended for demonstrable implementations used to test a concept or evaluate an approach.
 
@@ -147,7 +153,7 @@ Expected practices:
 
 A prototype may be incomplete or unstable, but its behavior should be sufficiently understood to support meaningful evaluation.
 
-### Level 3 — Validated
+#### Validated
 
 Intended for projects that have undergone structured testing or evaluation.
 
@@ -163,50 +169,40 @@ Expected practices:
 - Security review proportionate to project risk.
 - Evidence supporting published claims.
 
-Validation applies only to the scope and conditions actually tested.
-
+Validation applies only to the scope and conditions actually tested. 
 It must not be presented as universal proof of reliability or suitability for every environment.
 
-### Level 4 — Public Release
+### 4.2 Operational Readiness
 
-Intended for projects or releases explicitly approved for public distribution.
+Record operational readiness separately from technical maturity.
 
-Expected practices:
+| Readiness | Meaning |
+|---|---|
+| Not Assessed | No operational-readiness assessment has been recorded. |
+| Research or Experimental Use Only | Intended for controlled research, testing, or experimentation; not represented as suitable for real-world operational use. |
+| Demonstration Only | Suitable for a bounded demonstration or evaluation context; no production use is implied. |
+| Limited Operational Use 
+| Suitable only for a defined and constrained operating context with documented limitations, responsibilities, and safeguards. |
+| Production-Oriented 
+| Designed and assessed against sustained operational requirements, including appropriate security, reliability, monitoring, recovery, maintenance, and support considerations. |
 
-- Publication review.
-- Clear documentation.
-- Appropriate licensing information.
-- Version or release identification where relevant.
-- Security and privacy review.
-- Removal of credentials and confidential material.
-- Dependency and configuration review.
-- Known limitations and requirements.
-- Reproducible setup instructions where applicable.
-- Accurate project status.
+A Production-Oriented assessment requires explicit evidence proportionate to the system's intended impact and operating environment. 
+It must not be inferred from a successful demonstration, public deployment, polished interface, or technical maturity label.
 
-Public release does not automatically mean production readiness.
+Production-Oriented is an internal readiness descriptor. 
+It is not a certification, warranty, deployment claim, or guarantee of uninterrupted operation.
 
-### Level 5 — Production-Oriented
+### 4.3 Publication Is a Separate Decision
 
-Intended for systems designed or prepared for sustained operational use.
+Publication Classification and Publication Status are not technical maturity or operational-readiness levels.
 
-Additional expectations may include:
+- Publication Classification (`P0`–`P3`) is defined in `PUBLICATION-POLICY.md` and determines the applicable publication scrutiny
+  and restrictions.
+- Publication Status (`PENDING`, `APPROVED`, `REJECTED`, or `WITHDRAWN`) records the publication decision under `PUBLICATION-POLICY.md`.
+- A public release does not automatically establish Validated technical maturity or Production-Oriented operational readiness.
+- Publication approval does not itself mean that the material has already been released.
 
-- Defined operational requirements.
-- Robust authentication and authorization.
-- Appropriate monitoring and logging.
-- Backup and recovery considerations.
-- Reliability and availability targets.
-- Performance testing under representative conditions.
-- Dependency and infrastructure maintenance.
-- Incident response planning.
-- Deployment and rollback procedures.
-- Ongoing security review.
-- Support and maintenance arrangements.
-
-A production-oriented classification requires explicit assessment.
-
-It must not be inferred from a successful demonstration, public deployment, or polished interface.
+Use the relevant publication requirements and approval records. Do not create a separate publication status or classification within this quality standard.
 
 ---
 
