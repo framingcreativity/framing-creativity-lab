@@ -1,4 +1,3 @@
-
 # Project Lifecycle
 
 **Document ID:** FCL-PROC-001  
@@ -126,6 +125,21 @@ Projects generally progress through the following stages:
 | 07 | Publication and Release | Approve and publish the work |
 | 08 | Maintenance and Evolution | Correct, improve, and maintain where applicable |
 | 09 | Archival or Discontinuation | Preserve knowledge or formally close the project |
+
+### 4.1 Lifecycle Stage and Project Status
+
+Lifecycle Stage and Project Status are separate fields.
+
+- **Lifecycle Stage** identifies the point reached in the Lab's project workflow. The nine canonical stages are defined in this section.
+- **Project Status** describes the project's current state. The canonical status vocabulary is defined in §14.
+
+The two fields answer different questions and must not be used interchangeably. A stage describes process position; a status describes the current state of the work. They may be related, but one must not be inferred solely from the other.
+
+Technical Maturity and Operational Readiness are separate assessment dimensions defined in `QUALITY-STANDARDS.md`.
+Publication Classification and Publication Status are governed by `PUBLICATION-POLICY.md`.
+
+A project record should use the relevant fields independently and should not describe a project as validated, publicly approved, or production-oriented without the corresponding evidence or decision.
+
 
 This lifecycle is a reference framework, not a mandatory linear sequence.
 
@@ -841,7 +855,9 @@ Where appropriate, the project status and relevant documentation should be updat
 
 ## 14. Lifecycle Status Definitions
 
-The following statuses may be used in project documentation and repository labels.
+Project Status records the current state of the project; it is not a substitute for Lifecycle Stage, Technical Maturity,
+Operational Readiness, Publication Classification, or Publication Status. 
+Use the definitions below as the sole canonical project-status vocabulary across the Lab's documentation.
 
 | Status | Definition |
 |---|---|
