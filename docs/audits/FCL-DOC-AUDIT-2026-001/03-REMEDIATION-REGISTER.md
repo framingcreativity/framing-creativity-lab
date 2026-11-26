@@ -1,15 +1,15 @@
 # Remediation Register — FCL-DOC-AUDIT-2026-001
 
 **Document ID:** FCL-AUD-REG-001  
-**Version:** 1.4\
+**Version:** 1.5\
 **Status:** Open — remediation in progress  
 **Source:** `02-AUDIT-REPORT.md`  
 **Baseline commit:** `e026bdc5cc4a78dd80570f8c93d50008711de262`  
 **Last verified:** 26 November 2026  
 **Inspected branch:** `docs/archive-v1-and-fix-v2`\
-**Base commit:** `d83ac013e7079dfae524d27d96f61b199fa11975`\
-**Base tree:** `fce459a2cfbe926e52d3bcb32826c7abd6966c29`\
-**Working-tree state:** Archive migration applied; documentation corrections under review; changes not yet committed.\
+**Inspected commit:** `f507e0d81cf5e4c85faee85a4b600a1fe2083202`\
+**Inspected tree:** `997dc39107b5caec9447737ec9b1a4eb788d8ffc`\
+**Inspection status:** Committed topic-branch snapshot; not yet merged into `main`.\
 **Maintainer:** J-ART
 
 ---
@@ -26,13 +26,15 @@ A draft, recommendation, or locally prepared replacement is not a completed repo
 
 A finding may be marked **Resolved** only after the relevant document or configuration has been inspected on `main` and the correction has been verified.
 
-### 1.4 Verification Scope
+### 1.5 Verification Scope
 
-This version records the documentation reconciliation work on branch `docs/archive-v1-and-fix-v2`, based on the committed `main` baseline at `d83ac013e7079dfae524d27d96f61b199fa11975`.
+This version records a read-only validation of the committed topic-branch snapshot at `f507e0d81cf5e4c85faee85a4b600a1fe2083202`.
 
-The eleven v1.0 documents have been moved into `docs/archives/` and renamed with the `-v1.0.md` suffix. Their local contents were checked byte-for-byte against the original files at the base commit.
+The eleven v1.0 documents are preserved under `docs/archives/` with their contents unchanged from the committed main baseline. Git detects all eleven moves as 100% renames.
 
-The working-tree changes remain uncommitted. Cross-document consistency, relative-link validation, and the final repository state must be verified before any finding is marked Resolved.
+The eleven v2.0 documents retain their Draft for Maintainer Review status. The README, archive index, audit index, and selected cross-document references have been reconciled. Relative Markdown links and committed whitespace checks passed.
+
+This validation applies to the topic branch only. The branch has not been merged into `main`. Repository security settings, private reporting channels, policy approval, and effective dates have not been independently verified.
 
 ---
 
@@ -73,7 +75,7 @@ A v2.0 document with the status `Draft for Maintainer Review` is evidence of rem
 
 ### 2.1 Current Finding Summary
 
-This summary reflects the current uncommitted working-tree review based on `d83ac013e7079dfae524d27d96f61b199fa11975`. It is not a final validation result.
+This summary reflects the committed topic-branch snapshot at `f507e0d81cf5e4c85faee85a4b600a1fe2083202`. It is not a final audit verdict or evidence of approval of the v2.0 drafts.
 
 | Status | Count | Findings |
 |---|---:|---|
@@ -214,10 +216,10 @@ The following repository state was inspected:
 
 **Repository:** `framingcreativity/framing-creativity-lab`  
 **Branch:** `docs/archive-v1-and-fix-v2`\
-**Base commit:** `d83ac013e7079dfae524d27d96f61b199fa11975`\
-**Base tree:** `fce459a2cfbe926e52d3bcb32826c7abd6966c29`\
-**Verification date:** 26 November 2026  
-**Inspection mode:** Local working-tree review; uncommitted
+**Commit:** `f507e0d81cf5e4c85faee85a4b600a1fe2083202`\
+**Tree:** `997dc39107b5caec9447737ec9b1a4eb788d8ffc`\
+**Verification date:** 26 November 2026\
+**Inspection mode:** Read-only inspection of committed topic-branch snapshot
 
 ### 5.1 Root Documentation
 
@@ -300,7 +302,7 @@ Historical evidence must remain intact. New entries are added chronologically.
 | 2026-11-26 | AUD-010 | Verified consistent metadata fields across the eleven v2.0 documents. | v2.0 document blobs listed in Section 3.2 | Partially resolved pending approval and final metadata review |
 | 2026-11-26 | Register | Updated the remediation register to reflect the versioned v2.0 document strategy and the latest inspected repository state. | Current register Version 1.3 | Updated checkpoint |
 
-| 2026-11-26 | AUD-001 / AUD-002 / AUD-005 / AUD-008 / AUD-009 | Moved the eleven v1.0 documents into `docs/archives/`, added the archive index, updated README navigation, corrected audit-index paths, and reconciled selected v2.0 references. | Local working tree based on `d83ac013e7079dfae524d27d96f61b199fa11975` | Applied locally; final validation and commit pending |
+| 2026-11-26 | AUD-001 / AUD-002 / AUD-005 / AUD-008 / AUD-009 | Committed the archive migration, README and audit-index corrections, archive index, and v2.0 cross-reference reconciliation. | `f507e0d81cf5e4c85faee85a4b600a1fe2083202` | Topic-branch commit; validation report 07 added; merge pending |
 
 Add a dated row for every subsequent material change.
 

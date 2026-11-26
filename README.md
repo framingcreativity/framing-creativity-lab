@@ -242,7 +242,8 @@ framing-creativity-lab/
             ├── 03-REMEDIATION-REGISTER.md
             ├── 04-POST-REMEDIATION-VALIDATION-PROMPT.md
             ├── 05-README-INTEGRATION-SNIPPET.md
-            └── 06-POST-REMEDIATION-VALIDATION-2026-11-26.md
+            ├── 06-POST-REMEDIATION-VALIDATION-2026-11-26.md
+            └── 07-CROSS-DOCUMENT-VALIDATION-2026-11-26.md
 ```
 
 This is a view of the current documentation structure, not a requirement that every future project use the same internal layout.

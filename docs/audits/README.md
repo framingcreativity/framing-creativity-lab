@@ -1,7 +1,7 @@
 # Framing Creativity Lab — Audit Documentation
 
 **Document ID:** FCL-AUD-INDEX-001  
-**Version:** 1.2\
+**Version:** 1.3\
 **Status:** Active — Audit Collection Index  
 **Last Updated:** 26 November 2026  
 **Maintainer:** J-ART  
@@ -42,6 +42,7 @@ The audit instance contains the following records:
 | [04 — Validation Prompt](FCL-DOC-AUDIT-2026-001/04-POST-REMEDIATION-VALIDATION-PROMPT.md) | Instructions for a subsequent validation |
 | [05 — README Integration Snippet](FCL-DOC-AUDIT-2026-001/05-README-INTEGRATION-SNIPPET.md) | Historical README integration material |
 | [06 — Post-Remediation Validation, 26 November](FCL-DOC-AUDIT-2026-001/06-POST-REMEDIATION-VALIDATION-2026-11-26.md) | Historical read-only validation report |
+| [07 — Cross-Document Validation, 26 November] (FCL-DOC-AUDIT-2026-001/07-CROSS-DOCUMENT-VALIDATION-2026-11-26.md) | Validation of the committed archive migration and cross-document corrections |
 
 ---
 
@@ -54,6 +55,7 @@ They are immutable snapshots of their respective inspection points.
 | Audit ID | Date | Inspected commit | Result | Report |
 |---|---|---|---|---|
 | `FCL-DOC-AUDIT-2026-001` | 26 November 2026 | `b0a71f618cde4b75459b1094f80a30eec5a71543` | NOT READY — remediation remained open | [Open historical validation](FCL-DOC-AUDIT-2026-001/06-POST-REMEDIATION-VALIDATION-2026-11-26.md) |
+| `FCL-DOC-AUDIT-2026-001` | 26 November 2026 | `f507e0d81cf5e4c85faee85a4b600a1fe2083202` | PASS — topic-branch documentation validation; merge pending | [Open cross-document validation](FCL-DOC-AUDIT-2026-001/07-CROSS-DOCUMENT-VALIDATION-2026-11-26.md) |
 
 The validation report above predates the current v2.0 documentation checkpoint.
 
@@ -65,22 +67,22 @@ It must not be presented as a validation of later repository changes.
 
 ## 4. Current Remediation Checkpoint
 
-The committed `main` baseline used for the current reconciliation is:
+The latest documentation reconciliation is committed on the topic branch at:
 
-**Commit:** `d83ac013e7079dfae524d27d96f61b199fa11975`\
-**Tree:** `fce459a2cfbe926e52d3bcb32826c7abd6966c29`\
-**Date:** 26 November 2026  
+**Commit:** `f507e0d81cf5e4c85faee85a4b600a1fe2083202`\
+**Tree:** `997dc39107b5caec9447737ec9b1a4eb788d8ffc`\
+**Date:** 26 November 2026
 **Inspection mode:** Read-only
 
-The baseline contains eleven separately versioned v2.0 documents. The current working branch, `docs/archive-v1-and-fix-v2`, moves the original v1.0 files into `docs/archives/` and reconciles the documentation navigation.
+Commit `f507e0d81cf5e4c85faee85a4b600a1fe2083202` records the archive migration and documentation reconciliation on the topic branch. The eleven original v1.0 documents are preserved under `docs/archives/` and remain unchanged in content.
 
-The archive migration and related corrections are being reviewed in the local working tree and are not yet represented by a new commit. The v2.0 documents remain marked `Draft for Maintainer Review`.
+The v2.0 documents remain marked `Draft for Maintainer Review`. The topic-branch validation is recorded in report 07. This commit has not been merged into `main`.
 
 ### 4.1 Current Remediation Register
 
 The current remediation record is:
 
-[Open Remediation Register — Version 1.4](FCL-DOC-AUDIT-2026-001/03-REMEDIATION-REGISTER.md)
+[Open Remediation Register — Version 1.5](FCL-DOC-AUDIT-2026-001/03-REMEDIATION-REGISTER.md)
 
 Its recorded status summary is:
 
@@ -229,4 +231,4 @@ Independent Research · Applied AI · Creative Technology · Experimental Design
 
 **Maintainer:** J-ART  
 **Document:** `docs/audits/README.md`  
-**Version:** 1.2
+**Version:** 1.3
