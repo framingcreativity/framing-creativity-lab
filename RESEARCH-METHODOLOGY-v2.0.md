@@ -1,1516 +1,2037 @@
-# Quality Standards
+# Framing Creativity Lab — Research Methodology
 
-**Document ID:** FCL-STD-001  
+**Document ID:** FCL-METH-001  
 **Version:** 2.0  
 **Status:** Draft for Maintainer Review  
 **Effective Date:** Pending approval  
 **Maintainer:** J-ART  
-**Repository:** Framing Creativity Lab
+**Repository:** Framing Creativity Lab  
+**Applies to:** Research, experiments, technical investigations, prototypes, and evaluation activities conducted under Framing Creativity Lab.
 
 ---
 
 ## 1. Purpose
 
-Framing Creativity Lab combines technical experimentation, creative exploration, research, and software development. The quality of its work depends not only on whether an implementation functions, but also on whether it is understandable, appropriately tested, secure within its intended context, maintainable, and accurately represented.
+This document establishes the research methodology used by Framing Creativity Lab.
 
-This document establishes the Lab's engineering and quality expectations for work that is developed, evaluated, maintained, or prepared for publication under the Framing Creativity Lab identity.
+It defines the principles, processes, methods, and evaluation practices used to investigate questions, formulate hypotheses, conduct experiments, analyse results, interpret findings, and document conclusions.
 
-Its objectives are to:
+Its purpose is to establish a consistent approach to research while allowing sufficient flexibility for different disciplines, technologies, and experimental objectives.
 
-- establish a shared and proportionate quality framework;
-- encourage clear, maintainable, and technically sound implementations;
-- define expectations for testing, evaluation, and evidence;
-- improve reliability, performance, accessibility, and usability;
-- reduce avoidable security, privacy, and operational risks;
-- support reproducible technical work and honest reporting;
-- distinguish technical maturity from operational readiness;
-- prevent publication approval from being mistaken for technical or operational validation; and
-- provide practical completion criteria for projects and changes.
+The methodology supports:
 
-These standards are intended to guide decisions, not to impose identical engineering processes on every project. Requirements must be proportionate to the project's purpose, complexity, intended audience, operating context, and potential impact.
+- Independent technical research.
+- Artificial intelligence experimentation.
+- Software and systems investigation.
+- Creative technology research.
+- Computational and generative experimentation.
+- Digital product exploration.
+- Technical prototyping.
+- Comparative technology evaluation.
+- Methodological research.
+- Interdisciplinary investigation.
+- Qualitative and quantitative studies.
+- Experimental design and evaluation.
 
-A small research experiment does not require the same infrastructure as a public application. It must, however, describe its limitations honestly and avoid preventable harm.
+The document provides a common framework rather than prescribing a single research technique.
 
----
+Individual investigations may require different methods depending on their objectives, complexity, uncertainty, risks, and available resources.
 
-## 2. Scope
-
-These standards apply to work developed, maintained, evaluated, or published within Framing Creativity Lab.
-
-They may be applied to:
-
-- software applications and services;
-- web applications, interfaces, and digital experiences;
-- APIs and backend services;
-- developer tools, utilities, and supporting scripts;
-- technical prototypes and proofs of concept;
-- research implementations and experimental systems;
-- artificial intelligence and machine-learning applications;
-- autonomous or semi-autonomous workflows;
-- data processing and automation systems;
-- creative technology and interactive media;
-- design systems and reusable components;
-- infrastructure and deployment configurations; and
-- technical documentation and reference implementations.
-
-The requirements may be adapted for non-software work, research-only projects, short-lived experiments, and exploratory studies.
-
-Where a project has additional quality requirements, those requirements should be recorded in its project documentation. Project-specific requirements may be stricter than this document where justified, but they must not be used to weaken the Lab's fundamental security, privacy, confidentiality, intellectual-property, or publication obligations.
-
-These standards do not replace specialist policies. Their relationship to the Lab's other documents is defined in Section 22.
+**The objective is not to standardise every experiment. It is to make every substantial investigation understandable, purposeful, evaluable, traceable, and appropriately documented.**
 
 ---
 
-## 3. Quality Philosophy
+## 2. Research Philosophy
 
-The Lab treats quality as a set of related properties rather than a single score or visual impression.
+Framing Creativity Lab approaches research as a structured process of exploration and evaluation.
 
-A project may be technically functional while remaining difficult to understand or maintain. An interface may be visually refined while being inaccessible. An AI demonstration may appear convincing while producing inconsistent or unsupported outputs. A successful prototype may still be unsuitable for sustained operational use.
+Research begins with a question, not with an assumption that a particular technology is the right solution.
 
-Quality must therefore be assessed against the project's declared purpose and the evidence available.
+The Lab recognises that meaningful investigation may require combining different perspectives:
 
-### 3.1 Core Quality Dimensions
+- Scientific and technical reasoning.
+- Creative and exploratory thinking.
+- Engineering and implementation.
+- Human interpretation and evaluation.
+- Comparative and critical analysis.
+- Empirical observation.
+- Methodological reflection.
 
-| Dimension | Primary concern |
-|---|---|
-| Correctness | Does the implementation behave as intended? |
-| Reliability | Does it behave consistently under its expected conditions? |
-| Maintainability | Can it be understood, modified, and maintained? |
-| Security | Are systems, data, and users protected appropriately? |
-| Privacy | Is personal or sensitive information handled responsibly? |
-| Performance | Are resources used efficiently for the intended workload? |
-| Usability | Can the intended audience use it effectively? |
-| Accessibility | Can people with different abilities access and operate it? |
-| Reproducibility | Can important results or behaviours be repeated or independently examined? |
-| Documentation | Can readers understand what the work does and what its limitations are? |
-| Integrity | Are claims, results, and representations supported by evidence? |
+Technology should be examined through both its capabilities and its limitations.
 
-The relative importance of each dimension depends on the project.
+A successful experiment is not necessarily one that confirms its initial hypothesis. An experiment that reveals an incorrect assumption, exposes a limitation, or demonstrates the inadequacy of an approach may produce equally valuable knowledge.
 
-A short visual experiment may place greater emphasis on interaction quality, technical feasibility, and clear documentation of limitations. A public API requires more attention to compatibility, input validation, security, reliability, and operational behaviour.
+### 2.1 Core Principles
 
-### 3.2 Quality Is Not Surface Polish
+#### Curiosity Before Conclusion
 
-Presentation, visual coherence, and interaction design matter, particularly in creative technology and digital experiences.
+Research should begin with a genuine question and remain open to unexpected findings.
 
-They must not conceal technical weaknesses, missing functionality, inaccessible interactions, or unverified claims.
+#### Hypothesis Before Implementation
 
-The reverse is also true. Technical complexity does not automatically make a project useful, coherent, or well designed.
+Where appropriate, establish what is being investigated before selecting tools or writing code.
 
-The Lab aims for alignment between intention, implementation, observed behaviour, evaluation, and published claims.
+#### Evidence Before Claims
 
-### 3.3 Quality Is Contextual
+Conclusions should be supported by observations, measurements, tests, sources, or clearly identified reasoning.
 
-A project must be assessed against its declared purpose, scope, audience, and intended use.
+#### Exploration Before Commitment
 
-An exploratory prototype is not expected to satisfy every requirement of a production system. It is expected to make its experimental status clear, handle relevant risks responsibly, and avoid presenting incomplete capabilities as established results.
+Promising approaches should be examined before they become fixed technical, methodological, or architectural decisions.
 
-A project should not be penalised simply because it is experimental. It should be assessed honestly against the quality expectations appropriate to that experiment.
+#### Reproducibility Before Assumption
 
-### 3.4 Evidence Over Assumption
+Methods and configurations should be documented sufficiently for results to be understood and repeated where practical.
 
-A quality claim must be supported by evidence appropriate to the claim.
+#### Limitations as Findings
+
+Failures, constraints, anomalies, and inconclusive outcomes must be recognised as part of the research record.
+
+#### Documentation as Part of Research
+
+Documentation should accompany the investigation rather than being reconstructed only after implementation.
+
+#### Human Judgement Remains Essential
+
+Automated tools, AI systems, and quantitative measurements support research. They do not eliminate the need for critical interpretation.
+
+#### Intellectual Honesty
+
+The research record must distinguish what is known, what has been observed, what has been inferred, and what remains uncertain.
+
+### 2.2 Research Is Not Product Development Alone
+
+A research investigation may produce a product, prototype, demonstration, technical report, experimental dataset, methodological framework, or no functional artefact at all.
+
+The value of the investigation is not determined exclusively by whether it produces a finished application.
+
+A negative result may be more informative than an implementation that works under narrow conditions but does not support the original hypothesis.
+
+---
+
+## 3. Research Scope and Classification
+
+Before beginning an investigation, its nature and scope should be established.
+
+Research activities may fall into one or more of the following categories.
+
+### 3.1 Exploratory Research
+
+Exploratory research investigates a subject where the relevant questions, approaches, or possibilities have not yet been sufficiently established.
+
+Objectives may include:
+
+- Understanding an emerging technology.
+- Identifying potential applications.
+- Discovering relevant technical constraints.
+- Investigating unfamiliar methods.
+- Identifying knowledge gaps.
+- Formulating questions for future experiments.
+- Exploring relationships between different disciplines.
+
+Exploratory research does not necessarily require a formal hypothesis.
+
+Its findings should distinguish observations from speculation.
+
+### 3.2 Experimental Research
+
+Experimental research tests a defined proposition through a structured implementation or controlled investigation.
+
+Objectives may include:
+
+- Evaluating a particular technique.
+- Comparing implementation approaches.
+- Testing model behaviour.
+- Measuring performance.
+- Investigating system responses.
+- Examining cause-and-effect relationships where the design supports such conclusions.
+
+Experimental research should define its variables, conditions, and evaluation criteria as precisely as reasonably possible.
+
+### 3.3 Applied Research
+
+Applied research investigates how existing knowledge or technologies can address a practical problem.
+
+Examples include:
+
+- Developing an AI-assisted workflow.
+- Improving an interaction pattern.
+- Evaluating an automation strategy.
+- Testing an application architecture.
+- Investigating a practical implementation of a technical concept.
+- Evaluating a proposed digital experience.
+
+The intended application should not predetermine the research conclusion.
+
+### 3.4 Comparative Research
+
+Comparative research compares multiple technologies, methods, models, or implementations under defined conditions.
+
+The comparison should establish:
+
+- What is being compared.
+- Why the comparison is relevant.
+- Which conditions are shared.
+- Which variables differ.
+- How results are measured.
+- Which constraints affect comparability.
+- Which conclusions the comparison can legitimately support.
+
+Comparisons should avoid declaring one approach universally superior when results only support a narrower conclusion.
+
+### 3.5 Methodological Research
+
+Methodological research investigates how a process, framework, or research method can be designed, improved, or evaluated.
+
+Examples include:
+
+- AI evaluation methodologies.
+- Prompt testing frameworks.
+- Documentation standards.
+- Development workflows.
+- Human-in-the-loop validation methods.
+- Design-to-development processes.
+- Reproducibility methods.
+- Technical evaluation frameworks.
+
+### 3.6 Creative and Interdisciplinary Research
+
+Creative and interdisciplinary research investigates the relationship between computation, interaction, perception, creative practice, and emerging technologies.
+
+Examples include:
+
+- Generative visual systems.
+- Algorithmic composition.
+- Interactive narratives.
+- Computational typography.
+- AI-assisted creative processes.
+- Experimental interfaces.
+- Human–machine collaboration.
+- Procedural and generative environments.
+- Multimodal creative systems.
+
+Not every creative investigation requires quantitative measurement.
+
+Qualitative observations, documented behaviours, interaction studies, comparative visual evaluation, and critical interpretation may be more appropriate.
+
+### 3.7 Research Category Versus Project Classification
+
+Research categories describe the nature of an investigation.
+
+They do not replace the canonical project fields defined by the Lab.
+
+In particular, a research category must not be treated as:
+
+- A Lifecycle Stage.
+- A Project Status.
+- A Technical Maturity level.
+- An Operational Readiness level.
+- A Publication Classification.
+- A Publication Status.
+- An AI Risk Classification.
+
+The six project fields remain governed by their respective documents. AI Risk Classification remains independently governed by `RESPONSIBLE-AI-v2.0.md`.
+
+---
+
+## 4. The Research Lifecycle
+
+The standard Framing Creativity Lab research process follows nine stages.
+
+**Question → Context → Hypothesis → Design → Experiment → Evaluation → Interpretation → Documentation → Review**
+
+The stages provide a common structure. Some may be repeated, combined, or adapted according to the nature of the research.
+
+This research lifecycle is distinct from the project lifecycle defined in `PROJECT-LIFECYCLE-v2.0.md`.
+
+The research lifecycle describes how an investigation is conducted. The project lifecycle describes the broader progression and state of a Lab project.
+
+### 4.1 Stage 01 — Identify the Research Question
+
+Every substantial investigation should begin with a clearly formulated question.
+
+A useful research question should:
+
+- Identify the subject being investigated.
+- Establish the relevant context.
+- Define the problem or uncertainty.
+- Be sufficiently specific to guide an investigation.
+- Be appropriate to the available resources and methods.
+- Allow a meaningful form of evaluation.
+
+Weak research question:
+
+> Can artificial intelligence improve digital products?
+
+More focused research question:
+
+> Under which conditions can an LLM-based interface reduce the time required to complete a structured information-retrieval task without significantly reducing answer accuracy?
+
+The second formulation identifies an observable task and introduces evaluation criteria.
+
+The research question may evolve when the initial investigation reveals that the problem was incorrectly framed.
+
+A material change to the question should be documented rather than silently substituted after results have been observed.
+
+### 4.2 Stage 02 — Establish the Research Context
+
+Before designing an experiment, establish what is already known.
+
+Relevant activities include:
+
+- Reviewing technical documentation.
+- Examining relevant scientific literature.
+- Investigating existing implementations.
+- Comparing established methods.
+- Identifying relevant standards.
+- Examining known limitations.
+- Identifying conflicting findings.
+- Assessing the reliability of available sources.
+- Identifying knowledge gaps.
+
+#### Source Quality
+
+Sources should be evaluated according to their relevance, authority, recency, methodology, and verifiability.
+
+Preferred sources may include:
+
+- Peer-reviewed scientific publications.
+- Academic research institutions.
+- Official technical documentation.
+- Standards organisations.
+- Original technical specifications.
+- Reputable research reports.
+- Public implementation repositories.
+- Reproducible experimental studies.
+- Official datasets and technical benchmarks.
+
+Community discussions and informal publications may provide useful observations, but should not automatically be treated as authoritative evidence.
+
+#### Source Traceability
+
+Important factual claims should be traceable to their original source.
+
+Research notes should record, where applicable:
+
+- Author or organisation.
+- Title.
+- Publication or release date.
+- Source URL or identifier.
+- Access date.
+- Relevant section or page.
+- Reason for including the source.
+- Relevant methodological limitations.
+
+Unverified claims must be labelled accordingly.
+
+#### Source Interpretation
+
+A source should not be cited as support for a claim that it does not actually establish.
+
+Research should distinguish:
+
+- What the source explicitly states.
+- What the source demonstrates.
+- What the researcher infers.
+- What remains unverified.
+- Whether the source is current enough for the relevant claim.
+
+The existence of a citation does not automatically establish the validity of an interpretation.
+
+### 4.3 Stage 03 — Formulate the Hypothesis
+
+Where appropriate, translate the research question into a testable proposition.
+
+A useful hypothesis should identify:
+
+- The expected relationship or behaviour.
+- The relevant conditions.
+- The expected outcome.
+- The means by which the outcome will be evaluated.
+
+Example:
+
+> Under identical input and evaluation conditions, structured prompting will produce a higher proportion of valid outputs than an unstructured instruction.
+
+The experiment must define what constitutes a valid output before testing begins.
+
+#### Hypothesis Types
+
+Depending on the investigation, a project may use:
+
+- A directional hypothesis.
+- A non-directional hypothesis.
+- A comparative hypothesis.
+- A technical feasibility hypothesis.
+- A design hypothesis.
+- An exploratory proposition.
+
+Not every investigation needs a null hypothesis or formal statistical testing.
+
+The methodology should reflect the type of question being asked.
+
+#### Hypothesis Discipline
+
+The initial hypothesis should be recorded before results are interpreted.
+
+This reduces the risk of changing the research question retrospectively to fit observed outcomes.
+
+Where the hypothesis changes materially, record:
+
+- The original proposition.
+- The revised proposition.
+- The reason for the change.
+- The evidence or observation that prompted the revision.
+- The stage at which the change occurred.
+
+Exploratory changes are legitimate when they are documented honestly.
+
+### 4.4 Stage 04 — Design the Experiment
+
+The experiment design translates the hypothesis into a practical investigation.
+
+The design should establish:
+
+- Objective.
+- Scope.
+- Method.
+- Variables.
+- Tools and technologies.
+- Test conditions.
+- Input data.
+- Expected outputs.
+- Evaluation criteria.
+- Known constraints.
+- Risks and limitations.
+- Repetition requirements.
+- Relevant data permissions.
+
+#### Variables
+
+Where relevant, distinguish between:
+
+**Independent Variables**
+
+Factors deliberately changed during the experiment.
+
+**Dependent Variables**
+
+Outcomes being observed or measured.
+
+**Controlled Variables**
+
+Conditions maintained consistently to support meaningful comparison.
+
+**External Variables**
+
+Factors that may influence results but cannot necessarily be controlled.
+
+For qualitative or creative research, these categories may be adapted to reflect the nature of the investigation.
+
+#### Baselines
+
+Comparative experiments should establish an appropriate baseline whenever practical.
+
+A baseline provides a reference against which the proposed approach can be evaluated.
+
+The baseline should be documented, including why it is relevant and what limitations affect the comparison.
+
+#### Evaluation Criteria
+
+Evaluation criteria must be selected before analysing the results whenever possible.
+
+Criteria may include:
+
+- Accuracy.
+- Completion rate.
+- Response time.
+- Resource consumption.
+- Output consistency.
+- Functional correctness.
+- Usability.
+- Accessibility.
+- Visual coherence.
+- Reproducibility.
+- Human preference.
+- Qualitative observations.
+- Error frequency.
+- Cost.
+- Reliability.
+
+The selected criteria should correspond to the original research question.
+
+### 4.5 Stage 05 — Conduct the Experiment
+
+The experiment should be carried out according to the documented design.
+
+Record relevant information such as:
+
+- Execution date.
+- Environment.
+- Software versions.
+- Model versions.
+- Configuration.
+- Inputs.
+- Test cases.
+- Outputs.
+- Observations.
+- Deviations from the original plan.
+- Unexpected behaviour.
+- Manual interventions.
+- Relevant external conditions.
+
+Where practical, preserve the original experimental conditions and distinguish exploratory adjustments from formal test runs.
+
+Do not silently discard unexpected results or unsuccessful attempts when they materially affect interpretation.
+
+### 4.6 Stage 06 — Evaluate the Results
+
+Results should be evaluated against the defined criteria.
+
+This may involve:
+
+- Quantitative analysis.
+- Qualitative analysis.
+- Comparative evaluation.
+- Functional testing.
+- Performance measurements.
+- Human assessment.
+- Visual or behavioural inspection.
+- Statistical analysis where justified.
+
+The evaluation should identify:
+
+- What worked.
+- What failed.
+- What changed.
+- What was unexpected.
+- Whether the hypothesis was supported.
+- Which limitations remain.
+- Whether additional testing is required.
+- Whether the results are sufficiently reliable to support a conclusion.
+
+A successful implementation does not automatically establish that the original hypothesis was correct.
+
+### 4.7 Stage 07 — Interpret the Findings
+
+Interpretation connects the observations to the original research question.
+
+It should distinguish between:
+
+- Directly observed results.
+- Measured results.
+- Reasonable interpretations.
+- Assumptions.
+- Speculation.
+- Unresolved questions.
+- External explanations that have not been tested.
+
+Conclusions must remain proportionate to the evidence.
+
+A small experimental sample should not be presented as proof of general behaviour.
+
+A single successful AI response should not be interpreted as evidence of model reliability.
+
+A visual prototype should not be presented as proof of production feasibility.
+
+A measured correlation should not automatically be presented as a causal relationship.
+
+### 4.8 Stage 08 — Document the Research
+
+Document the process while relevant information remains available.
+
+The research record should explain:
+
+- Why the investigation was conducted.
+- How it was designed.
+- What was implemented.
+- Which conditions were used.
+- What was observed.
+- How results were evaluated.
+- What conclusions were reached.
+- What remains uncertain.
+- Which limitations affect interpretation.
+
+Documentation must preserve methodological context, not merely final outcomes.
+
+### 4.9 Stage 09 — Review and Next Steps
+
+The investigation should conclude with a review.
+
+Possible outcomes include:
+
+- Accept the findings.
+- Reject the original hypothesis.
+- Refine the hypothesis.
+- Repeat the experiment.
+- Expand the investigation.
+- Change the method.
+- Develop a prototype.
+- Conduct further validation.
+- Discontinue the approach.
+- Archive the research.
+
+The final decision should be documented.
+
+These research decisions do not create additional Project Status values.
+
+---
+
+## 5. Experiment Design Standards
+
+The quality of an experiment depends on the suitability of its design.
+
+### 5.1 Research Objective
+
+The objective must be clearly stated.
+
+Avoid combining multiple unrelated questions into a single experiment unless their relationship is part of the investigation.
+
+A substantial investigation should identify what it intends to establish and what would count as an informative result.
+
+### 5.2 Scope Definition
+
+Define what the investigation includes and excludes.
+
+Scope should identify:
+
+- Subjects or systems under examination.
+- Relevant technical environment.
+- Included functionality.
+- Excluded functionality.
+- Assumptions.
+- Resource constraints.
+- Expected depth of investigation.
+- Intended audience or context.
+- Important ethical or publication boundaries.
+
+### 5.3 Test Conditions
+
+Conditions should be documented sufficiently to interpret the results.
+
+For software experiments, this may include:
+
+- Operating system.
+- Runtime environment.
+- Programming language version.
+- Framework versions.
+- Hardware configuration.
+- Network conditions.
+- External services.
+- Relevant environment variables.
+- Database or storage configuration.
+
+For AI experiments, additional model-specific conditions are required.
+
+### 5.4 Input Definition
+
+Input data and test cases should be characterised.
+
+Document:
+
+- Origin.
+- Structure.
+- Format.
+- Relevant characteristics.
+- Selection criteria.
+- Known limitations.
+- Permissions or licence conditions.
+- Relevant transformations.
+- Exclusions and filtering rules.
+
+Inputs must be appropriate for the research question.
+
+### 5.5 Repetition
+
+Repeat experiments when necessary to assess consistency.
+
+The appropriate number of repetitions depends on the research question, the variability of the system, the evaluation method, and the cost of testing.
+
+For non-deterministic systems, a single run is generally insufficient to characterise output consistency.
+
+Where repetition is not practical, the limitation should be recorded.
+
+### 5.6 Deviations
+
+Any material deviation from the experiment design must be recorded.
+
+This includes:
+
+- Modified test conditions.
+- Changed inputs.
+- Updated model versions.
+- Different evaluation criteria.
+- Failed execution.
+- Environmental changes.
+- Manual interventions.
+- Changes to the hypothesis.
+- Excluded observations.
+- Changes to the experimental population or sample.
+
+The original plan and the actual execution should remain distinguishable.
+
+### 5.7 Experiment Separation
+
+Where practical, distinguish exploratory runs from formal evaluation runs.
+
+Exploratory runs may be used to improve a method or discover failure conditions.
+
+Formal evaluation should use documented conditions and criteria that are not changed retrospectively merely to improve the apparent result.
+
+If formal conditions change, record the change and its rationale.
+
+### 5.8 Experimental Integrity
+
+The researcher should preserve a sufficiently accurate record of the work performed.
+
+Do not fabricate, selectively alter, or omit material observations to create a more favourable conclusion.
+
+Where an experiment cannot be completed as planned, document what was actually performed and what remains incomplete.
+
+---
+
+## 6. Artificial Intelligence Research Methodology
+
+AI experimentation requires particular attention to model variability, configuration, evaluation, data handling, and the interaction between model outputs and application behaviour.
+
+The Lab treats AI systems as technical components whose behaviour must be investigated within a defined context.
+
+An AI model cannot be evaluated independently of its inputs, prompts, configuration, integration, data, and intended task.
+
+AI-specific principles, risk classifications, human oversight, and restrictions are governed by `RESPONSIBLE-AI-v2.0.md`.
+
+### 6.1 AI Research Objectives
+
+An AI experiment should identify what aspect of the system is being investigated.
+
+Possible objectives include:
+
+- Output accuracy.
+- Instruction following.
+- Reasoning performance.
+- Information retrieval.
+- Structured data generation.
+- Classification.
+- Summarisation.
+- Code generation.
+- Tool usage.
+- Workflow automation.
+- Multimodal interpretation.
+- User interaction.
+- Response consistency.
+- Cost and latency.
+- Safety and reliability.
+- Human evaluation.
+- Robustness under unexpected inputs.
+
+Multiple objectives may be investigated, but each should have an appropriate evaluation method.
+
+### 6.2 Model Identification
+
+Where relevant, record:
+
+- Model provider.
+- Model name.
+- Model version or identifier.
+- Access method.
+- API or interface version.
+- Access date.
+- Relevant configuration.
+- Known provider-side constraints.
+- Important model limitations.
+
+Model identifiers and versions should be recorded accurately.
+
+Do not invent unavailable version information.
+
+If a provider changes a model without exposing a stable version identifier, document that limitation.
+
+### 6.3 Prompt Documentation
+
+Prompts are part of the experimental configuration.
+
+Where a prompt materially affects results, document:
+
+- Prompt identifier.
+- Prompt version.
+- System instructions, where publication is authorised.
+- User input.
+- Output constraints.
+- Examples or contextual material.
+- Relevant parameters.
+- Intended task.
+- Changes between tested versions.
+
+Prompt changes should be versioned where comparative evaluation is required.
+
+If prompts contain confidential or restricted information, they must not be transferred to the public repository.
+
+### 6.4 AI Model Configuration
+
+Record relevant parameters when available:
+
+- Temperature.
+- Maximum output tokens.
+- Top-p.
+- Sampling configuration.
+- Seed.
+- Tool configuration.
+- Context window.
+- Structured output requirements.
+- Retrieval settings.
+- Model-specific parameters.
+- Provider-specific settings.
+
+Some providers expose only a subset of these options.
+
+Unavailable parameters should be omitted or identified as unavailable rather than assumed.
+
+### 6.5 AI Input and Output Evaluation
+
+AI outputs should be evaluated against explicit criteria.
+
+Possible criteria include:
+
+**Correctness**
+
+Does the output contain accurate information or produce the intended result?
+
+**Completeness**
+
+Does it address the relevant requirements?
+
+**Instruction Adherence**
+
+Does it follow the requested constraints?
+
+**Consistency**
+
+Does it maintain acceptable behaviour across repeated executions?
+
+**Relevance**
+
+Does it address the intended task?
+
+**Robustness**
+
+Does it behave appropriately when inputs vary or contain ambiguity?
+
+**Safety**
+
+Does it avoid unacceptable or harmful outputs in the tested context?
+
+**Efficiency**
+
+Are latency and resource consumption appropriate?
+
+**Usability**
+
+Can the intended user understand and use the result?
+
+Not every experiment requires every criterion.
+
+The evaluation criteria should match the use case.
+
+### 6.6 Evaluation Datasets and Test Cases
+
+AI evaluations should use a defined set of test cases whenever practical.
+
+A useful test collection may include:
+
+- Typical inputs.
+- Edge cases.
+- Ambiguous requests.
+- Incomplete information.
+- Invalid inputs.
+- Adversarial inputs where relevant.
+- Expected output characteristics.
+- Known failure cases.
+- Relevant negative examples.
+
+Test sets should be selected with awareness of representativeness and potential bias.
+
+Where a reference answer exists, its origin, accuracy, and validation should be documented.
+
+Evaluation data must be used in accordance with its classification, permitted purpose, licence, and applicable restrictions.
+
+### 6.7 Reproducibility and Variability
+
+AI outputs may vary between executions.
+
+Exact reproduction may be impossible because of:
+
+- Model updates.
+- Provider-side infrastructure changes.
+- Sampling behaviour.
+- Non-deterministic operations.
+- Hidden implementation details.
+- Changes in retrieval or contextual information.
+- Changes in safety or system configurations.
+
+The research record should distinguish:
+
+- Exact reproducibility.
+- Approximate reproducibility.
+- Configuration-level reproducibility.
+- Non-reproducible external behaviour.
+
+Where possible, retain representative inputs and outputs.
+
+Do not present one successful execution as a complete characterisation of the system.
+
+### 6.8 Human Evaluation
+
+Human evaluation may be necessary when quality cannot be adequately determined through automated metrics.
+
+This is particularly relevant for:
+
+- Creative outputs.
+- Visual quality.
+- Interaction quality.
+- Natural-language interpretation.
+- Perceived usefulness.
+- Relevance.
+- Aesthetic coherence.
+- Contextual appropriateness.
+
+Human evaluation should document:
+
+- The criteria used.
+- The evaluation procedure.
+- Relevant evaluator characteristics where appropriate.
+- The number of evaluations.
+- The method for handling disagreement.
+- Any limitations.
+
+Where feasible, reduce evaluator bias through consistent assessment procedures.
+
+### 6.9 AI Failure Analysis
+
+Failures are important research observations.
+
+Potential failure categories include:
+
+- Hallucination.
+- Incorrect reasoning.
+- Unsupported factual claims.
+- Instruction drift.
+- Format violations.
+- Context loss.
+- Inconsistent outputs.
+- Tool-use errors.
+- Retrieval failures.
+- Refusal failures.
+- Prompt injection.
+- Security weaknesses.
+- Data leakage.
+- Unintended actions.
+
+A documented failure should identify the conditions under which it occurred and whether the failure was reproducible.
+
+### 6.10 AI Safety and Responsible Evaluation
+
+Experiments must respect applicable safety, privacy, security, and publication requirements.
+
+AI systems should not be assumed to provide reliable protection merely because a safety mechanism is present.
+
+Where an experiment investigates sensitive behaviour, appropriate safeguards and publication restrictions must be established before testing.
+
+The AI Risk Classification A0–A4 must be assigned where required by `RESPONSIBLE-AI-v2.0.md`.
+
+AI Risk Classification must not be confused with Publication Classification P0–P3.
+
+---
+
+## 7. Software and Systems Research
+
+Technical investigations involving software systems should follow an implementation-oriented methodology.
+
+### 7.1 Architecture Investigation
+
+Document:
+
+- System objective.
+- Relevant components.
+- Component relationships.
+- Data flow.
+- External integrations.
+- Configuration.
+- Runtime dependencies.
+- Architectural constraints.
+- Important technical assumptions.
+- Relevant failure boundaries.
+
+Diagrams may be used to communicate complex structures.
+
+Architecture descriptions should distinguish implemented components from proposed or conceptual elements.
+
+### 7.2 Implementation Comparisons
+
+When comparing implementation strategies, establish consistent evaluation criteria.
+
+Possible dimensions include:
+
+- Functional suitability.
+- Complexity.
+- Maintainability.
+- Performance.
+- Scalability.
+- Compatibility.
+- Security.
+- Development effort.
+- Operational cost.
+- Dependency requirements.
+- Extensibility.
+- Reproducibility.
+
+No single approach should be declared superior without identifying the criteria under which it performs better.
+
+### 7.3 Software Testing
+
+Depending on the project, appropriate tests may include:
+
+- Unit tests.
+- Integration tests.
+- End-to-end tests.
+- Regression tests.
+- Performance tests.
+- Compatibility tests.
+- Accessibility tests.
+- Security tests.
+- User acceptance tests.
+- Failure and recovery tests.
+
+The presence and scope of tests must be described accurately.
+
+### 7.4 Performance Evaluation
+
+Performance studies should document:
+
+- Hardware and environment.
+- Software versions.
+- Dataset or workload.
+- Test duration.
+- Number of runs.
+- Measurement method.
+- Relevant environmental conditions.
+- Important resource constraints.
+
+Measurements should be interpreted in context.
+
+A benchmark from one environment cannot automatically establish performance across other systems.
+
+### 7.5 System Behaviour
+
+Where relevant, evaluate:
+
+- Input handling.
+- State transitions.
+- Error handling.
+- Resource consumption.
+- Dependency failures.
+- Network behaviour.
+- Data persistence.
+- Concurrent operations.
+- Recovery behaviour.
+- Permission boundaries.
+
+The research should identify the conditions under which observed behaviour is expected to remain valid.
+
+---
+
+## 8. Creative Technology and Qualitative Research
+
+Creative and interdisciplinary experiments require a methodology appropriate to their subject.
+
+The Lab recognises that not all valuable outcomes can be reduced to numerical measurements.
+
+### 8.1 Creative Hypothesis
+
+A creative investigation may begin with a conceptual proposition.
 
 Examples:
 
-- A successful local launch demonstrates that the application started in that environment; it does not prove production reliability.
-- A passing unit test supports the behaviour covered by that test; it does not prove that the whole system is correct.
-- A demonstration supports the existence of a demonstrable workflow; it does not establish scalability.
-- A limited evaluation may support a bounded validation claim; it does not establish universal suitability.
-- A public release indicates that publication was authorised; it does not establish production readiness.
+- How does delayed interaction change the perception of a digital narrative?
+- Can generative constraints produce more coherent visual compositions?
+- How does dynamic typography affect the interpretation of text?
+- Can a computational system introduce meaningful variation into an interactive experience?
+- How does adaptive sound influence the perception of an interactive environment?
+- Can an algorithmic process create a recognisable visual language?
 
-The level of confidence communicated must remain proportional to the scope and quality of the evidence.
+The proposition should be documented in a manner that makes the intention understandable.
+
+### 8.2 Experimental Framework
+
+Creative experiments may investigate:
+
+- Form.
+- Behaviour.
+- Interaction.
+- Timing.
+- Perception.
+- Composition.
+- Variability.
+- Interpretation.
+- User response.
+- Spatial or temporal relationships.
+- Generative constraints.
+- Human–machine collaboration.
+
+The implementation should preserve enough information to explain how the experience was constructed.
+
+### 8.3 Qualitative Evaluation
+
+Relevant approaches may include:
+
+- Structured observation.
+- Interaction analysis.
+- Comparative visual inspection.
+- User feedback.
+- Expert assessment.
+- Reflective analysis.
+- Documentation of emergent behaviour.
+- Comparative interpretation.
+- Recorded creative decisions.
+
+Where subjective assessment is used, its criteria and limitations should be acknowledged.
+
+### 8.4 Creative Reproducibility
+
+Perfect visual or experiential reproducibility may not always be necessary or possible.
+
+The research should nevertheless document relevant parameters, constraints, assets, algorithms, configurations, and creative decisions.
+
+The objective is to make the creative process understandable even when every outcome cannot be reproduced identically.
+
+### 8.5 Human Interpretation
+
+Human interpretation may be an essential component of the research.
+
+The research record should identify where conclusions depend on subjective judgement and avoid presenting personal preference as universal evidence.
+
+### 8.6 Creative Outcome Versus Technical Validation
+
+A successful creative experience does not automatically demonstrate technical reliability.
+
+Likewise, technical consistency does not automatically establish creative quality.
+
+The investigation should evaluate each dimension according to its own criteria.
 
 ---
 
-## 4. Technical Maturity and Operational Readiness
+## 9. Data Collection and Management
 
-Technical Maturity and Operational Readiness are separate assessment dimensions. Publication is a third, independent decision governed by `PUBLICATION-POLICY.md`.
+Data handling must be appropriate to the research objective and publication scope.
 
-These dimensions answer different questions:
+### 9.1 Data Sources
 
-- **Technical Maturity:** What has been implemented and demonstrated through evidence?
-- **Operational Readiness:** For what operating context has the work been assessed?
-- **Publication Classification and Status:** What publication scrutiny applies, and what is the current publication decision?
+Possible sources include:
 
-They must not be combined into one scale or inferred from one another.
+- Public datasets.
+- Synthetic datasets.
+- Original experimental data.
+- Authorised APIs.
+- Public technical documentation.
+- Licensed research datasets.
+- Generated outputs.
+- Structured observations.
+- User evaluation records, where appropriately authorized.
 
-### 4.1 Technical Maturity
+Data origins must be documented where material to the research.
 
-Use the following values to record the project's technical maturity assessment.
+### 9.2 Data Suitability
 
-#### Not Assessed
+Evaluate:
 
-No maturity assessment has been recorded, or the available evidence is insufficient to assign a meaningful level.
+- Relevance.
+- Quality.
+- Completeness.
+- Representativeness.
+- Potential bias.
+- Provenance.
+- Licence conditions.
+- Privacy implications.
+- Processing restrictions.
+- Suitability for the intended analysis.
 
-This value describes the state of the assessment. It does not indicate that the project has failed or that the work has no maturity.
+The availability of a dataset does not automatically establish permission to use it.
 
-#### Exploratory
+### 9.3 Data Integrity
 
-Intended for early investigation, technical feasibility checks, and short experiments.
+Original data should be preserved when appropriate and permitted.
 
-A project at this level may include temporary implementation choices, incomplete functionality, or changing assumptions.
+Transformations should be documented, including:
 
-Expected practices:
+- Cleaning.
+- Filtering.
+- Normalisation.
+- Aggregation.
+- Annotation.
+- Sampling.
+- Deduplication.
+- Exclusion rules.
+- Reformatting.
+- Feature extraction.
 
-- a clear experimental or technical objective;
-- a sufficiently understandable method or implementation;
-- basic implementation discipline appropriate to the work;
-- appropriate handling of credentials and private data;
-- identification of major dependencies and constraints;
-- minimal but useful documentation;
-- recording of significant observations and limitations; and
-- honest communication of what has and has not been demonstrated.
+Where a transformation materially affects the results, retain enough information to understand how it was performed.
 
-Exploratory work must not be represented as completed, validated, or operationally reliable merely because it produces a successful result once.
+### 9.4 Data Versioning
 
-#### Prototype
+When data changes materially between experiments, the relevant version should be identifiable.
 
-Intended for a demonstrable implementation used to test a concept, evaluate an approach, or explore a proposed system.
+Where appropriate, record:
 
-Expected practices:
+- Dataset identifier.
+- Version.
+- Date of retrieval.
+- Source reference.
+- Checksums.
+- Relevant transformations.
+- Selection criteria.
 
-- defined scope and intended behaviour;
-- an understandable project structure;
-- demonstrable core functionality;
-- basic functional testing;
-- appropriate input validation;
-- relevant error handling;
-- documented setup requirements and dependencies;
-- identification of significant technical limitations;
-- review of relevant security and privacy risks; and
-- clear communication that the implementation is a prototype.
+### 9.5 Data Retention
 
-A prototype may be incomplete or unstable. Its behaviour must nevertheless be understood well enough to support meaningful evaluation.
+Data should be retained only when necessary and permitted.
 
-#### Validated
+Private, personal, confidential, or restricted data must not be included in public research assets without an appropriate basis and authorization.
 
-Intended for work that has undergone structured testing or evaluation against defined objectives and acceptance criteria.
+### 9.6 Canonical Data Classification
 
-Expected practices:
+Research data must follow the four canonical classifications defined in `PUBLICATION-POLICY-v2.0.md`:
 
-- documented objectives and acceptance criteria;
-- a suitable validation method;
-- recorded test or evaluation results;
-- relevant unit, integration, system, or user-facing tests;
-- examination of significant failure conditions;
-- documented limitations and unresolved issues;
-- maintainable implementation appropriate to the project;
-- documented architecture and dependencies where relevant;
-- security and privacy review proportionate to risk; and
-- evidence supporting the claims being made.
+- Public.
+- Internal.
+- Confidential.
+- Restricted.
 
-Validation applies only to the scope, conditions, configurations, and test cases actually evaluated.
+Personal information and sensitive information are data characteristics, not additional values in the four-level classification vocabulary.
 
-A validated project must not be presented as universally reliable, secure, scalable, compliant, or suitable for every environment unless those distinct claims have been separately assessed.
+Personal information should be classified at least as Confidential. Sensitive personal information and information subject to stricter restrictions should be classified as Restricted.
 
-### 4.2 Operational Readiness
+### 9.7 External Data Processing
 
-Record Operational Readiness separately from Technical Maturity.
+Where research involves external AI services, APIs, or data platforms, document relevant processing conditions.
 
-| Readiness | Meaning |
+This may include:
+
+- Information transmitted.
+- Processing purpose.
+- Provider or recipient.
+- Data classification.
+- Retention conditions.
+- Authorization and usage rights.
+- Relevant access restrictions.
+
+Do not submit confidential or restricted research data to external services without the necessary authorization and safeguards.
+
+---
+
+## 10. Analysis and Interpretation
+
+Analysis must be aligned with the research question and the type of evidence collected.
+
+### 10.1 Quantitative Analysis
+
+Quantitative methods may include:
+
+- Descriptive statistics.
+- Frequency analysis.
+- Comparative measurements.
+- Error rates.
+- Response distributions.
+- Performance measurements.
+- Confidence intervals where appropriate.
+- Statistical testing where justified.
+- Correlation analysis.
+- Timing and resource measurements.
+
+The selected method should be proportionate to the quality and quantity of available data.
+
+### 10.2 Qualitative Analysis
+
+Qualitative methods may include:
+
+- Thematic analysis.
+- Structured observations.
+- Comparative interpretation.
+- Content analysis.
+- Behavioural analysis.
+- Expert assessment.
+- Reflective commentary.
+- Interaction analysis.
+- Case-based interpretation.
+
+Qualitative findings should identify their basis and avoid presenting subjective interpretation as objective measurement.
+
+### 10.3 Mixed-Method Analysis
+
+Some investigations benefit from combining quantitative and qualitative evidence.
+
+For example, an interface experiment may measure task completion time while also recording user observations.
+
+The relationship between the two forms of evidence should be explained.
+
+Quantitative results should not automatically override qualitative observations when both are relevant to the research question.
+
+### 10.4 Statistical Caution
+
+Statistical significance should not be confused with practical importance.
+
+A numerical difference may exist without representing a meaningful improvement.
+
+Small samples, biased selection, measurement error, and uncontrolled conditions may limit the reliability of conclusions.
+
+Where statistical methods are used, their assumptions and limitations should be documented.
+
+### 10.5 Negative and Inconclusive Results
+
+Research records should preserve relevant negative and inconclusive outcomes.
+
+Do not remove failures from a report merely because they do not support the initial hypothesis.
+
+The absence of a demonstrated effect is not automatically proof that no effect exists.
+
+### 10.6 Causal Interpretation
+
+Causal claims require an appropriate research design.
+
+Observational evidence or correlation alone does not establish causation.
+
+Where causal conclusions cannot be supported, describe the observed relationship without overstating its meaning.
+
+### 10.7 Interpretation Boundaries
+
+A conclusion should identify the population, system, configuration, or conditions to which it applies.
+
+Do not generalise beyond the tested scope without additional evidence.
+
+---
+
+## 11. Reproducibility and Traceability
+
+Reproducibility supports technical understanding and independent evaluation.
+
+The Lab aims to make its experiments reproducible to the extent permitted by their nature, dependencies, and data restrictions.
+
+### 11.1 Reproduction Requirements
+
+Where practical, document:
+
+- Source code.
+- Environment.
+- Runtime.
+- Dependencies.
+- Configuration.
+- Input data.
+- Test cases.
+- Execution steps.
+- Expected outputs.
+- Evaluation method.
+- Relevant model or provider information.
+- Known reproduction limitations.
+
+### 11.2 Experiment Identification
+
+Substantial experiments should receive a unique identifier.
+
+Recommended format:
+
+`FCL-EXP-YYYY-NNN`
+
+Example:
+
+`FCL-EXP-2026-001`
+
+Identifiers should be unique within the Lab's experiment records.
+
+### 11.3 Version Tracking
+
+Record relevant versions of:
+
+- Source code.
+- Dependencies.
+- Models.
+- Datasets.
+- Prompts.
+- Configuration.
+- External APIs.
+- Evaluation procedures.
+- Research documentation.
+
+Use commit identifiers or tagged releases when they support traceability.
+
+### 11.4 Research Records
+
+Maintain sufficient records to distinguish:
+
+- Original experiment design.
+- Actual execution.
+- Modified conditions.
+- Intermediate results.
+- Failed attempts.
+- Final interpretation.
+- Subsequent reassessment.
+
+### 11.5 Limits of Reproduction
+
+Where exact reproduction is impossible, explain why.
+
+This may include:
+
+- Unavailable infrastructure.
+- Changing external services.
+- Non-deterministic models.
+- Restricted data.
+- Provider-side configuration changes.
+- Unavailable historical dependencies.
+- Environmental differences.
+
+The limitation must be explicit rather than hidden.
+
+### 11.6 Reproducibility and Publication
+
+Reproducibility does not authorize the disclosure of confidential information, proprietary source code, restricted datasets, or private configurations.
+
+Where full reproduction is not possible publicly, provide the information that can legitimately be shared and identify the remaining restrictions.
+
+---
+
+## 12. Research Quality and Evidence Standards
+
+Research conclusions should be supported by evidence appropriate to their claims.
+
+### 12.1 Evidence Categories
+
+The following categories provide an internal framework for describing the type and maturity of research evidence.
+
+| Category | Description |
 |---|---|
-| Not Assessed | No operational-readiness assessment has been recorded, or available evidence is insufficient to assign a meaningful value. |
-| Research or Experimental Use Only | Intended for controlled research, testing, or experimentation. It is not represented as suitable for real-world operational use. |
-| Demonstration Only | Suitable for a bounded demonstration or evaluation context. No production use is implied. |
-| Limited Operational Use | Suitable only for a defined and constrained operating context with documented limitations, responsibilities, safeguards, and usage conditions. |
-| Production-Oriented | Designed and assessed against sustained operational requirements, including appropriate security, reliability, monitoring, recovery, maintenance, and support considerations. |
+| E0 — Conceptual | A proposal or theoretical proposition without experimental support. |
+| E1 — Observational | An observation or exploratory finding. |
+| E2 — Demonstrated | A functional example or initial experiment. |
+| E3 — Evaluated | Results assessed against defined criteria. |
+| E4 — Repeated | Relevant results reproduced across repeated conditions. |
+| E5 — Independently Corroborated | Findings supported by a separate implementation, evaluator, or independent investigation. |
 
-An Operational Readiness assessment should consider, where relevant:
+These are internal descriptive categories, not a universal scientific evidence hierarchy.
 
-- the intended users and operating environment;
-- the importance and consequences of system failure;
-- authentication, authorisation, and permission boundaries;
-- data sensitivity and data-handling requirements;
-- expected availability and performance;
-- monitoring, logging, and incident detection;
-- backup, recovery, and continuity;
-- dependency and infrastructure maintenance;
-- deployment, configuration, and rollback;
-- support responsibilities and maintenance capacity; and
-- known operational limitations.
+A project may have different evidence categories for different claims.
 
-A **Production-Oriented** assessment requires explicit evidence proportionate to the system's intended impact and operating environment. It must not be inferred from a successful demonstration, public deployment, polished interface, technical maturity label, or publication approval.
+Independent corroboration must never be claimed when the evaluation was conducted only by the original author.
 
-Production-Oriented is an internal readiness descriptor. It is not a certification, warranty, guarantee of uninterrupted operation, or claim that a system is suitable for every production environment.
+### 12.2 Evidence Categories Are Not Project Maturity
 
-### 4.3 Publication Is a Separate Decision
+The E0–E5 categories describe the available research evidence.
 
-Publication Classification and Publication Status are not Technical Maturity or Operational Readiness values.
+They must not be confused with:
 
-- **Publication Classification (`P0`–`P3`)** is defined in `PUBLICATION-POLICY.md` and determines the applicable publication scrutiny and restrictions.
-- **Publication Status (`PENDING`, `APPROVED`, `REJECTED`, or `WITHDRAWN`)** records the current publication review state or final decision under `PUBLICATION-POLICY.md`.
-- A public release does not automatically establish Validated Technical Maturity or Production-Oriented Operational Readiness.
-- Publication approval does not itself mean that the material has already been released.
-- A project must not be described as Published until the approved material has actually been made publicly available.
+- Technical Maturity.
+- Operational Readiness.
+- Lifecycle Stage.
+- Project Status.
+- Publication Classification.
+- Publication Status.
+- AI Risk Classification.
 
-The Quality Standards document does not redefine P0–P3 or the publication decision process. Use `PUBLICATION-POLICY.md` as the authoritative source for publication classification, approval, release, and withdrawal.
+For example, E4 evidence does not automatically establish that a project is operationally ready or validated in every relevant context.
 
-### 4.4 Recording and Reassessing Assessments
+Likewise, a project may contain a validated technical component while a separate research claim remains supported only by preliminary evidence.
 
-Where these assessments are relevant, the project record should identify:
+Technical Maturity remains governed by `QUALITY-STANDARDS-v2.0.md`.
 
-- the assigned Technical Maturity;
-- the assigned Operational Readiness;
-- the evidence supporting each assessment;
-- the scope and conditions covered;
-- significant limitations and outstanding risks;
-- the assessment date; and
-- the person responsible for the assessment.
+### 12.3 Claim Discipline
 
-Assessments should be revisited when the project scope, architecture, data, dependencies, intended users, operating environment, or material risks change.
+The research report should distinguish:
 
-A previous assessment must not be treated as permanently valid after a material change.
+- What was proposed.
+- What was implemented.
+- What was tested.
+- What was observed.
+- What was measured.
+- What was interpreted.
+- What was concluded.
 
----
+Claims must not exceed the evidence available.
 
-## 5. Engineering and Code Quality
+### 12.4 Evidence Limitations
 
-### 5.1 General Principles
+Document important limitations such as:
 
-Code developed within the Lab should be:
+- Sample size.
+- Selection bias.
+- Measurement uncertainty.
+- External dependencies.
+- Model variability.
+- Environmental constraints.
+- Subjective assessment.
+- Missing baseline comparisons.
+- Limited test conditions.
+- Incomplete source verification.
 
-- understandable;
-- consistent;
-- purposeful;
-- appropriately modular;
-- maintainable;
-- testable;
-- secure within its intended context; and
-- free of unnecessary complexity.
+### 12.5 Confidence
 
-The implementation should express its intended behaviour clearly and avoid relying on hidden assumptions.
+Where useful, findings may be described as:
 
-Engineering choices should reflect the project's purpose and expected evolution. A simple implementation is preferable when it adequately addresses the problem.
+- Preliminary.
+- Indicative.
+- Moderately supported.
+- Strongly supported within the tested scope.
+- Inconclusive.
 
-### 5.2 Readability
+Confidence descriptions should be explained rather than used as decorative labels.
 
-Implementations should use clear names, logical structure, and consistent formatting.
+### 12.6 Independent Corroboration
 
-Where relevant:
+Independent corroboration requires a meaningful degree of separation from the original investigation.
 
-- use meaningful identifiers;
-- keep functions and components focused;
-- avoid unnecessary nesting and deeply coupled logic;
-- separate unrelated responsibilities;
-- remove obsolete code and unused dependencies;
-- document non-obvious behaviour and important constraints;
-- avoid unexplained constants and configuration values; and
-- prefer explicit behaviour over unnecessarily clever implementation.
+Depending on the claim, this may involve:
 
-Comments should explain intent, constraints, or non-obvious decisions rather than simply restating the code.
+- An independent evaluator.
+- A separate implementation.
+- A reproduction by another researcher.
+- A distinct dataset or evaluation environment.
+- A separate analysis of the original evidence.
 
-### 5.3 Modularity and Separation of Concerns
+A second review by the original author does not, by itself, establish independent corroboration.
 
-Where appropriate, implementations should separate concerns into logical units.
+### 12.7 Evidence Preservation
 
-Examples include:
+Where practical, retain relevant evidence such as:
 
-- presentation and application logic;
-- data access and business rules;
-- configuration and runtime behaviour;
-- external integrations and internal functionality;
-- reusable components and project-specific components; and
-- infrastructure and application code.
+- Test results.
+- Measurement records.
+- Experimental configurations.
+- Source references.
+- Evaluation reports.
+- Relevant output samples.
+- Reproducibility instructions.
 
-Modularity should solve an actual organizational or maintenance problem.
-
-Excessive abstraction can make a small project harder to understand without providing meaningful benefit. Reusable structures should be introduced when their responsibilities and interfaces can be defined clearly.
-
-### 5.4 Reusability
-
-Reusable components, functions, tools, and modules should have:
-
-- a clear purpose;
-- a defined interface;
-- documented assumptions;
-- predictable behaviour;
-- appropriate input and output handling; and
-- a maintenance approach proportionate to their expected use.
-
-Reuse should not be pursued at the expense of clarity.
-
-A component should not become a generic abstraction merely because two implementations share superficial similarities.
-
-### 5.5 Error Handling
-
-Projects should handle expected error conditions deliberately.
-
-Depending on the application, this may include:
-
-- invalid or incomplete input;
-- missing resources;
-- network failures;
-- authentication or authorisation failures;
-- service timeouts;
-- API errors;
-- file access problems;
-- database failures;
-- unavailable dependencies; and
-- unexpected external responses.
-
-Errors should be handled at appropriate boundaries.
-
-Where possible, an error should provide enough information to support diagnosis without exposing credentials, private data, internal paths, sensitive configuration, or other restricted information.
-
-Silent failure should be avoided where it could mislead users or conceal data loss, incomplete operations, or unsafe conditions.
-
-### 5.6 Configuration Management
-
-Configuration should be separated from application logic where appropriate.
-
-Projects should distinguish between:
-
-- public configuration;
-- environment-specific configuration;
-- sensitive configuration;
-- build-time settings; and
-- runtime settings.
-
-Secrets must not be committed to public source code.
-
-Required configuration variables should be documented without publishing their sensitive values. Example configuration files should use clearly identified placeholders.
-
-### 5.7 Code Consistency
-
-Projects should use consistent conventions for formatting, naming, file organisation, and error handling.
-
-Automated formatters, linters, type checkers, and static analysis tools may be used where they provide practical value.
-
-Tooling should be proportionate. Introducing a tool must have a clear benefit relative to its configuration and maintenance cost.
-
-### 5.8 Safe Changes
-
-Changes should be scoped and understandable.
-
-Where a change affects existing behaviour, relevant compatibility expectations should be considered. Unrelated refactoring should not be bundled into a narrowly scoped correction unless there is a clear reason.
-
-A change should not silently remove important functionality, alter data semantics, weaken security controls, or invalidate documented behaviour.
+Evidence must be retained and published only where the applicable rights, privacy, and confidentiality conditions permit.
 
 ---
 
-## 6. Architecture and Technical Design
+## 13. Ethics, Privacy, and Responsible Research
 
-### 6.1 Architectural Clarity
+Research must be conducted with appropriate consideration for human participants, data subjects, third parties, and wider impacts.
 
-Architecture should reflect the project's purpose, complexity, constraints, and expected evolution.
+### 13.1 Respect for Individuals
 
-A technical design should avoid unnecessary dependencies, tightly coupled components, unexplained implementation decisions, and hidden operational assumptions.
+Experiments involving people should respect their privacy, autonomy, and informed participation.
 
-Architecture should remain understandable to someone other than the original author, to the degree appropriate for the project's scope.
+Participation must not be misrepresented or obtained through deceptive practices.
 
-### 6.2 Appropriate Complexity
+The nature and purpose of participation should be explained in an appropriate manner.
 
-The Lab favours solutions that are sufficiently robust without being unnecessarily complex.
+### 13.2 Personal Data
 
-Architectural decisions should consider:
+Personal information should not be collected unnecessarily.
 
-- functional requirements;
-- technical constraints;
-- project scope and maturity;
-- expected scale and usage;
-- maintainability;
-- security and privacy;
-- external dependencies;
-- resource requirements; and
-- foreseeable changes.
+Any processing must have an appropriate legal basis and respect applicable obligations.
 
-A simple architecture is preferable when it adequately addresses the problem.
+Research documentation should identify relevant data handling without exposing personal information.
 
-Complexity should be justified by actual requirements, not by novelty or the availability of a particular technology.
+### 13.3 Human Evaluation
 
-### 6.3 Architecture Documentation
+Where individuals are asked to evaluate a system, relevant participation conditions should be explained.
 
-For projects with meaningful architectural complexity, documentation should identify, where relevant:
+Collect only the information necessary for the research.
 
-- main components and their responsibilities;
-- important data flows;
-- external integrations;
-- significant dependencies;
-- configuration boundaries;
-- security-sensitive components;
-- storage and persistence mechanisms;
-- relevant execution or deployment environments; and
-- important design decisions.
+Where appropriate, record:
 
-Architecture Decision Records (ADRs) may be used for decisions with significant long-term implications.
+- Evaluation purpose.
+- Participation conditions.
+- Relevant consent or authorization.
+- Data collected.
+- Data retention.
+- Evaluation procedure.
+- Limitations.
 
-Documentation should record the reason for a consequential decision and relevant alternatives considered. It need not formalise every minor implementation choice.
+### 13.4 Sensitive Research
 
-### 6.4 Dependency Management
+Research involving sensitive personal information, vulnerable populations, or potentially harmful applications requires additional scrutiny.
 
-Dependencies should be introduced deliberately.
+Where formal ethical review, contractual permission, informed consent, or legal authorization is required, the experiment must not proceed as though an internal methodology were a substitute for those requirements.
 
-Projects should:
+### 13.5 Responsible AI
 
-- avoid unnecessary packages and services;
-- prefer established and maintained dependencies where appropriate;
-- review licensing and usage conditions;
-- consider security history and maintenance activity;
-- avoid unnecessary duplication of functionality;
-- document important external dependencies;
-- use lockfiles or version constraints where appropriate; and
-- update vulnerable or obsolete dependencies when justified.
+AI research should consider possible bias, harmful outputs, misuse, privacy risks, and the limitations of automated decision-making.
 
-The introduction of a dependency should provide a clear benefit relative to its maintenance, security, compatibility, and resource costs.
+Where relevant, the experiment should document the safeguards and evaluation measures applied.
 
-### 6.5 Technical Debt
+Detailed AI requirements remain governed by `RESPONSIBLE-AI-v2.0.md`.
 
-Technical debt is an accepted part of experimentation, provided it remains visible and understood.
+### 13.6 Ethical Limitations
 
-Temporary workarounds, incomplete abstractions, and architectural compromises should be documented when they materially affect future work.
+Where a meaningful ethical assessment cannot be performed, the limitation must be addressed before the research proceeds into activities that could materially affect people or protected information.
 
-Where useful, technical debt may be described by:
+The maintainer should restrict, redesign, or discontinue an investigation when adequate safeguards or authorizations cannot be established.
 
-- impact;
-- reason for introduction;
-- affected components;
-- known consequences;
-- recommended resolution; and
-- priority.
+### 13.7 No Substitution for External Review
 
-Experimental debt should not silently become permanent architecture.
+The Lab's internal methodology does not constitute:
 
-### 6.6 Architecture and Project Maturity
+- An institutional ethics approval.
+- A legal assessment.
+- A regulatory authorization.
+- A professional clinical assessment.
+- A formal research ethics certification.
 
-Architectural expectations should reflect the project's Technical Maturity and Operational Readiness.
-
-An exploratory experiment may use a temporary architecture where that choice is safe and documented. A system intended for Limited Operational Use or Production-Oriented use requires greater attention to maintainability, resilience, security boundaries, and operational dependencies.
-
-A project must not describe an architecture as scalable, secure, resilient, or production-ready merely because it follows a recognised pattern.
+Where such review or authorization is required, it must be obtained through an appropriate process.
 
 ---
 
-## 7. Testing and Validation
+## 14. Research Documentation Standard
 
-### 7.1 Testing Philosophy
+Substantial investigations should follow a common documentation structure.
 
-Testing should provide meaningful evidence that a project behaves as intended.
+Each research report should include the relevant sections below.
 
-The level and type of testing must correspond to the project's functionality, Technical Maturity, Operational Readiness, and potential impact.
+The exact structure may be adapted to the type and complexity of the investigation.
 
-Testing is not limited to checking whether an application starts successfully.
+### 14.1 Research Identity
 
-The purpose of testing is to examine expected behaviour, identify failures, verify important constraints, and provide evidence for claims.
+- Research title.
+- Experiment identifier.
+- Research domain.
+- Author or maintainer.
+- Creation date.
+- Last revision date.
+- Current Project Status, where applicable.
+- Relevant project and repository.
+- Research scope.
+- Relevant document version.
 
-### 7.2 Testing Categories
+### 14.2 Executive Summary
 
-Depending on the project, relevant tests may include:
+A concise description of the investigation, its purpose, principal method, and most important findings.
 
-**Unit Testing**
+The summary should not present planned work as completed work.
 
-Tests focused on individual functions, modules, or components.
+### 14.3 Research Question
 
-**Integration Testing**
+The question being investigated and its context.
 
-Tests verifying interactions between internal components or external services.
+### 14.4 Background and References
 
-**System Testing**
+Existing knowledge, relevant sources, and the technical context.
 
-Tests evaluating the behaviour of the complete application or system.
+Important claims should be traceable to their original sources.
 
-**End-to-End Testing**
+### 14.5 Hypothesis
 
-Tests covering important user journeys or complete workflows.
+The initial proposition or expected outcome, where applicable.
 
-**Regression Testing**
+Where the hypothesis has changed, record the change and its rationale.
 
-Tests ensuring that changes do not unintentionally break previously functioning behaviour.
+### 14.6 Scope
 
-**Performance Testing**
+The boundaries, assumptions, exclusions, and constraints.
 
-Tests evaluating response time, throughput, resource consumption, or behaviour under load.
+### 14.7 Methodology
 
-**Security Testing**
+The experiment design, tools, procedures, variables, and evaluation criteria.
 
-Tests examining vulnerabilities, permission boundaries, input handling, and unsafe behaviour.
+### 14.8 Implementation
 
-**Accessibility Testing**
+Technical details necessary to understand the experiment.
 
-Tests evaluating whether relevant interfaces and interactions are accessible to the intended audience.
+### 14.9 Results
 
-**User or Expert Evaluation**
+Observed and measured outputs.
 
-Structured evaluation by representative users, reviewers, or subject-matter experts where the project requires it.
+Distinguish direct observations from derived measurements and interpretations.
 
-### 7.3 Test Expectations
+### 14.10 Analysis
 
-Where tests are applicable, they should:
+Interpretation of results and comparison against the original question or hypothesis.
 
-- have a clear purpose;
-- cover relevant behaviour and important edge cases;
-- be repeatable where practical;
-- use appropriate test data;
-- avoid exposing confidential information;
-- provide understandable results;
-- distinguish expected from observed outcomes; and
-- be updated when relevant functionality changes.
+### 14.11 Evidence and Confidence
 
-Tests should be proportionate to the potential consequences of failure.
+The relevant evidence category, supporting records, and confidence limitations.
 
-### 7.4 Test Coverage
+The E0–E5 categories may be used where meaningful.
 
-Code coverage may be used as an indicator of which code has been exercised. It is not a complete measure of quality.
+### 14.12 Limitations
 
-A high coverage percentage does not guarantee meaningful assertions, adequate edge-case handling, correct system behaviour, or reliability.
+Known uncertainties, weaknesses, and constraints.
 
-The relevance and quality of tests matter more than the metric alone.
+### 14.13 Conclusion
 
-### 7.5 Known Failures
+The principal findings and whether the original hypothesis was supported, rejected, or left unresolved.
 
-Unresolved test failures should be:
+### 14.14 Next Steps
 
-- investigated;
-- documented;
-- corrected where necessary; or
-- explicitly accepted as limitations where appropriate.
+Potential additional experiments, improvements, or unresolved questions.
 
-A known failure must not be concealed to make a project appear more mature than it is.
+### 14.15 References and Attribution
 
-Where a failure prevents a reliable assessment, the relevant maturity or readiness claim should be withheld or qualified.
+Sources, third-party resources, and relevant licences.
 
-### 7.6 Validation Records
+### 14.16 Reproducibility Information
 
-For material validation work, retain a record of:
+Where relevant, include the environment, dependencies, configuration, inputs, test procedure, and reproduction limitations.
 
-- what was evaluated;
-- the environment and configuration;
-- test inputs or relevant conditions;
-- the method used;
-- expected and observed results;
-- failures or deviations;
-- limitations; and
-- the conclusion supported by the evidence.
+### 14.17 Publication Considerations
 
-A validation record should make it possible to understand what the evaluation actually established.
+Identify relevant publication restrictions or conditions without reproducing confidential information.
+
+Publication decisions must follow `PUBLICATION-POLICY-v2.0.md`.
 
 ---
 
-## 8. Reliability and Resilience
+## 15. Research Decision Framework
 
-Systems should behave predictably under their intended operating conditions.
+At the end of an investigation, findings should lead to an explicit decision.
 
-Where relevant, projects should consider:
+Recommended research decision categories:
 
-- network interruptions;
-- external service failures;
-- timeouts;
-- invalid or incomplete responses;
-- resource exhaustion;
-- concurrent operations;
-- unexpected user inputs;
-- partial system failures; and
-- recovery behaviour.
-
-Reliability requirements must be proportionate to the consequences of failure and the project's intended use.
-
-### 8.1 Graceful Failure
-
-Where practical, failures should be handled without unnecessarily affecting unrelated functionality.
-
-The system should communicate failures clearly while avoiding disclosure of sensitive technical details.
-
-A fallback mechanism should not conceal a failure when the user or operator needs to know that the system is operating with reduced capability.
-
-### 8.2 External Service Failures
-
-Projects depending on external APIs, models, databases, or platforms should consider provider availability and failure behaviour.
-
-Where appropriate, implementations should include:
-
-- timeouts;
-- deliberate error handling;
-- rate-limit handling;
-- bounded retry policies;
-- safe fallback behaviour;
-- clear dependency documentation; and
-- user or operator feedback when a dependency is unavailable.
-
-Retries should be designed carefully to avoid duplicated operations, resource exhaustion, or unintended side effects.
-
-### 8.3 State and Data Integrity
-
-Projects that modify or store data should consider how data integrity is preserved.
-
-Depending on the implementation, this may include:
-
-- input and schema validation;
-- transactional operations;
-- consistency checks;
-- idempotency where relevant;
-- backup strategies;
-- recovery procedures;
-- protection against partial writes; and
-- explicit handling of failed or interrupted operations.
-
-Data integrity requirements should reflect the importance of the information and the consequences of corruption or loss.
-
-### 8.4 Recovery and Continuity
-
-Where a project is intended for sustained operational use, recovery expectations should be documented.
-
-Depending on the context, this may include restoration procedures, backup frequency, recovery objectives, rollback procedures, and responsibility for maintaining recovery mechanisms.
-
-Do not claim that a system is recoverable merely because backups are configured. Relevant restoration procedures should be tested where practical.
-
----
-
-## 9. Performance and Resource Efficiency
-
-Performance should be evaluated in relation to the intended use, workload, and operating environment.
-
-Relevant considerations may include:
-
-- response time;
-- initial loading time;
-- memory consumption;
-- CPU and GPU usage;
-- network usage;
-- database operations;
-- asset size;
-- rendering performance;
-- API latency;
-- model inference time; and
-- infrastructure or provider cost.
-
-### 9.1 Performance Practices
-
-Projects should avoid unnecessary resource consumption.
-
-Where appropriate, this may involve:
-
-- efficient data access;
-- optimised asset delivery;
-- appropriate caching;
-- lazy loading;
-- avoiding unnecessary network requests;
-- reducing redundant computations;
-- efficient rendering and state management;
-- appropriate background processing; and
-- sensible request, concurrency, and timeout limits.
-
-Optimisation should be guided by observed behaviour rather than premature assumptions.
-
-### 9.2 Performance Claims
-
-Performance claims should identify their measurement conditions.
-
-Where possible, documentation should indicate:
-
-- test environment;
-- workload;
-- dataset or input characteristics;
-- measurement method;
-- sample size or duration where relevant; and
-- important limitations.
-
-Statements such as "fast", "scalable", or "low latency" should be supported by appropriate evidence when used as technical claims.
-
-### 9.3 Resource Awareness
-
-Where projects rely on paid APIs, cloud infrastructure, computationally expensive models, or large data transfers, relevant cost implications should be considered.
-
-Experimental configurations should not unintentionally create uncontrolled resource consumption.
-
-Where costs can vary significantly with usage, limits, quotas, or alerts may be appropriate.
-
-### 9.4 Performance and User Experience
-
-Performance should be evaluated from the perspective of the intended user or downstream system.
-
-A technically efficient implementation may still provide a poor experience if important interactions are delayed, loading states are unclear, or system behaviour is inconsistent.
-
-Performance optimisation should preserve correctness, accessibility, and comprehensibility.
-
----
-
-## 10. Security and Privacy Quality
-
-Security and privacy are fundamental quality dimensions. They must be considered throughout development rather than added only before publication.
-
-This section defines quality expectations. Detailed vulnerability reporting, incident response, and security handling procedures remain governed by `SECURITY.md`. Publication and confidentiality decisions remain governed by `PUBLICATION-POLICY.md`.
-
-### 10.1 Secure Development
-
-Projects should consider, where relevant:
-
-- input validation;
-- authentication;
-- authorisation;
-- session management;
-- secure configuration;
-- dependency vulnerabilities;
-- access control;
-- error handling;
-- logging practices;
-- data protection; and
-- secure deployment.
-
-Security requirements should reflect the actual capabilities, permissions, data, and risks of the system.
-
-### 10.2 Privacy by Design
-
-Projects processing personal or sensitive information should consider:
-
-- data minimisation;
-- purpose limitation;
-- appropriate access restrictions;
-- data retention;
-- secure storage;
-- secure transmission;
-- deletion and disposal;
-- third-party processing; and
-- user transparency.
-
-Data should not be collected or retained without a justified purpose.
-
-Privacy claims must reflect actual system behaviour and should not be inferred from the absence of obvious identifying fields.
-
-### 10.3 Secrets Management
-
-Credentials, API keys, tokens, private keys, certificates, and other secrets must be stored through appropriate secret-management mechanisms.
-
-Public examples should use placeholders or documented environment variables rather than real credentials.
-
-Secrets must not appear in source code, issue examples, logs, screenshots, test fixtures, or public documentation.
-
-### 10.4 Security Review
-
-Security reviews should be proportionate to the project's risk.
-
-Public-facing systems, privileged integrations, data-processing applications, automation with external permissions, and AI agents with tool access require particular attention.
-
-Where practical, review should consider trust boundaries, permissions, authentication, data flows, exposed interfaces, and dependency risks.
-
-### 10.5 Confidentiality
-
-Technical quality does not justify the disclosure of proprietary or confidential material.
-
-Public projects must remain separate from private projects, internal implementations, client information, and unauthorised third-party material.
-
-A project must not include confidential details merely to make a technical explanation more complete. Use a safe abstraction or omit the material where publication rights are uncertain.
-
-### 10.6 Security Limitations
-
-Experimental status does not justify publishing exposed credentials, unauthorised personal information, or avoidable security weaknesses.
-
-Where relevant security controls are incomplete, the limitation should be documented and the permitted use restricted accordingly.
-
-Do not represent an experimental system as secure or production-ready solely because no vulnerability has yet been reported.
-
----
-
-## 11. User Experience and Interaction Quality
-
-For projects with a user-facing interface, usability and interaction quality are part of technical quality.
-
-### 11.1 Functional Clarity
-
-Interfaces should communicate:
-
-- what users can do;
-- what the system is doing;
-- what has succeeded or failed;
-- what information is required; and
-- what happens after an action.
-
-Controls should behave consistently and provide meaningful feedback.
-
-### 11.2 Interaction Design
-
-Interactions should be:
-
-- predictable;
-- responsive;
-- understandable;
-- consistent; and
-- appropriate to the intended context.
-
-Unexpected movement, unnecessary animation, ambiguous controls, and inconsistent interaction patterns should be avoided.
-
-### 11.3 Visual Consistency
-
-Visual systems should use coherent layout, spacing, typography, colour, and component behaviour.
-
-Where a project uses a design system, components and design tokens should be applied consistently.
-
-Visual polish should support comprehension and interaction rather than interfere with them.
-
-### 11.4 Responsive Design
-
-Interfaces intended for different screen sizes should be tested across relevant viewport dimensions and input methods.
-
-Responsive behaviour should preserve:
-
-- content readability;
-- navigation clarity;
-- interaction accessibility;
-- functional completeness; and
-- appropriate visual hierarchy.
-
-Responsive design must not be limited to shrinking desktop layouts.
-
-### 11.5 User Feedback
-
-Important actions should provide appropriate confirmation, progress indication, error feedback, or recovery guidance.
-
-Loading states, empty states, and error states should be considered where relevant.
-
-The interface should avoid implying that an operation succeeded when the underlying action is incomplete or has failed.
-
-### 11.6 Content and Interface Accuracy
-
-Interface text, screenshots, demonstrations, and documentation should accurately represent implemented functionality.
-
-A mock-up, prototype, or simulated interaction must not be presented as a working capability unless it actually operates as described.
-
----
-
-## 12. Accessibility
-
-Accessibility should be considered during interface design and implementation, not treated solely as a final check.
-
-For user-facing applications, relevant practices include:
-
-- semantic HTML and appropriate document structure;
-- meaningful heading hierarchy;
-- keyboard navigation;
-- visible focus states;
-- descriptive labels;
-- accessible form instructions;
-- text alternatives for meaningful images;
-- sufficient colour contrast;
-- avoidance of colour-only communication;
-- appropriate screen-reader behaviour;
-- respect for reduced-motion preferences; and
-- understandable error messages.
-
-### 12.1 Accessibility Evaluation
-
-Where appropriate, accessibility may be evaluated against recognised standards such as the Web Content Accessibility Guidelines (WCAG).
-
-When a project makes a formal accessibility or conformance claim, the applicable standard version, conformance target, scope, and evaluation method should be identified.
-
-A project must not claim full accessibility or WCAG conformance solely because an automated tool reports no errors.
-
-Automated checks should be complemented by manual evaluation where practical, including keyboard and assistive-technology testing appropriate to the interface.
-
-### 12.2 Motion and Animation
-
-Animation should have a clear interaction, communication, or expressive purpose.
-
-Excessive or unnecessary movement may reduce usability and accessibility.
-
-Projects should consider:
-
-- reduced-motion preferences;
-- animation duration;
-- repetition;
-- movement intensity;
-- interaction feedback; and
-- potential distraction.
-
-Creative experimentation should remain compatible with reasonable accessibility considerations.
-
-### 12.3 Accessibility Limitations
-
-Where a project has known accessibility limitations, they should be documented accurately.
-
-A limitation should not be hidden by broad claims that an interface is accessible. The project should identify the affected experience and, where practical, provide an alternative way to access essential information or functionality.
-
----
-
-## 13. AI and Machine-Learning Quality
-
-AI-enabled projects require additional technical evaluation because their outputs may be variable, probabilistic, context-dependent, or difficult to predict.
-
-This section addresses technical quality and evaluation. The Lab's broader AI principles, risk classifications, human oversight requirements, and restrictions are defined in `RESPONSIBLE-AI.md`.
-
-### 13.1 Clear AI Functionality
-
-Documentation should explain where AI is used and what role it performs.
-
-Examples include:
-
-- text generation;
-- image, audio, or video generation;
-- classification;
-- search and retrieval;
-- recommendation;
-- decision support;
-- agent-based workflows;
-- tool orchestration;
-- data extraction; and
-- predictive analysis.
-
-Users and reviewers should not be misled about which capabilities are automated, model-generated, deterministic, or human-reviewed.
-
-### 13.2 Model and Configuration Documentation
-
-Where relevant, experiments should record:
-
-- model name and version;
-- provider or source;
-- relevant configuration;
-- model parameters;
-- prompt or instruction version;
-- retrieval configuration;
-- tools and integrations;
-- dataset or evaluation inputs;
-- date of evaluation; and
-- important environmental conditions.
-
-Credentials, access tokens, confidential provider information, and restricted prompts must not be included in public documentation.
-
-The level of detail should be sufficient to understand the experiment without exposing protected information or violating applicable terms.
-
-### 13.3 Output Evaluation
-
-AI outputs should be assessed according to the intended task.
-
-Potential evaluation dimensions include:
-
-- accuracy;
-- relevance;
-- consistency;
-- completeness;
-- instruction adherence;
-- robustness;
-- latency;
-- resource consumption;
-- safety; and
-- human-perceived quality.
-
-The evaluation method should be appropriate to the application.
-
-For creative tasks, qualitative expert or user assessment may be more meaningful than a single numerical score. For factual or structured tasks, reference data and explicit evaluation criteria may be appropriate.
-
-### 13.4 Hallucinations and Unsupported Claims
-
-Projects that generate factual information should consider how unsupported statements are detected, communicated, or mitigated.
-
-Where appropriate, the system should:
-
-- identify uncertainty;
-- preserve source attribution;
-- distinguish retrieved information from generated interpretation;
-- avoid presenting unverified outputs as established facts; and
-- support human review for consequential decisions.
-
-### 13.5 Variability and Reproducibility
-
-AI outputs may change due to model updates, provider behaviour, configuration changes, sampling, and nondeterministic inference.
-
-Exact reproducibility should not be claimed unless the relevant conditions can reasonably be controlled.
-
-Where exact reproduction is impossible, the project should document the factors that influence variation and provide a practical method for repeating the evaluation.
-
-### 13.6 Human Review and Output Boundaries
-
-Where AI outputs influence important decisions or actions, the project should define the relevant review and permission boundaries in accordance with `RESPONSIBLE-AI.md`.
-
-Model-generated code, scripts, queries, configurations, and commands should be treated as untrusted until reviewed and validated.
-
-Security, data access, and operational permissions must be enforced independently of model-generated content.
-
-### 13.7 AI Quality Does Not Establish Responsible Use
-
-A technically accurate or high-performing AI system is not automatically appropriate to deploy.
-
-Technical quality evaluation does not replace the AI-specific governance, risk assessment, and restrictions defined in `RESPONSIBLE-AI.md`.
-
----
-
-## 14. Research Integrity and Reproducibility
-
-Research quality depends on the reliability of its methods, evidence, interpretation, and reporting.
-
-Detailed research design, experimental methodology, and the Lab's internal evidence framework are governed by `RESEARCH-METHODOLOGY.md`. This section establishes the quality expectations that apply to research outputs.
-
-Projects involving research or structured experimentation should:
-
-- define their objectives clearly;
-- document relevant methods;
-- identify assumptions and limitations;
-- preserve relevant experimental configurations where permitted;
-- distinguish observations from interpretations;
-- avoid selectively presenting results;
-- report significant negative or inconclusive findings where relevant; and
-- support reproduction of important experiments where feasible.
-
-### 14.1 Evidence-Based Claims
-
-Claims should not exceed the available evidence.
-
-A successful test under limited conditions does not establish universal reliability.
-
-A demonstration does not prove scalability.
-
-A promising preliminary result does not establish a general conclusion.
-
-The level of confidence should correspond to the quality, scope, and limitations of the evidence.
-
-### 14.2 Methodological Limitations
-
-Relevant limitations should be communicated.
-
-These may include:
-
-- small sample sizes;
-- limited test environments;
-- incomplete datasets;
-- known measurement bias;
-- model variability;
-- external service dependencies;
-- uncontrolled experimental conditions; and
-- incomplete validation.
-
-Limitations should be specific enough for readers to understand their effect on the interpretation of the results.
-
-### 14.3 Reproducibility
-
-Where practical, projects should preserve the information needed to repeat important experiments.
-
-This may include code versions, configuration, dependencies, test inputs, model identifiers, and measurement methods.
-
-Reproducibility must remain subject to privacy, confidentiality, intellectual-property, licensing, and data-access restrictions.
-
-The inability to publish a complete experimental configuration must not be concealed. Document the limitation without disclosing protected material.
-
-### 14.4 Negative and Inconclusive Results
-
-Failed, negative, or inconclusive experiments may provide useful technical knowledge.
-
-They should not be selectively omitted where their exclusion would materially misrepresent the experiment or its conclusions.
-
-The purpose of reporting is to preserve an accurate account of what was tested and observed, not to make every project appear successful.
-
----
-
-## 15. Documentation Standards
-
-Documentation is part of the deliverable, not an optional addition.
-
-It should help readers understand what a project does, how to use or evaluate it, what dependencies it requires, and what limitations apply.
-
-### 15.1 General Documentation Requirements
-
-Where relevant, project documentation should include:
-
-- project purpose and scope;
-- current Project Status and Lifecycle Stage;
-- Technical Maturity and Operational Readiness;
-- main functionality;
-- installation or setup instructions;
-- configuration requirements;
-- dependencies;
-- usage examples;
-- limitations and known issues;
-- licensing and attribution information; and
-- relevant security and privacy considerations.
-
-Use the canonical Project Status and Lifecycle Stage values defined in `PROJECT-LIFECYCLE.md`.
-
-Use the Technical Maturity and Operational Readiness values defined in this document.
-
-Publication Classification and Publication Status must follow `PUBLICATION-POLICY.md`.
-
-### 15.2 Technical Documentation
-
-Complex projects may require:
-
-- architecture descriptions;
-- component responsibilities;
-- API references;
-- data structures;
-- configuration references;
-- integration instructions;
-- testing procedures;
-- deployment guidance; and
-- maintenance notes.
-
-The documentation depth should reflect the complexity and expected use of the project.
-
-### 15.3 Documentation Accuracy
-
-Documentation must reflect the current implementation.
-
-Instructions must not claim functionality that has not been implemented or validated.
-
-Known limitations should be visible and understandable. Screenshots, diagrams, examples, and demonstrations should represent the actual implementation or be clearly identified as conceptual material.
-
-### 15.4 Writing Quality
-
-Technical documentation should be:
-
-- clear;
-- accurate;
-- structured;
-- consistent;
-- specific; and
-- free of unnecessary ambiguity.
-
-Use terminology consistently. Distinguish requirements from recommendations and examples.
-
-Examples should be relevant, valid, and safe to execute.
-
-### 15.5 Documentation Maintenance
-
-Material changes to functionality, interfaces, dependencies, configuration, or operating assumptions should trigger a review of affected documentation.
-
-Obsolete instructions should be corrected or clearly marked as historical.
-
-Documentation should not imply that a project is maintained, supported, or available beyond what the Lab can reasonably provide.
-
----
-
-## 16. Dependency, Tooling, and Environment Standards
-
-Projects should document their relevant development and runtime requirements.
-
-Where applicable, this may include:
-
-- programming language and version;
-- framework and version;
-- package manager;
-- major dependencies;
-- operating system requirements;
-- environment variables;
-- external services;
-- build requirements;
-- testing commands;
-- deployment assumptions; and
-- required access permissions.
-
-### 16.1 Reproducible Environments
-
-Where practical, projects should use dependency lockfiles, version constraints, containers, environment files, or other mechanisms that support consistent setup.
-
-The chosen approach should reflect the project architecture and the level of reproducibility required.
-
-Do not introduce environment tooling solely for appearance or without a practical maintenance benefit.
-
-### 16.2 Tooling Consistency
-
-Formatting, linting, type checking, build validation, and automated testing may be used to improve consistency.
-
-Tooling should support development rather than introduce unnecessary complexity.
-
-The project documentation should identify important commands and required tooling where readers are expected to reproduce the development or test environment.
-
-### 16.3 Build and Deployment
-
-Projects intended for distribution or deployment should document the relevant build and deployment process.
-
-Where appropriate, this includes:
-
-- build commands;
-- required configuration;
-- output artefacts;
-- deployment environment;
-- release procedure; and
-- rollback or recovery considerations.
-
-A successful local build does not by itself establish that the project can be deployed safely or reliably in another environment.
-
-### 16.4 Environment Separation
-
-Where projects use multiple environments, distinguish development, testing, staging, and production configurations as applicable.
-
-Sensitive credentials and data must not be copied into less protected environments without an appropriate basis and safeguards.
-
-Environment-specific assumptions should be documented where they materially affect behaviour.
-
----
-
-## 17. External Integrations and Third-Party Services
-
-Projects may depend on external models, APIs, frameworks, services, libraries, datasets, or platforms.
-
-Such dependencies introduce technical, security, privacy, intellectual-property, licensing, and operational considerations.
-
-Before adoption, relevant questions include:
-
-- Is the provider or source sufficiently documented?
-- Are the terms of use compatible with the project?
-- Are data-handling practices understood?
-- Are there rate limits or usage restrictions?
-- Could the provider change or discontinue the service?
-- What happens when the service is unavailable?
-- Does the integration require sensitive permissions?
-- Are costs or resource requirements significant?
-- Is the integration maintainable within the Lab's available capacity?
-
-### 17.1 Integration Boundaries
-
-External integrations should have clear interfaces and responsibilities.
-
-Where appropriate, projects should isolate provider-specific behaviour so that failures, changes, or replacements do not unnecessarily affect unrelated functionality.
-
-The project should document significant assumptions about provider availability, versioning, configuration, and data handling.
-
-### 17.2 Provider and Service Claims
-
-Projects should not imply that an external service is controlled, endorsed, supported, or maintained by Framing Creativity Lab unless this is actually the case.
-
-Provider names, logos, and service descriptions should be used accurately and in accordance with applicable terms.
-
-### 17.3 Third-Party Technologies and Assets
-
-Third-party libraries, models, datasets, media, and other assets must be identified and used within applicable rights and usage conditions.
-
-Attribution should be provided where required.
-
-Unresolved licensing, ownership, or usage questions must be referred to the applicable publication and contribution procedures. This document does not grant permission to use third-party material.
-
----
-
-## 18. Code Review and Quality Assurance
-
-Where review is applicable, proposed changes should be evaluated according to their scope and impact.
-
-A review may consider:
-
-- correctness;
-- readability;
-- architecture;
-- consistency;
-- test coverage and relevance;
-- security;
-- performance;
-- accessibility;
-- documentation;
-- backward compatibility; and
-- licensing and dependencies.
-
-### 18.1 Review Expectations
-
-Review feedback should be specific, constructive, and technically relevant.
-
-Material issues should be addressed before acceptance or clearly documented as accepted limitations by the responsible maintainer.
-
-A review should distinguish defects that prevent acceptance from recommendations that improve maintainability or future evolution.
-
-### 18.2 Proportionate Review
-
-Small documentation corrections may require a simple review.
-
-Changes affecting authentication, sensitive data, architecture, external integrations, privileged execution, or consequential AI behaviour should receive greater scrutiny.
-
-The review method should reflect the actual risk and complexity of the change.
-
-### 18.3 Acceptance
-
-The maintainer determines whether a contribution meets the relevant project requirements in accordance with `GOVERNANCE-v2.0.md` and `CONTRIBUTING.md`.
-
-Acceptance into a repository does not automatically establish Validated Technical Maturity, Production-Oriented Operational Readiness, publication approval for separate material, or authorisation for commercial or external use.
-
-### 18.4 Review Records
-
-For material changes, retain an appropriate record of:
-
-- the change reviewed;
-- the relevant files or components;
-- tests or checks performed;
-- material findings;
-- accepted limitations; and
-- the acceptance or rejection decision.
-
-A record may be concise where the change is small. It should be sufficient to understand the basis for a material decision.
-
----
-
-## 19. Quality Gates and Definition of Done
-
-A project or change should have a clear definition of completion appropriate to its purpose, Technical Maturity, Operational Readiness, and potential impact.
-
-The following checklists provide a general reference. They should be adapted to the actual work rather than applied mechanically.
-
-Passing a checklist does not replace project-specific risk assessment or professional judgment.
-
-### 19.1 Exploratory Completion
-
-- [ ] The research or experimental objective is documented.
-- [ ] The method or implementation is sufficiently understandable.
-- [ ] Relevant dependencies are identified.
-- [ ] Significant assumptions and limitations are recorded.
-- [ ] Sensitive information is handled appropriately.
-- [ ] Findings and observations are documented.
-- [ ] The work is not represented as more mature than the evidence supports.
-
-### 19.2 Prototype Completion
-
-- [ ] Intended functionality and scope are defined.
-- [ ] Core interactions or workflows are demonstrable.
-- [ ] Relevant functional tests have been conducted.
-- [ ] Important error conditions have been considered.
-- [ ] Setup and usage instructions are available where needed.
-- [ ] Known limitations are documented.
-- [ ] Relevant security and privacy concerns are reviewed.
-- [ ] Prototype status is clearly communicated.
-- [ ] Operational limitations are not concealed.
-
-### 19.3 Validated Completion
-
-- [ ] Objectives and acceptance criteria are defined.
-- [ ] Relevant tests or evaluation methods have been conducted.
-- [ ] Results and limitations are documented.
-- [ ] Material defects are addressed or disclosed.
-- [ ] Dependencies and architecture are sufficiently documented.
-- [ ] Claims are supported by evidence.
-- [ ] Relevant quality dimensions have been evaluated.
-- [ ] The validation scope and conditions are clear.
-- [ ] The validation claim does not exceed the available evidence.
-
-### 19.4 Public Release Readiness
-
-This checklist concerns the technical quality of a proposed public release. Publication Classification, publication approval, and release authorisation remain governed by `PUBLICATION-POLICY.md`.
-
-- [ ] Publication has been explicitly reviewed and approved through the applicable process.
-- [ ] No unauthorised confidential material is included.
-- [ ] No secrets or credentials are exposed.
-- [ ] Ownership, licensing, and attribution have been reviewed.
-- [ ] Dependencies and external assets have been checked.
-- [ ] Documentation is accurate and usable.
-- [ ] Technical Maturity and limitations are clearly communicated.
-- [ ] Relevant security and privacy concerns have been addressed.
-- [ ] Known issues and external requirements are disclosed.
-- [ ] Release information is prepared where appropriate.
-- [ ] The material being released matches the approved scope.
-
-### 19.5 Production-Oriented Readiness
-
-This checklist supports an Operational Readiness assessment. It is not a certification or guarantee of operational suitability.
-
-- [ ] Operational requirements and intended users are defined.
-- [ ] Authentication and authorisation are appropriate.
-- [ ] Relevant security testing has been completed.
-- [ ] Monitoring and logging are considered.
-- [ ] Failure and recovery behaviour is understood.
-- [ ] Performance has been evaluated under representative conditions.
-- [ ] Backup and recovery arrangements exist where needed.
-- [ ] Dependencies and infrastructure have maintenance owners.
-- [ ] Support and incident procedures are defined where applicable.
-- [ ] Deployment and rollback procedures are documented where relevant.
-- [ ] Data handling and retention practices are understood.
-- [ ] Operational limitations and responsibilities are documented.
-- [ ] The available maintenance capacity is compatible with the intended use.
-
-### 19.6 Acceptance and Remaining Work
-
-A project or change may be accepted with known limitations where those limitations are understood, proportionate, documented, and compatible with the intended use.
-
-Acceptance must not be used to conceal unresolved critical risks, unauthorised material, exposed credentials, or publication restrictions.
-
-Where remaining work affects Technical Maturity or Operational Readiness, the relevant assessment must reflect that limitation.
-
----
-
-## 20. Quality Exceptions
-
-Exceptions may be necessary for experimental, constrained, or short-lived projects.
-
-Examples include:
-
-- a short-lived proof of concept;
-- a prototype with known architectural limitations;
-- a research implementation that prioritises evaluation over maintainability;
-- a demonstration dependent on an external service;
-- an experiment using temporary infrastructure; or
-- a project for which full automation would be disproportionate.
-
-Exceptions should be:
-
-- intentional;
-- limited in scope;
-- understood by the responsible maintainer;
-- documented when materially relevant; and
-- consistent with fundamental security, privacy, intellectual-property, confidentiality, and publication obligations.
-
-Where an exception materially affects intended use, Technical Maturity, or Operational Readiness, the limitation should be reflected in the project record.
-
-An exception does not justify exposing credentials, unauthorised data, confidential material, or unsafe privileged functionality.
-
-Exceptions should be reconsidered when project scope, risk, or usage changes.
-
----
-
-## 21. Continuous Improvement
-
-Quality standards should evolve as the Lab's projects, tools, and technical practices develop.
-
-The maintainer may review and improve these standards based on:
-
-- project experience;
-- technical findings;
-- recurring defects;
-- security incidents;
-- evaluation results;
-- contributor feedback;
-- changes in relevant technologies; and
-- new accessibility or engineering requirements.
-
-Quality improvement should focus on practical outcomes.
-
-The objective is not to maximise the number of tools, tests, or processes used. It is to improve the reliability, clarity, maintainability, accessibility, and integrity of the work produced.
-
-Changes to quality expectations should be communicated through the applicable documentation and project records.
-
----
-
-## 22. Relationship with Other Documents
-
-This document establishes the Lab's general engineering and quality expectations. It should be read alongside the specialist documents that define related responsibilities and procedures.
-
-| Document | Primary responsibility |
+| Decision | Meaning |
 |---|---|
-| `README.md` | Lab identity, mission, scope, and public overview |
-| `LAB-CHARTER-v2.0.md` | Foundational principles and institutional direction |
-| `GOVERNANCE-v2.0.md` | Decision-making authority and responsibilities |
-| `PROJECT-LIFECYCLE.md` | Lifecycle stages and canonical Project Status definitions |
-| `PROJECT-TEMPLATE-v2.0.md` | Standard structure for project records and assessment fields |
-| `RESEARCH-METHODOLOGY.md` | Research design, experimental methods, and evidence practices |
-| `PUBLICATION-POLICY.md` | Publication Classification, publication decisions, confidentiality, and release approval |
-| `CONTRIBUTING.md` | Contribution workflow and contributor responsibilities |
-| `SECURITY.md` | Security practices, vulnerability reporting, and incident handling |
-| `CODE-OF-CONDUCT.md` | Collaboration expectations and conduct reporting |
-| `RESPONSIBLE-AI.md` | AI-specific principles, risk classification, oversight, and restrictions |
+| Proceed | Evidence supports continuation into the next research or development activity. |
+| Refine | The method or hypothesis requires modification. |
+| Repeat | Additional testing is necessary. |
+| Expand | The investigation has revealed new research questions. |
+| Validate Further | Evidence is promising but insufficient. |
+| Hold | The work is temporarily suspended. |
+| Reject | The investigated approach is unsuitable within the defined scope. |
+| Archive | The investigation is concluded or discontinued while its record is preserved. |
 
-The authoritative ownership of a subject remains with its specialist document.
+A decision to reject an approach should be accompanied by the reasoning and relevant evidence.
 
-Where this document summarises a subject covered by another policy, the summary must not be interpreted as replacing or modifying that policy.
+An archived experiment may remain a valuable research record.
 
-If a project-specific document appears to conflict with a Lab policy, the conflict should be raised with the maintainer rather than resolved by silently adopting a weaker requirement.
+### 15.1 Decision Records
+
+A material research decision should record:
+
+- Decision identifier, where used.
+- Date.
+- Research question or experiment.
+- Decision.
+- Evidence considered.
+- Rationale.
+- Known limitations.
+- Next action.
+- Responsible decision-maker.
+
+### 15.2 Research Decisions Are Not Project Statuses
+
+The categories in this section describe research decisions.
+
+They must not be introduced as additional Project Status values.
+
+The canonical Project Status vocabulary is defined in `PROJECT-LIFECYCLE-v2.0.md`.
+
+### 15.3 Discontinuation
+
+An investigation may be discontinued when:
+
+- The hypothesis is no longer relevant.
+- The method is unsuitable.
+- The required resources are unavailable.
+- The risk is unacceptable.
+- The research question has been answered sufficiently.
+- The investigation is superseded by a more appropriate approach.
+
+The reasons should be recorded where they provide useful research knowledge or accountability.
 
 ---
 
-## 23. Policy Review and Amendments
+## 16. Research Governance and Responsibilities
 
-This document may be revised as the Lab's technical practices, project scope, and operating model evolve.
+### 16.1 Research Governance
 
-The Founder and Maintainer is responsible for approving and documenting changes in accordance with `GOVERNANCE-v2.0.md`.
+Research activities are conducted under the governance model defined in `GOVERNANCE-v2.0.md` and the foundational principles established by `LAB-CHARTER-v2.0.md`.
 
-Revisions should:
+The maintainer is responsible for the organisation and integrity of research conducted and published under the Lab's identity.
 
-- preserve the distinction between Technical Maturity, Operational Readiness, Project Status, Lifecycle Stage, and publication decisions;
-- maintain clear ownership boundaries with specialist policies;
-- remain proportionate to the Lab's actual operating capacity;
-- avoid unsupported legal, security, or compliance claims;
-- identify material changes to requirements; and
-- preserve an appropriate revision history.
+### 16.2 Methodological Consistency
 
-A revision to this document does not automatically change the status, maturity, readiness, or publication decision of an existing project. Relevant project records should be reassessed where the change materially affects them.
+The methodology should be applied proportionately.
+
+Small exploratory studies do not require the same documentation and validation effort as complex comparative experiments.
+
+However, all substantial investigations should establish their purpose, scope, methods, and relevant limitations.
+
+### 16.3 Changes to Research Methods
+
+Material changes to an experiment's design or evaluation criteria should be documented.
+
+This includes changes made in response to unexpected results.
+
+The original method and subsequent changes should remain distinguishable.
+
+### 16.4 External Review
+
+External technical, academic, or expert review may be sought when appropriate.
+
+Where no external review has taken place, the research must not imply independent verification.
+
+The identity and role of an external reviewer should be represented accurately and with appropriate authorization.
+
+### 16.5 Research Integrity
+
+Research must not knowingly:
+
+- Fabricate results.
+- Misrepresent testing conditions.
+- Conceal material failures.
+- Manipulate evaluation criteria after observing results without disclosure.
+- Present generated output as independently verified fact.
+- Claim reproducibility without adequate evidence.
+- Misattribute authorship.
+- Present assumptions as established findings.
+- Selectively omit material observations to create a misleading conclusion.
+- Present an informal review as independent expert validation.
+- Use data without appropriate rights or authorization.
+
+### 16.6 Research Responsibilities
+
+The maintainer is responsible for ensuring that material research published under the Lab's identity is appropriately documented and reviewed.
+
+Contributors and collaborators should:
+
+- Work within the agreed research scope.
+- Record material methodological changes.
+- Respect data and intellectual property restrictions.
+- Identify relevant limitations.
+- Report significant failures or risks.
+- Avoid unsupported claims.
+- Attribute sources and contributions appropriately.
+
+Participation does not automatically grant authority to approve a public release or represent the Lab.
 
 ---
 
-## 24. Closing Principle
+## 17. Methodology Adaptation
 
-Quality is not a single technical achievement.
+This methodology provides a shared framework, not a rigid sequence that must be applied identically to every project.
 
-It is the coherence between what a project intends to do, how it is built, how it behaves, how it is evaluated, how it is maintained, and how its results are presented.
+The approach may be adapted according to:
 
-A rigorous prototype can be valuable without being production-ready. A polished release can still have technical limitations. An ambitious system can remain unfinished despite its sophistication.
+- Research complexity.
+- Technical Maturity.
+- Experimental uncertainty.
+- Available resources.
+- Data characteristics.
+- Creative or artistic intent.
+- Safety and privacy constraints.
+- Intended publication format.
+- Potential consequences of error.
+- Reproducibility requirements.
 
-The Lab therefore aims to make quality visible through deliberate engineering, meaningful evaluation, responsible use of technology, clear documentation, and honest communication.
+An adaptation should preserve the principles of transparency, traceability, and intellectual honesty.
 
-**Build with intention. Test with rigor. Document with clarity. Improve continuously.**
+For a small experiment, a concise research record may be sufficient.
+
+For a complex AI benchmark or technical investigation, a more formal protocol may be necessary.
+
+The depth of the methodology should reflect the importance and complexity of the claims being made.
+
+### 17.1 Documenting Adaptations
+
+Where a material methodological adaptation affects the reliability or interpretation of results, record:
+
+- What was adapted.
+- Why the adaptation was necessary.
+- Which requirements were affected.
+- What limitations were introduced.
+- Whether further evaluation is necessary.
+
+### 17.2 Non-Negotiable Principles
+
+Methodological adaptation must not be used to justify:
+
+- Fabricated findings.
+- Misleading reporting.
+- Unauthorised data processing.
+- Disclosure of confidential information.
+- Unauthorised publication.
+- False claims of independent validation.
+- Concealment of material limitations.
+
+---
+
+## 18. Relationship with Other Lab Documents
+
+This methodology operates within the broader Framing Creativity Lab documentation framework.
+
+| Document | Responsibility |
+|---|---|
+| `README.md` | Public identity, mission, scope, and repository overview |
+| `LAB-CHARTER-v2.0.md` | Mission, foundational principles, and institutional direction |
+| `GOVERNANCE-v2.0.md` | Decision authority, responsibilities, and governance |
+| `PROJECT-LIFECYCLE-v2.0.md` | Lifecycle stages and canonical Project Status definitions |
+| `PROJECT-TEMPLATE-v2.0.md` | Standard project documentation and assessment fields |
+| `QUALITY-STANDARDS-v2.0.md` | Technical Maturity, Operational Readiness, and quality expectations |
+| `PUBLICATION-POLICY-v2.0.md` | Publication eligibility, classification, and approval controls |
+| `RESPONSIBLE-AI-v2.0.md` | AI risk, responsible use, and human oversight |
+| `SECURITY.md` | Security practices and vulnerability reporting |
+| `CONTRIBUTING.md` | Contribution process and contributor responsibilities |
+| `CODE-OF-CONDUCT.md` | Collaboration and behavioural expectations |
+
+The documents serve different purposes and should be interpreted together.
+
+The Lab Charter establishes foundational principles.
+
+The Governance document establishes decision-making authority and responsibilities.
+
+The Project Lifecycle defines the project's stages and canonical statuses.
+
+The Quality Standards define technical maturity and operational readiness.
+
+The Publication Policy determines what can be released publicly and under which conditions.
+
+The Responsible AI Policy addresses AI-specific requirements and risks.
+
+The Research Methodology establishes how investigations are conducted, evaluated, and documented.
+
+A research project must satisfy the applicable requirements of all relevant documents.
+
+### 18.1 Authoritative Terminology
+
+| Subject | Authoritative document |
+|---|---|
+| Lifecycle Stage | `PROJECT-LIFECYCLE-v2.0.md` |
+| Project Status | `PROJECT-LIFECYCLE-v2.0.md` |
+| Technical Maturity | `QUALITY-STANDARDS-v2.0.md` |
+| Operational Readiness | `QUALITY-STANDARDS-v2.0.md` |
+| Publication Classification | `PUBLICATION-POLICY-v2.0.md` |
+| Publication Status | `PUBLICATION-POLICY-v2.0.md` |
+| AI Risk Classification | `RESPONSIBLE-AI-v2.0.md` |
+| Data Classification | `PUBLICATION-POLICY-v2.0.md` |
+| Research Evidence Categories E0–E5 | This document |
+
+These fields and vocabularies must remain distinct.
+
+The Research Evidence Categories describe the nature and support of research findings. They do not replace a project's Technical Maturity or Operational Readiness assessment.
+
+---
+
+## 19. Research Templates
+
+The Lab should maintain reusable templates to support consistent research documentation.
+
+Recommended templates include:
+
+### A. Research Brief
+
+Defines the research question, objectives, context, scope, and intended outcomes.
+
+### B. Experiment Protocol
+
+Defines the hypothesis, variables, methodology, test conditions, and evaluation criteria.
+
+### C. AI Evaluation Protocol
+
+Defines model identification, prompts, test datasets, evaluation criteria, configuration, and observed behaviour.
+
+### D. Technical Evaluation Report
+
+Documents implementation, testing, measurements, technical findings, and limitations.
+
+### E. Comparative Study
+
+Provides a structured framework for comparing models, frameworks, methods, or architectures.
+
+### F. Research Findings Report
+
+Summarises results, interpretation, evidence, conclusions, and next steps.
+
+### G. Qualitative Study Record
+
+Documents research questions, observation methods, evaluation criteria, qualitative findings, and interpretive limitations.
+
+### H. Reproducibility Record
+
+Documents the environment, versions, inputs, configuration, procedure, and conditions necessary to repeat an investigation where practical.
+
+Templates should be introduced progressively and adapted to actual research requirements.
+
+The presence of a proposed template in this section does not imply that a dedicated template file already exists.
+
+---
+
+## 20. Methodology Maintenance
+
+### 20.1 Document Ownership
+
+This methodology is maintained by J-ART under the governance framework established by Framing Creativity Lab.
+
+### 20.2 Revision Authority
+
+The maintainer approves substantive revisions in accordance with `GOVERNANCE-v2.0.md`.
+
+### 20.3 Versioning
+
+The document follows semantic document versioning.
+
+- **Major:** Fundamental changes to the research framework.
+- **Minor:** Addition or substantive revision of methodologies.
+- **Patch:** Clarifications and editorial corrections.
+
+### 20.4 Revision Records
+
+Material changes should record:
+
+- Version.
+- Date.
+- Author or responsible maintainer.
+- Description.
+- Reason for revision.
+- Approval status.
+
+### 20.5 Consistency Review
+
+Changes should be reviewed for consistency with:
+
+- Lab Charter.
+- Governance.
+- Project Lifecycle.
+- Quality Standards.
+- Publication Policy.
+- Responsible AI Policy.
+- Project Documentation Template.
+
+Changes to canonical terminology must be coordinated with the document that owns the relevant vocabulary.
+
+### 20.6 Continuous Improvement
+
+The methodology may evolve through lessons learned from actual experiments.
+
+Changes should improve research quality without introducing unnecessary administrative complexity.
+
+A revision must not imply that historical experiments followed a method that was introduced only later.
+
+Where relevant, historical research records should identify the methodology version under which they were conducted.
+
+---
+
+## 21. Final Principle
+
+Research is not simply the process of finding confirmation for an idea.
+
+It is the disciplined examination of a question, the willingness to test assumptions, and the ability to distinguish what is known from what is merely believed.
+
+Framing Creativity Lab treats experimentation as a means of developing understanding.
+
+Its methodology seeks to preserve curiosity without sacrificing rigour, technical ambition without hiding limitations, and creative freedom without abandoning accountability.
+
+**Question with purpose.  
+Investigate with curiosity.  
+Experiment with discipline.  
+Evaluate with evidence.  
+Document with precision.  
+Conclude with intellectual honesty.**
+
+---
+
+**FRAMING CREATIVITY LAB**  
+Independent Research · Applied AI · Creative Technology · Digital Innovation
+
+**Maintainer:** J-ART  
+**Document:** `RESEARCH-METHODOLOGY-v2.0.md`  
+**Reference:** `LAB-CHARTER-v2.0.md`  
+**Publication requirements:** `PUBLICATION-POLICY-v2.0.md`
+
+*The value of an experiment lies not only in what it demonstrates, but in what it allows us to understand.*
