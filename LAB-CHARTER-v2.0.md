@@ -242,8 +242,8 @@ Project records must keep the following six attributes separate. They answer dif
 |---|---|---|
 | Lifecycle Stage | Where is the project in the Lab's workflow? | `PROJECT-LIFECYCLE.md` |
 | Project Status | What is the project's current state? | `PROJECT-LIFECYCLE.md` |
-| Technical Maturity | How far has the technical work been assessed and validated? | `QUALITY-STANDARDS.md` |
-| Operational Readiness | What operating context has the work been assessed for? | `QUALITY-STANDARDS.md` |
+| Technical Maturity | How far has the technical work been assessed and validated? | `QUALITY-STANDARDS-v2.0.md` |
+| Operational Readiness | What operating context has the work been assessed for? | `QUALITY-STANDARDS-v2.0.md` |
 | Publication Classification | What level of publication scrutiny or restriction applies? | `PUBLICATION-POLICY.md` |
 | Publication Status | What is the current publication review state or recorded decision? | `PUBLICATION-POLICY.md` |
 
@@ -277,7 +277,7 @@ Project records should use only the fields relevant to the work and should not i
 
 The Lab currently operates under a founder-led governance model. J-ART is the founder and maintainer and holds responsibility for the Lab's direction, policies, repository administration, and publication decisions, subject to applicable law, agreements, licences, and platform procedures.
 
-The detailed allocation of authority, delegation, access management, collaboration, conflict handling, continuity, and governance records is defined in `GOVERNANCE.md`.
+The detailed allocation of authority, delegation, access management, collaboration, conflict handling, continuity, and governance records is defined in `GOVERNANCE-v2.0.md`.
 
 The current model does not imply the existence of a board, formal research committee, employees, departments, or external supervisory body unless such structures are explicitly established and documented.
 
@@ -358,7 +358,7 @@ Projects should follow engineering and quality practices proportionate to their 
 
 Projects involving data or external services must identify relevant sources, usage rights, processing conditions, dependencies, and constraints. Personal, sensitive, confidential, or restricted data must not be used or disclosed without an appropriate basis and safeguards.
 
-The detailed technical expectations are defined in `QUALITY-STANDARDS.md`, `RESEARCH-METHODOLOGY.md`, `RESPONSIBLE-AI.md`, and `SECURITY.md`.
+The detailed technical expectations are defined in `QUALITY-STANDARDS-v2.0.md`, `RESEARCH-METHODOLOGY.md`, `RESPONSIBLE-AI.md`, and `SECURITY.md`.
 
 ## 13. Contributions and Collaboration
 
@@ -385,7 +385,7 @@ Substantial projects should document their purpose, scope, methods, relevant tec
 
 Important findings should not remain only in informal conversations or undocumented development environments when they are intended to inform future work. Records should be preserved in suitable locations, with restricted information kept out of public repositories.
 
-The Lab's project documentation structure is maintained in `PROJECT-TEMPLATE.md`. Research-specific expectations are maintained in `RESEARCH-METHODOLOGY.md`.
+The Lab's project documentation structure is maintained in `PROJECT-TEMPLATE-v2.0.md`. Research-specific expectations are maintained in `RESEARCH-METHODOLOGY.md`.
 
 ## 15. Lifecycle, Maintenance, and Discontinuation
 
@@ -414,10 +414,10 @@ This Charter should be read alongside the Lab's specialist documents:
 | Document | Governing subject |
 |---|---|
 | `README.md` | Public identity, mission, repository overview, and navigation. |
-| `GOVERNANCE.md` | Decision authority, responsibilities, delegation, access, and governance records. |
+| `GOVERNANCE-v2.0.md` | Decision authority, responsibilities, delegation, access, and governance records. |
 | `PROJECT-LIFECYCLE.md` | Canonical lifecycle stages and project statuses. |
-| `QUALITY-STANDARDS.md` | Technical maturity, operational readiness, and quality expectations. |
-| `PROJECT-TEMPLATE.md` | Standard structure for project records. |
+| `QUALITY-STANDARDS-v2.0.md` | Technical maturity, operational readiness, and quality expectations. |
+| `PROJECT-TEMPLATE-v2.0.md` | Standard structure for project records. |
 | `RESEARCH-METHODOLOGY.md` | Research design, experimentation, evaluation, and reproducibility. |
 | `PUBLICATION-POLICY.md` | Publication classification, review, approval, release, and withdrawal. |
 | `RESPONSIBLE-AI.md` | Responsible AI principles and requirements. |
