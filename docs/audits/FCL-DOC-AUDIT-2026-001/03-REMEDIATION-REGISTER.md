@@ -75,7 +75,7 @@ The following canonical files were read from the default branch `main` during th
 | 2026-11-25 | Audit archive | Audit report, prompt, register, validation prompt, and archive index added. | `386a3ac3e7cbfc70eb40226d4d1ce1e06af2606c` | Archive present |
 | 2026-11-25 | AUD-001 | Corrected malformed filenames to `QUALITY-STANDARDS.md` and `RESPONSIBLE-AI.md`. | `c073e881e7c9fc3d7e17f2c735b703d6be23e745` | **Verified — Resolved** |
 | 2026-11-25 | AUD-002 / AUD-008 | Added canonical Lifecycle Stage and Project Status distinction and references to separate maturity, readiness, and publication dimensions. | `216ce2ac33a2e14a2959fa54bb2cf9f8abd5c890` | **Partially implemented — In progress** |
-| 2026-11-25 | AUD-008 | Added a v2.0 Quality Standards draft as a separate file; canonical file was not replaced. | `b711dbdbd9de7f58f8915a988ef6f8e33daae6d1` | Draft only — not a canonical correction |
+| 2026-11-25 | AUD-008 | Added a v2.0 Quality Standards draft as a separate file; canonical file was not replaced. | `b711dbdbd9de7f58f8915a988ef6f8e33daae6d1` | Draft only — not a canonical correction || 2026-11-26 | AUD-001–AUD-011 | Read-only post-remediation validation completed. | Inspected commit: `b0a71f618cde4b75459b1094f80a30eec5a71543`; report: `06-POST-REMEDIATION-VALIDATION-2026-11-26.md` | Read-only validation | 1 Resolved; 3 Partially resolved; 3 Blocked; 4 Open |
 
 Add a dated row for each subsequent material change. Include the commit SHA, the canonical path affected, and the verification performed. A draft upload must be recorded as a draft, not as a resolved finding.
 
