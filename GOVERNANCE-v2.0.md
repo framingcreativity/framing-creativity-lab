@@ -39,7 +39,7 @@ It does not replace detailed technical, research, security, contribution, or pub
 
 ### 2.2 Relationship with the Lab Charter
 
-`LAB-CHARTER.md` establishes the Lab's foundational identity, mission, principles, and broad institutional direction.
+`LAB-CHARTER-v2.0.md` establishes the Lab's foundational identity, mission, principles, and broad institutional direction.
 
 This Governance document translates those foundations into practical responsibilities, decision rights, and operating arrangements.
 
@@ -47,13 +47,13 @@ This Governance document translates those foundations into practical responsibil
 
 Where a subject is governed by a dedicated policy, that policy provides the detailed requirements for that subject. In particular:
 
-- `PROJECT-LIFECYCLE.md` owns the canonical project lifecycle stages and Project Status definitions.
-- `QUALITY-STANDARDS.md` owns the Technical Maturity and Operational Readiness definitions.
-- `PUBLICATION-POLICY.md` owns Publication Classification, Publication Status, and publication authorization requirements.
-- `SECURITY.md` governs security reporting and vulnerability handling.
-- `CONTRIBUTING.md` governs contribution procedures and contributor workflow.
-- `CODE-OF-CONDUCT.md` governs expected conduct and conduct-related procedures.
-- `RESEARCH-METHODOLOGY.md` governs research design and experimental methodology.
+- `PROJECT-LIFECYCLE-v2.0.md` owns the canonical project lifecycle stages and Project Status definitions.
+- `QUALITY-STANDARDS-v2.0.md` owns the Technical Maturity and Operational Readiness definitions.
+- `PUBLICATION-POLICY-v2.0.md` owns Publication Classification, Publication Status, and publication authorization requirements.
+- `SECURITY-v2.0.md` governs security reporting and vulnerability handling.
+- `CONTRIBUTING-v2.0.md` governs contribution procedures and contributor workflow.
+- `CODE-OF-CONDUCT-v2.0.md` governs expected conduct and conduct-related procedures.
+- `RESEARCH-METHODOLOGY-v2.0.md` governs research design and experimental methodology.
 
 This document may refer to those policies but must not create competing vocabularies or override their detailed requirements.
 
@@ -247,7 +247,7 @@ Publication decisions determine whether specified code, documentation, research,
 
 **Decision authority:** Founder and Maintainer, unless a specific publication authority has been explicitly delegated in writing.
 
-Every release must comply with `PUBLICATION-POLICY.md`, applicable rights and licences, security and privacy requirements, confidentiality obligations, and relevant legal restrictions.
+Every release must comply with `PUBLICATION-POLICY-v2.0.md`, applicable rights and licences, security and privacy requirements, confidentiality obligations, and relevant legal restrictions.
 
 A completed project, accepted contribution, merged change, or public repository location does not by itself constitute publication approval.
 
@@ -350,7 +350,7 @@ A small experiment may use a concise record. More complex or higher-risk work re
 
 **Lifecycle Stage** identifies the project's position in the Lab's project workflow.
 
-The nine canonical stages are owned by `PROJECT-LIFECYCLE.md`:
+The nine canonical stages are owned by `PROJECT-LIFECYCLE-v2.0.md`:
 
 1. Idea and Intake
 2. Proposal
@@ -362,13 +362,13 @@ The nine canonical stages are owned by `PROJECT-LIFECYCLE.md`:
 8. Maintenance and Evolution
 9. Archival or Discontinuation
 
-This list is reproduced here for orientation. `PROJECT-LIFECYCLE.md` remains the authoritative source for stage definitions, activities, and exit criteria.
+This list is reproduced here for orientation. `PROJECT-LIFECYCLE-v2.0.md` remains the authoritative source for stage definitions, activities, and exit criteria.
 
 A project may revisit a stage, repeat an investigation, omit a stage that is not relevant, or stop before publication. The lifecycle is not a requirement to publish every project.
 
 ### 7.3 Project Status
 
-**Project Status** describes the project's current state. It is distinct from Lifecycle Stage and must use the canonical vocabulary owned by `PROJECT-LIFECYCLE.md`:
+**Project Status** describes the project's current state. It is distinct from Lifecycle Stage and must use the canonical vocabulary owned by `PROJECT-LIFECYCLE-v2.0.md`:
 
 | Project Status | Definition |
 |---|---|
@@ -387,7 +387,7 @@ A project may use a subset of these statuses. The selected value must describe t
 
 ### 7.4 Technical Maturity
 
-**Technical Maturity** assesses the maturity of the technical work. Its canonical values are owned by `QUALITY-STANDARDS.md`:
+**Technical Maturity** assesses the maturity of the technical work. Its canonical values are owned by `QUALITY-STANDARDS-v2.0.md`:
 
 - `Not Assessed`
 - `Exploratory`
@@ -398,7 +398,7 @@ The value must be supported by the evidence and scope of assessment. It is not a
 
 ### 7.5 Operational Readiness
 
-**Operational Readiness** assesses the context and conditions for operating the work. Its canonical values are owned by `QUALITY-STANDARDS.md`:
+**Operational Readiness** assesses the context and conditions for operating the work. Its canonical values are owned by `QUALITY-STANDARDS-v2.0.md`:
 
 - `Not Assessed`
 - `Research or Experimental Use Only`
@@ -410,7 +410,7 @@ A readiness value must reflect the actual operating context, safeguards, respons
 
 ### 7.6 Publication Classification
 
-**Publication Classification** determines the applicable level of publication scrutiny and restriction. Its canonical values are owned by `PUBLICATION-POLICY.md`:
+**Publication Classification** determines the applicable level of publication scrutiny and restriction. Its canonical values are owned by `PUBLICATION-POLICY-v2.0.md`:
 
 | Classification | Meaning |
 |---|---|
@@ -419,11 +419,11 @@ A readiness value must reflect the actual operating context, safeguards, respons
 | P2 | Restricted review; material must remain unpublished until concerns are resolved and reassessed |
 | P3 | Non-publishable; excluded from the public publication process |
 
-The full requirements and examples for each classification are defined in `PUBLICATION-POLICY.md`. Classification is not a measure of technical maturity or project status.
+The full requirements and examples for each classification are defined in `PUBLICATION-POLICY-v2.0.md`. Classification is not a measure of technical maturity or project status.
 
 ### 7.7 Publication Status
 
-**Publication Status** records the current review state or publication decision. Its canonical values are owned by `PUBLICATION-POLICY.md`:
+**Publication Status** records the current review state or publication decision. Its canonical values are owned by `PUBLICATION-POLICY-v2.0.md`:
 
 - `PENDING` — review or decision is not complete.
 - `APPROVED` — publication has been authorized for the defined scope, subject to any recorded conditions.
@@ -438,12 +438,12 @@ The project fields answer different questions and must not be substituted for on
 
 | Field | Question answered | Authoritative document |
 |---|---|---|
-| Lifecycle Stage | Where is the project in the workflow? | `PROJECT-LIFECYCLE.md` |
-| Project Status | What is the current state of the project? | `PROJECT-LIFECYCLE.md` |
-| Technical Maturity | How mature is the technical work? | `QUALITY-STANDARDS.md` |
-| Operational Readiness | In what operating context is the work suitable? | `QUALITY-STANDARDS.md` |
-| Publication Classification | What level of publication scrutiny or restriction applies? | `PUBLICATION-POLICY.md` |
-| Publication Status | What is the current publication review state or decision? | `PUBLICATION-POLICY.md` |
+| Lifecycle Stage | Where is the project in the workflow? | `PROJECT-LIFECYCLE-v2.0.md` |
+| Project Status | What is the current state of the project? | `PROJECT-LIFECYCLE-v2.0.md` |
+| Technical Maturity | How mature is the technical work? | `QUALITY-STANDARDS-v2.0.md` |
+| Operational Readiness | In what operating context is the work suitable? | `QUALITY-STANDARDS-v2.0.md` |
+| Publication Classification | What level of publication scrutiny or restriction applies? | `PUBLICATION-POLICY-v2.0.md` |
+| Publication Status | What is the current publication review state or decision? | `PUBLICATION-POLICY-v2.0.md` |
 
 A project record should assign each relevant field independently. One value must not be inferred solely from another.
 
@@ -465,7 +465,7 @@ The project record should be updated where the pause materially changes its stat
 
 ### 8.3 Archival and Discontinuation
 
-Archival and discontinuation must follow `PROJECT-LIFECYCLE.md` and applicable publication requirements.
+Archival and discontinuation must follow `PROJECT-LIFECYCLE-v2.0.md` and applicable publication requirements.
 
 A project that is no longer actively maintained must not continue to be represented as actively maintained. Where appropriate, documentation should identify its limitations, support expectations, and closure state.
 
@@ -473,7 +473,7 @@ A project that is no longer actively maintained must not continue to be represen
 
 A public release may need to be withdrawn or restricted because of security, privacy, legal, licensing, confidentiality, or material quality concerns.
 
-The maintainer should coordinate withdrawal actions under `PUBLICATION-POLICY.md` and `SECURITY.md`, as applicable. Public explanations should be accurate but must not disclose additional sensitive information.
+The maintainer should coordinate withdrawal actions under `PUBLICATION-POLICY-v2.0.md` and `SECURITY-v2.0.md`, as applicable. Public explanations should be accurate but must not disclose additional sensitive information.
 
 ---
 
@@ -545,7 +545,7 @@ No participant may use the Lab as a channel to disclose material from another pr
 
 ### 10.6 Publication Boundary
 
-Public accessibility is not equivalent to permission to reuse. All publication and distribution must follow `PUBLICATION-POLICY.md` and the rights that actually apply to the material.
+Public accessibility is not equivalent to permission to reuse. All publication and distribution must follow `PUBLICATION-POLICY-v2.0.md` and the rights that actually apply to the material.
 
 ---
 
@@ -631,7 +631,7 @@ Under the current founder-led model, the founder and maintainer retains final in
 
 Concerns involving the maintainer require particular care. The Lab must not imply that an independent internal board or appeal process exists when it does not. Where appropriate, affected individuals may use relevant external, contractual, platform, or legal channels.
 
-Conduct-related concerns must be handled under `CODE-OF-CONDUCT.md`. Security vulnerabilities must be handled under `SECURITY.md` rather than disclosed through an ordinary public discussion.
+Conduct-related concerns must be handled under `CODE-OF-CONDUCT-v2.0.md`. Security vulnerabilities must be handled under `SECURITY-v2.0.md` rather than disclosed through an ordinary public discussion.
 
 ---
 
@@ -656,7 +656,7 @@ Governance review may include:
 
 Where a material risk cannot be reasonably addressed, the project may be restricted, delayed, modified, suspended, or withdrawn.
 
-The maintainer should ensure that the relevant requirements in `SECURITY.md`, `PUBLICATION-POLICY.md`, `RESPONSIBLE-AI.md`, and other applicable policies are considered.
+The maintainer should ensure that the relevant requirements in `SECURITY-v2.0.md`, `PUBLICATION-POLICY-v2.0.md`, `RESPONSIBLE-AI-v2.0.md`, and other applicable policies are considered.
 
 No governance approval authorizes the collection, processing, retention, or disclosure of information without an appropriate legal and operational basis.
 
@@ -764,15 +764,15 @@ This document forms part of the Lab's governance framework and should be read al
 | Document | Governance relevance |
 |---|---|
 | `README.md` | Public identity, mission, scope, and repository overview |
-| `LAB-CHARTER.md` | Foundational principles and institutional direction |
-| `PROJECT-LIFECYCLE.md` | Canonical lifecycle stages and Project Status definitions |
-| `QUALITY-STANDARDS.md` | Technical Maturity and Operational Readiness definitions and quality expectations |
-| `PUBLICATION-POLICY.md` | Publication Classification, Publication Status, release authorization, and publication restrictions |
-| `RESEARCH-METHODOLOGY.md` | Research design, experimentation, and evaluation methods |
-| `RESPONSIBLE-AI.md` | Responsible AI principles and AI-specific risk considerations |
-| `CONTRIBUTING.md` | Contribution process and contributor workflow |
-| `SECURITY.md` | Security reporting and vulnerability handling |
-| `CODE-OF-CONDUCT.md` | Behavioral expectations and conduct-related procedures |
+| `LAB-CHARTER-v2.0.md` | Foundational principles and institutional direction |
+| `PROJECT-LIFECYCLE-v2.0.md` | Canonical lifecycle stages and Project Status definitions |
+| `QUALITY-STANDARDS-v2.0.md` | Technical Maturity and Operational Readiness definitions and quality expectations |
+| `PUBLICATION-POLICY-v2.0.md` | Publication Classification, Publication Status, release authorization, and publication restrictions |
+| `RESEARCH-METHODOLOGY-v2.0.md` | Research design, experimentation, and evaluation methods |
+| `RESPONSIBLE-AI-v2.0.md` | Responsible AI principles and AI-specific risk considerations |
+| `CONTRIBUTING-v2.0.md` | Contribution process and contributor workflow |
+| `SECURITY-v2.0.md` | Security reporting and vulnerability handling |
+| `CODE-OF-CONDUCT-v2.0.md` | Behavioral expectations and conduct-related procedures |
 
 A more specific policy governs its defined subject matter. This document establishes governance authority and accountability but does not replace detailed procedures in those policies.
 

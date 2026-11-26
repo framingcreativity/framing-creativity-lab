@@ -1,14 +1,15 @@
 # Remediation Register — FCL-DOC-AUDIT-2026-001
 
 **Document ID:** FCL-AUD-REG-001  
-**Version:** 1.3  
+**Version:** 1.4\
 **Status:** Open — remediation in progress  
 **Source:** `02-AUDIT-REPORT.md`  
 **Baseline commit:** `e026bdc5cc4a78dd80570f8c93d50008711de262`  
 **Last verified:** 26 November 2026  
-**Inspected branch:** `main`  
-**Inspected commit:** `417b114874d17e64f5d86c3bcb071cdcff13834f`  
-**Inspected tree:** `433f3099415640ade56eb94f5967fbece8884a7a`  
+**Inspected branch:** `docs/archive-v1-and-fix-v2`\
+**Base commit:** `d83ac013e7079dfae524d27d96f61b199fa11975`\
+**Base tree:** `fce459a2cfbe926e52d3bcb32826c7abd6966c29`\
+**Working-tree state:** Archive migration applied; documentation corrections under review; changes not yet committed.\
 **Maintainer:** J-ART
 
 ---
@@ -25,13 +26,13 @@ A draft, recommendation, or locally prepared replacement is not a completed repo
 
 A finding may be marked **Resolved** only after the relevant document or configuration has been inspected on `main` and the correction has been verified.
 
-### 1.3 Verification Scope
+### 1.4 Verification Scope
 
-This version records a read-only inspection of the latest repository state at commit `417b114874d17e64f5d86c3bcb071cdcff13834f`.
+This version records the documentation reconciliation work on branch `docs/archive-v1-and-fix-v2`, based on the committed `main` baseline at `d83ac013e7079dfae524d27d96f61b199fa11975`.
 
-The inspection confirms the presence of the versioned v2.0 documentation suite and evaluates the current remediation status against the original eleven findings.
+The eleven v1.0 documents have been moved into `docs/archives/` and renamed with the `-v1.0.md` suffix. Their local contents were checked byte-for-byte against the original files at the base commit.
 
-This checkpoint is not a complete post-remediation validation. Cross-document consistency, relative-link validation, and repository configuration verification remain outstanding.
+The working-tree changes remain uncommitted. Cross-document consistency, relative-link validation, and the final repository state must be verified before any finding is marked Resolved.
 
 ---
 
@@ -58,11 +59,11 @@ A v2.0 document with the status `Draft for Maintainer Review` is evidence of rem
 
 | Finding | Severity | Affected area | Required corrective action | Current status | Verification condition |
 |---|---|---|---|---|---|
-| AUD-001 | High | Documentation filenames and internal references | Maintain the exact canonical v1 filenames and ensure the v2.0 lifecycle filename has the `.md` extension. Verify relevant repository paths. | **Resolved** | The malformed trailing-dot filenames are absent. The v2.0 lifecycle document exists as `PROJECT-LIFECYCLE-v2.0.md`. |
-| AUD-002 | High | Project vocabulary and cross-document references | Maintain the approved separation of Lifecycle Stage, Project Status, Technical Maturity, Operational Readiness, Publication Classification, and Publication Status. Align the README and v2.0 references. | **Partially resolved** | The v2.0 documents define the separate dimensions. The README and several cross-document references still point to v1.0 files. Complete validation and maintainer approval remain outstanding. |
+| AUD-001 | High | Documentation filenames and internal references | Preserve the v1.0 documents in the archive, use the `-v1.0.md` suffix, and ensure current v2.0 references resolve to the correct `.md` files. | **Partially resolved** | The eleven archived files were verified byte-for-byte against the base commit and renamed with the `-v1.0.md` suffix. Final cross-document and relative-link validation is still required. |
+| AUD-002 | High | Project vocabulary and cross-document references | Maintain the proposed separation of Lifecycle Stage, Project Status, Technical Maturity, Operational Readiness, Publication Classification, and Publication Status across the v2.0 draft suite. | **Partially resolved** | The v2.0 drafts define the proposed separate dimensions. The README and selected cross-document references have been aligned with the v2.0 draft set. Complete validation and maintainer approval remain outstanding. |
 | AUD-003 | High | `CONTRIBUTING-v2.0.md`, `PUBLICATION-POLICY-v2.0.md`, `GOVERNANCE-v2.0.md` | Establish clear permission requirements for the Lab to incorporate, reproduce, modify, maintain, distribute, and publish accepted external contributions. Preserve the intentional absence of a general repository licence. | **Partially resolved** | The v2.0 documents state that submission or acceptance does not transfer ownership or grant unrestricted rights. Required permissions must be established through an applicable licence or explicit written agreement. The documents still require approval, and the practical agreement process must be clear before external contributions are accepted. |
 | AUD-004 | Medium | `SECURITY-v2.0.md`, `CODE-OF-CONDUCT-v2.0.md`, reporting channels | Verify GitHub Private Vulnerability Reporting and establish an accessible private conduct-reporting route. | **Blocked — configuration** | GitHub configuration must be checked. A private conduct-reporting method must be explicitly established and published. The v2.0 documents correctly state that neither channel has yet been verified as operational. |
-| AUD-005 | Medium | `README.md`, documentation navigation, cross-document references | Update the README to identify the v1.0 and v2.0 documentation sets clearly. Validate relative links and the repository structure. | **Partially resolved** | A documentation index exists in the README, but it describes the v1.0 files as the main documentation set and does not adequately identify the v2.0 suite. README revision and link validation remain outstanding. |
+| AUD-005 | Medium | `README.md`, documentation navigation, cross-document references | Identify the archived v1.0 documents and the v2.0 draft suite clearly. Validate relative links and the repository structure. | **Partially resolved** | The README now distinguishes the archived v1.0 baseline from the v2.0 draft suite, and the archive index lists all eleven historical documents. Relative-link and final tree validation remain outstanding. |
 | AUD-006 | Medium | `PUBLICATION-POLICY-v2.0.md`, `RESPONSIBLE-AI-v2.0.md`, `PROJECT-TEMPLATE-v2.0.md`, `RESEARCH-METHODOLOGY-v2.0.md` | Use a consistent four-level data-classification model. Distinguish data classification from personal-data characteristics and AI Risk Classification. | **Partially resolved** | The v2.0 Publication Policy and Responsible AI Policy use Public, Internal, Confidential, and Restricted. Personal and sensitive information are treated as characteristics rather than additional classification values. The project template delegates to the applicable classification requirements. Approval and complete cross-document validation remain outstanding. |
 | AUD-007 | Medium | `PUBLICATION-POLICY-v2.0.md`, `PROJECT-TEMPLATE-v2.0.md` | Clarify P1 controlled-publication conditions and formal P2/P3 reassessment requirements. Keep Publication Status separate from Publication Classification. | **Partially resolved** | The v2.0 Publication Policy defines mandatory P1 conditions and a documented P2 reassessment process. P3 is excluded from the public process. The v2.0 Project Template uses the canonical Publication Status values. Formal approval and complete consistency validation remain outstanding. |
 | AUD-008 | Medium | Lifecycle, Quality Standards, Project Template, README | Separate Lifecycle Stage, Project Status, Technical Maturity, Operational Readiness, Publication Classification, and Publication Status. | **Partially resolved** | The v2.0 Lifecycle, Quality Standards, Publication Policy, Charter, and Project Template distinguish the six dimensions. The README and cross-document references still require alignment. |
@@ -72,12 +73,12 @@ A v2.0 document with the status `Draft for Maintainer Review` is evidence of rem
 
 ### 2.1 Current Finding Summary
 
-This summary reflects the read-only checkpoint at `417b114874d17e64f5d86c3bcb071cdcff13834f`. It is not a final validation result.
+This summary reflects the current uncommitted working-tree review based on `d83ac013e7079dfae524d27d96f61b199fa11975`. It is not a final validation result.
 
 | Status | Count | Findings |
 |---|---:|---|
-| Resolved | 1 | AUD-001 |
-| Partially resolved | 8 | AUD-002, AUD-003, AUD-005, AUD-006, AUD-007, AUD-008, AUD-009, AUD-010 |
+| Resolved | 0 | — |
+| Partially resolved | 9 | AUD-001, AUD-002, AUD-003, AUD-005, AUD-006, AUD-007, AUD-008, AUD-009, AUD-010 |
 | Blocked — configuration | 1 | AUD-004 |
 | Open | 1 | AUD-011 |
 | **Total** | **11** | |
@@ -154,9 +155,9 @@ The repository must not imply that a draft policy has superseded an earlier docu
 
 ---
 
-## 4. Approved Canonical Project Vocabulary
+## 4. Proposed Canonical Project Vocabulary — v2.0 Draft
 
-The maintainer-approved framework separates six independent project dimensions.
+The proposed v2.0 framework separates six independent project dimensions. These definitions remain subject to maintainer review and are not approved policy.
 
 The v2.0 documents define the following values.
 
@@ -212,17 +213,17 @@ They are not Project Status, Technical Maturity, or Operational Readiness values
 The following repository state was inspected:
 
 **Repository:** `framingcreativity/framing-creativity-lab`  
-**Branch:** `main`  
-**Commit:** `417b114874d17e64f5d86c3bcb071cdcff13834f`  
-**Tree:** `433f3099415640ade56eb94f5967fbece8884a7a`  
+**Branch:** `docs/archive-v1-and-fix-v2`\
+**Base commit:** `d83ac013e7079dfae524d27d96f61b199fa11975`\
+**Base tree:** `fce459a2cfbe926e52d3bcb32826c7abd6966c29`\
 **Verification date:** 26 November 2026  
-**Inspection mode:** Read-only
+**Inspection mode:** Local working-tree review; uncommitted
 
 ### 5.1 Root Documentation
 
-The repository contains the original v1.0 documents and the eleven separately versioned v2.0 documents listed in Section 3.
+The working tree contains the eleven v2.0 draft documents at the repository root and the eleven original v1.0 documents under `docs/archives/`.
 
-The README exists at its canonical root path and contains a documentation index. However, the index and repository structure describe the v1.0 files and do not yet adequately identify the v2.0 draft suite.
+The README and archive index have been updated to distinguish the two documentation sets. Final relative-link validation and committed-state verification remain outstanding.
 
 ### 5.2 Lifecycle Filename
 
@@ -298,6 +299,8 @@ Historical evidence must remain intact. New entries are added chronologically.
 | 2026-11-26 | AUD-006 / AUD-007 / AUD-008 | Verified the data classification, P1/P2/P3 publication rules, six project dimensions, and separate AI Risk Classification in the v2.0 document set. | v2.0 document blobs listed in Section 3.2 | Partially resolved pending approval and cross-document validation |
 | 2026-11-26 | AUD-010 | Verified consistent metadata fields across the eleven v2.0 documents. | v2.0 document blobs listed in Section 3.2 | Partially resolved pending approval and final metadata review |
 | 2026-11-26 | Register | Updated the remediation register to reflect the versioned v2.0 document strategy and the latest inspected repository state. | Current register Version 1.3 | Updated checkpoint |
+
+| 2026-11-26 | AUD-001 / AUD-002 / AUD-005 / AUD-008 / AUD-009 | Moved the eleven v1.0 documents into `docs/archives/`, added the archive index, updated README navigation, corrected audit-index paths, and reconciled selected v2.0 references. | Local working tree based on `d83ac013e7079dfae524d27d96f61b199fa11975` | Applied locally; final validation and commit pending |
 
 Add a dated row for every subsequent material change.
 

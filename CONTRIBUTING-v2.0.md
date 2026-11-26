@@ -60,13 +60,13 @@ The following documents establish the wider framework:
 |---|---|
 | `LAB-CHARTER-v2.0.md` | Identity, mission, principles, and operating boundaries |
 | `GOVERNANCE-v2.0.md` | Governance, responsibilities, decision-making, and access |
-| `PROJECT-LIFECYCLE-v2.0` | Project stages and status definitions |
+| `PROJECT-LIFECYCLE-v2.0.md` | Project stages and status definitions |
 | `QUALITY-STANDARDS-v2.0.md` | Engineering quality, technical maturity, and operational readiness |
 | `RESEARCH-METHODOLOGY-v2.0.md` | Research, experimentation, evaluation, and reproducibility |
 | `PUBLICATION-POLICY-v2.0.md` | Ownership, publication eligibility, classification, and approval |
 | `RESPONSIBLE-AI-v2.0.md` | Responsible AI principles and requirements |
-| `SECURITY.md` | Security expectations and vulnerability reporting |
-| `CODE-OF-CONDUCT.md` | Behavioural expectations and conduct procedures |
+| `SECURITY-v2.0.md` | Security expectations and vulnerability reporting |
+| `CODE-OF-CONDUCT-v2.0.md` | Behavioural expectations and conduct procedures |
 
 Where a specialist policy establishes requirements for a particular subject, its requirements apply to that subject.
 
@@ -470,7 +470,7 @@ Do not include the following in public issues:
 - Restricted datasets.
 - Security vulnerabilities.
 
-Security vulnerabilities must be reported through the private procedure described in `SECURITY.md`.
+Security vulnerabilities must be reported through the private procedure described in `SECURITY-v2.0.md`.
 
 Do not assume that a private reporting feature is available unless the repository explicitly provides it.
 
@@ -893,7 +893,7 @@ Applicable data classification and handling requirements are defined by `PUBLICA
 
 ### 14.4 Security Vulnerabilities
 
-Security vulnerabilities must be reported privately through the process described in `SECURITY.md`.
+Security vulnerabilities must be reported privately through the process described in `SECURITY-v2.0.md`.
 
 Do not publish exploitable vulnerability details in public issues, pull requests, or discussions.
 
@@ -1216,7 +1216,7 @@ Share with responsibility.**
 Independent Research · Applied AI · Creative Technology · Digital Systems
 
 **Maintainer:** J-ART  
-**Document:** `CONTRIBUTING.md`  
-**Related policies:** `GOVERNANCE-v2.0.md` · `PUBLICATION-POLICY-v2.0.md` · `CODE-OF-CONDUCT.md` · `SECURITY.md`
+**Document:** `CONTRIBUTING-v2.0.md`\
+**Related policies:** `GOVERNANCE-v2.0.md` · `PUBLICATION-POLICY-v2.0.md` · `CODE-OF-CONDUCT-v2.0.md` · `SECURITY-v2.0.md`
 
 *Good collaboration does more than add to a project. It improves the way the project thinks, evolves, and creates.*

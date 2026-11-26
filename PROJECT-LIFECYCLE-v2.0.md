@@ -137,7 +137,7 @@ The two fields answer different questions and must not be used interchangeably. 
 
 Technical Maturity and Operational Readiness are separate assessment dimensions defined in `QUALITY-STANDARDS-v2.0.md`.
 
-Publication Classification and Publication Status are governed by `PUBLICATION-POLICY.md`.
+Publication Classification and Publication Status are governed by `PUBLICATION-POLICY-v2.0.md`.
 
 A project record should use the relevant fields independently and should not describe a project as validated, publicly approved, or production-oriented without the corresponding evidence or decision.
 
@@ -624,7 +624,7 @@ The review may result in:
 
 Unresolved ownership, licensing, privacy, security, or confidentiality issues prevent publication until adequately addressed.
 
-The detailed Publication Classification and Publication Status must be recorded according to `PUBLICATION-POLICY.md`.
+The detailed Publication Classification and Publication Status must be recorded according to `PUBLICATION-POLICY-v2.0.md`.
 
 ### 10.5 Approval Authority
 
@@ -979,7 +979,7 @@ The level of risk assessment should reflect potential impact.
 
 A change introducing new external access, sensitive information, or autonomous execution may require additional review even when the original project was low-risk.
 
-Applicable requirements are defined in the relevant Lab policies, including `SECURITY.md`, `RESPONSIBLE-AI.md`, and `PUBLICATION-POLICY.md`.
+Applicable requirements are defined in the relevant Lab policies, including `SECURITY-v2.0.md`, `RESPONSIBLE-AI-v2.0.md`, and `PUBLICATION-POLICY-v2.0.md`.
 
 ---
 
@@ -1056,22 +1056,22 @@ This document should be read alongside:
 | `GOVERNANCE-v2.0.md` | Decision-making authority and responsibilities |
 | `QUALITY-STANDARDS-v2.0.md` | Technical Maturity, Operational Readiness, and quality expectations |
 | `PROJECT-TEMPLATE-v2.0.md` | Standard project documentation structure |
-| `PUBLICATION-POLICY.md` | Publication Classification, Publication Status, and release requirements |
-| `RESEARCH-METHODOLOGY.md` | Research and experimental practices |
-| `CONTRIBUTING.md` | Contribution process and expectations |
-| `SECURITY.md` | Security reporting and vulnerability handling |
-| `CODE-OF-CONDUCT.md` | Behavioral expectations and collaboration standards |
-| `RESPONSIBLE-AI.md` | Responsible AI requirements and risk considerations |
+| `PUBLICATION-POLICY-v2.0.md` | Publication Classification, Publication Status, and release requirements |
+| `RESEARCH-METHODOLOGY-v2.0.md` | Research and experimental practices |
+| `CONTRIBUTING-v2.0.md` | Contribution process and expectations |
+| `SECURITY-v2.0.md` | Security reporting and vulnerability handling |
+| `CODE-OF-CONDUCT-v2.0.md` | Behavioral expectations and collaboration standards |
+| `RESPONSIBLE-AI-v2.0.md` | Responsible AI requirements and risk considerations |
 
 Where relevant, the requirements of these documents apply throughout the project lifecycle.
 
 Technical quality and assessment must follow `QUALITY-STANDARDS-v2.0.md`.
 
-Publication review must follow `PUBLICATION-POLICY.md`.
+Publication review must follow `PUBLICATION-POLICY-v2.0.md`.
 
-Research and experiment evaluation should follow `RESEARCH-METHODOLOGY.md`.
+Research and experiment evaluation should follow `RESEARCH-METHODOLOGY-v2.0.md`.
 
-Security incidents must be handled according to `SECURITY.md`.
+Security incidents must be handled according to `SECURITY-v2.0.md`.
 
 ---
 

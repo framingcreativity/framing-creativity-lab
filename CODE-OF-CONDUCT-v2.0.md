@@ -608,14 +608,14 @@ This Code should be read alongside the following documents:
 |---|---|
 | `LAB-CHARTER-v2.0.md` | Identity, independence, and foundational principles |
 | `GOVERNANCE-v2.0.md` | Decision authority, responsibilities, conflicts, and governance concerns |
-| `CONTRIBUTING.md` | Contributor responsibilities and workflow |
-| `SECURITY.md` | Security reporting and vulnerability handling |
+| `CONTRIBUTING-v2.0.md` | Contributor responsibilities and workflow |
+| `SECURITY-v2.0.md` | Security reporting and vulnerability handling |
 | `PUBLICATION-POLICY-v2.0.md` | Publication, confidentiality, and intellectual property |
 | `RESPONSIBLE-AI-v2.0.md` | Responsible AI principles and safeguards |
 
 This Code addresses human conduct and collaboration.
 
-Security vulnerabilities should be reported through the procedures defined in `SECURITY.md`.
+Security vulnerabilities should be reported through the procedures defined in `SECURITY-v2.0.md`.
 
 Questions concerning authorship, ownership, licensing, or unauthorized use of work should also be assessed under the relevant intellectual property and publication policies.
 
@@ -660,6 +660,6 @@ It requires mutual respect, clear boundaries, intellectual honesty, and the abil
 Independent Research · Applied AI · Creative Technology · Digital Systems
 
 **Maintainer:** J-ART  
-**Document:** `CODE-OF-CONDUCT.md`  
+**Document:** `CODE-OF-CONDUCT-v2.0.md`\
 **Version:** 2.0  
 **Status:** Draft for Maintainer Review

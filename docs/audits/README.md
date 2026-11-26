@@ -1,7 +1,7 @@
 # Framing Creativity Lab — Audit Documentation
 
 **Document ID:** FCL-AUD-INDEX-001  
-**Version:** 1.1  
+**Version:** 1.2\
 **Status:** Active — Audit Collection Index  
 **Last Updated:** 26 November 2026  
 **Maintainer:** J-ART  
@@ -53,7 +53,7 @@ They are immutable snapshots of their respective inspection points.
 
 | Audit ID | Date | Inspected commit | Result | Report |
 |---|---|---|---|---|
-| `FCL-DOC-AUDIT-2026-001` | 26 November 2026 | `b0a71f618cde4b75459b1094f80a30eec5a71543` | NOT READY — remediation remained open | [Open historical validation](FCL-DOC-AUDIT-2026-11-26.md) |
+| `FCL-DOC-AUDIT-2026-001` | 26 November 2026 | `b0a71f618cde4b75459b1094f80a30eec5a71543` | NOT READY — remediation remained open | [Open historical validation](FCL-DOC-AUDIT-2026-001/06-POST-REMEDIATION-VALIDATION-2026-11-26.md) |
 
 The validation report above predates the current v2.0 documentation checkpoint.
 
@@ -65,29 +65,29 @@ It must not be presented as a validation of later repository changes.
 
 ## 4. Current Remediation Checkpoint
 
-The latest documented remediation checkpoint was inspected against the `main` branch at:
+The committed `main` baseline used for the current reconciliation is:
 
-**Commit:** `417b114874d17e64f5d86c3bcb071cdcff13834f`  
-**Tree:** `433f3099415640ade56eb94f5967fbece8884a7a`  
+**Commit:** `d83ac013e7079dfae524d27d96f61b199fa11975`\
+**Tree:** `fce459a2cfbe926e52d3bcb32826c7abd6966c29`\
 **Date:** 26 November 2026  
 **Inspection mode:** Read-only
 
-The checkpoint confirms that the repository contains eleven separately versioned v2.0 documents.
+The baseline contains eleven separately versioned v2.0 documents. The current working branch, `docs/archive-v1-and-fix-v2`, moves the original v1.0 files into `docs/archives/` and reconciles the documentation navigation.
 
-These documents preserve the original v1.0 files and remain marked `Draft for Maintainer Review`.
+The archive migration and related corrections are being reviewed in the local working tree and are not yet represented by a new commit. The v2.0 documents remain marked `Draft for Maintainer Review`.
 
 ### 4.1 Current Remediation Register
 
 The current remediation record is:
 
-[Open Remediation Register — Version 1.3](FCL-DOC-AUDIT-2026-001/03-REMEDIATION-REGISTER.md)
+[Open Remediation Register — Version 1.4](FCL-DOC-AUDIT-2026-001/03-REMEDIATION-REGISTER.md)
 
 Its recorded status summary is:
 
 | Status | Findings | Count |
 |---|---|---:|
-| Resolved | AUD-001 | 1 |
-| Partially resolved | AUD-002, AUD-003, AUD-005, AUD-006, AUD-007, AUD-008, AUD-009, AUD-010 | 8 |
+| Resolved | — | 0 |
+| Partially resolved | AUD-001, AUD-002, AUD-003, AUD-005, AUD-006, AUD-007, AUD-008, AUD-009, AUD-010 | 9 |
 | Blocked — configuration | AUD-004 | 1 |
 | Open | AUD-011 | 1 |
 | **Total** | **AUD-001 to AUD-011** | **11** |
@@ -155,7 +155,7 @@ The archive may also contain historical or superseded audit material.
 
 Historical audit documentation is retained under:
 
-[`docs/audits/archive/`](archive/README.md)
+[`docs/archives/`](../archives/README.md)
 
 Archived material must not be mistaken for the current remediation register or the latest validation report.
 
@@ -229,4 +229,4 @@ Independent Research · Applied AI · Creative Technology · Experimental Design
 
 **Maintainer:** J-ART  
 **Document:** `docs/audits/README.md`  
-**Version:** 1.1
+**Version:** 1.2

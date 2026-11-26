@@ -1866,9 +1866,9 @@ This methodology operates within the broader Framing Creativity Lab documentatio
 | `QUALITY-STANDARDS-v2.0.md` | Technical Maturity, Operational Readiness, and quality expectations |
 | `PUBLICATION-POLICY-v2.0.md` | Publication eligibility, classification, and approval controls |
 | `RESPONSIBLE-AI-v2.0.md` | AI risk, responsible use, and human oversight |
-| `SECURITY.md` | Security practices and vulnerability reporting |
-| `CONTRIBUTING.md` | Contribution process and contributor responsibilities |
-| `CODE-OF-CONDUCT.md` | Collaboration and behavioural expectations |
+| `SECURITY-v2.0.md` | Security practices and vulnerability reporting |
+| `CONTRIBUTING-v2.0.md` | Contribution process and contributor responsibilities |
+| `CODE-OF-CONDUCT-v2.0.md` | Collaboration and behavioural expectations |
 
 The documents serve different purposes and should be interpreted together.
 

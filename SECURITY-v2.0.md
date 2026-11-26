@@ -1068,8 +1068,8 @@ This policy should be read alongside:
 | `RESPONSIBLE-AI-v2.0.md` | AI-specific risk, data handling, agent security, and incident management |
 | `QUALITY-STANDARDS-v2.0.md` | Engineering quality, validation, and technical assessment |
 | `RESEARCH-METHODOLOGY-v2.0.md` | Research and experimental practices |
-| `CONTRIBUTING.md` | Contributor responsibilities and development workflow |
-| `CODE-OF-CONDUCT.md` | Behavioural expectations and conduct procedures |
+| `CONTRIBUTING-v2.0.md` | Contributor responsibilities and development workflow |
+| `CODE-OF-CONDUCT-v2.0.md` | Behavioural expectations and conduct procedures |
 
 Where a specialist policy governs a specific subject, its detailed requirements apply.
 
@@ -1093,6 +1093,6 @@ Framing Creativity Lab aims to identify meaningful weaknesses, reduce avoidable 
 Independent Research · Applied AI · Creative Technology · Digital Systems
 
 **Maintainer:** J-ART  
-**Document:** `SECURITY.md`  
+**Document:** `SECURITY-v2.0.md`\
 **Version:** 2.0  
 **Status:** Draft for Maintainer Review

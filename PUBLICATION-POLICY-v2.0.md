@@ -487,7 +487,7 @@ The authoritative definitions are maintained in the relevant specialist document
 | Operational Readiness | `QUALITY-STANDARDS-v2.0.md` |
 | Publication Classification | This document |
 | Publication Status | This document |
-| AI Risk Classification | `RESPONSIBLE-AI.md` |
+| AI Risk Classification | `RESPONSIBLE-AI-v2.0.md` |
 
 No field should be inferred solely from another.
 
@@ -989,7 +989,7 @@ Deleting the visible credential is not a substitute for revocation.
 
 ### 12.5 Vulnerability Disclosure
 
-Security vulnerabilities must be handled according to `SECURITY.md`.
+Security vulnerabilities must be handled according to `SECURITY-v2.0.md`.
 
 Do not disclose exploitable details through ordinary public issues or publication notes before an appropriate response has been established.
 
@@ -1696,11 +1696,11 @@ It should be read alongside the following documents:
 | `PROJECT-LIFECYCLE-v2.0.md` | Lifecycle stages and canonical Project Status definitions |
 | `PROJECT-TEMPLATE-v2.0.md` | Standard project record and publication fields |
 | `QUALITY-STANDARDS-v2.0.md` | Technical Maturity, Operational Readiness, and technical quality expectations |
-| `RESEARCH-METHODOLOGY.md` | Research, experimentation, evidence, and reproducibility |
-| `RESPONSIBLE-AI.md` | AI risk, human oversight, data handling, and responsible AI requirements |
-| `SECURITY.md` | Security reporting and vulnerability handling |
-| `CONTRIBUTING.md` | Contribution process and contributor responsibilities |
-| `CODE-OF-CONDUCT.md` | Behavioural expectations and conduct concerns |
+| `RESEARCH-METHODOLOGY-v2.0.md` | Research, experimentation, evidence, and reproducibility |
+| `RESPONSIBLE-AI-v2.0.md` | AI risk, human oversight, data handling, and responsible AI requirements |
+| `SECURITY-v2.0.md` | Security reporting and vulnerability handling |
+| `CONTRIBUTING-v2.0.md` | Contribution process and contributor responsibilities |
+| `CODE-OF-CONDUCT-v2.0.md` | Behavioural expectations and conduct concerns |
 
 Publication Classification and Publication Status are defined only in this policy.
 
@@ -1708,7 +1708,7 @@ The Lifecycle Stage and Project Status are defined in `PROJECT-LIFECYCLE-v2.0.md
 
 Technical Maturity and Operational Readiness are defined in `QUALITY-STANDARDS-v2.0.md`.
 
-AI Risk Classification is defined separately in `RESPONSIBLE-AI.md`.
+AI Risk Classification is defined separately in `RESPONSIBLE-AI-v2.0.md`.
 
 A summary or reference in another document must not create a competing definition.
 

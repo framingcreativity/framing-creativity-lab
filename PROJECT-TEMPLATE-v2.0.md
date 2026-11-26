@@ -154,7 +154,7 @@ This section records six distinct fields. They describe different aspects of a p
 
 ### 4.1 Lifecycle Stage
 
-Lifecycle Stage identifies the project's position in the Lab's workflow. Use one of the nine stages defined by `PROJECT-LIFECYCLE.md`:
+Lifecycle Stage identifies the project's position in the Lab's workflow. Use one of the nine stages defined by `PROJECT-LIFECYCLE-v2.0.md`:
 
 | Stage | Canonical name |
 |---|---|
@@ -175,7 +175,7 @@ A lifecycle stage describes process position. It is not a project status, qualit
 
 ### 4.2 Project Status
 
-Project Status describes the project's current state. Use one of the ten canonical values defined by `PROJECT-LIFECYCLE.md`:
+Project Status describes the project's current state. Use one of the ten canonical values defined by `PROJECT-LIFECYCLE-v2.0.md`:
 
 | Canonical status | Definition |
 |---|---|
@@ -197,7 +197,7 @@ Do not infer Project Status solely from Lifecycle Stage. Select the status that 
 
 ### 4.3 Technical Maturity
 
-Technical Maturity describes the level of technical evidence and validation. Use one of the four values governed by `QUALITY-STANDARDS.md`:
+Technical Maturity describes the level of technical evidence and validation. Use one of the four values governed by `QUALITY-STANDARDS-v2.0.md`:
 
 | Value | Meaning |
 |---|---|
@@ -214,7 +214,7 @@ Technical Maturity is an evidence-based assessment. It does not establish produc
 
 ### 4.4 Operational Readiness
 
-Operational Readiness describes the intended and assessed context in which the project can be used. Use one of the five values governed by `QUALITY-STANDARDS.md`:
+Operational Readiness describes the intended and assessed context in which the project can be used. Use one of the five values governed by `QUALITY-STANDARDS-v2.0.md`:
 
 | Value | Meaning |
 |---|---|
@@ -232,7 +232,7 @@ Operational Readiness is not interchangeable with Technical Maturity. A technica
 
 ### 4.5 Publication Classification
 
-Publication Classification identifies the level of publication scrutiny required. Use the levels defined by `PUBLICATION-POLICY.md`:
+Publication Classification identifies the level of publication scrutiny required. Use the levels defined by `PUBLICATION-POLICY-v2.0.md`:
 
 | Level | Canonical classification | Meaning |
 |---|---|---|
@@ -245,11 +245,11 @@ Publication Classification identifies the level of publication scrutiny required
 **Classification Rationale:** [Summarize the basis without disclosing restricted details.]  
 **Review Reference:** [Record or Not Available]
 
-P2 and P3 material must not be placed in the public repository. P1 requires the additional checks and conditions established by `PUBLICATION-POLICY.md`. Classification is not publication approval.
+P2 and P3 material must not be placed in the public repository. P1 requires the additional checks and conditions established by `PUBLICATION-POLICY-v2.0.md`. Classification is not publication approval.
 
 ### 4.6 Publication Status
 
-Publication Status records the current review state or final publication decision. Use only the four canonical values defined by `PUBLICATION-POLICY.md`:
+Publication Status records the current review state or final publication decision. Use only the four canonical values defined by `PUBLICATION-POLICY-v2.0.md`:
 
 | Value | Meaning |
 |---|---|
@@ -448,11 +448,11 @@ flowchart TD
 
 ### 9.7 AI Risk Assessment
 
-**Risk Level:** [Applicable level under `RESPONSIBLE-AI.md`]  
+**Risk Level:** [Applicable level under `RESPONSIBLE-AI-v2.0.md`]\
 **Assessment Date:** [YYYY-MM-DD or Not Assessed]  
 **Assessment Reference:** [Link or record]
 
-[Summarize the relevant risks and controls without exposing restricted information. Refer to `RESPONSIBLE-AI.md` for the Lab's governing principles and assessment framework.]
+[Summarize the relevant risks and controls without exposing restricted information. Refer to `RESPONSIBLE-AI-v2.0.md` for the Lab's governing principles and assessment framework.]
 
 ---
 
@@ -502,7 +502,7 @@ flowchart TD
 **Last Review:** [YYYY-MM-DD or Not Assessed]  
 **Reviewer:** [Person or role]
 
-[Describe unresolved issues or unassessed areas without disclosing exploitable vulnerability details. Refer to `SECURITY.md` for reporting and handling requirements.]
+[Describe unresolved issues or unassessed areas without disclosing exploitable vulnerability details. Refer to `SECURITY-v2.0.md` for reporting and handling requirements.]
 
 ---
 
@@ -510,7 +510,7 @@ flowchart TD
 
 ### 12.1 Quality Approach
 
-[Describe how quality is assessed in proportion to the project's scope, risks, and intended use. Refer to `QUALITY-STANDARDS.md` for the Lab's quality requirements.]
+[Describe how quality is assessed in proportion to the project's scope, risks, and intended use. Refer to `QUALITY-STANDARDS-v2.0.md` for the Lab's quality requirements.]
 
 ### 12.2 Applicable Test Types
 
@@ -578,7 +578,7 @@ flowchart TD
 
 ### 14.1 Development Workflow
 
-[Summarize the development process and refer to `CONTRIBUTING.md` for general Lab contribution requirements. State project-specific requirements only where needed.]
+[Summarize the development process and refer to `CONTRIBUTING-v2.0.md` for general Lab contribution requirements. State project-specific requirements only where needed.]
 
 ### 14.2 Installation and Execution
 
@@ -687,7 +687,7 @@ API_KEY=[set locally; do not commit]
 
 ## 18. Publication and Distribution
 
-This section records the project's publication scope and release information. Publication Classification and Publication Status must follow Section 4 and `PUBLICATION-POLICY.md`.
+This section records the project's publication scope and release information. Publication Classification and Publication Status must follow Section 4 and `PUBLICATION-POLICY-v2.0.md`.
 
 ### 18.1 Publication Scope
 
@@ -717,7 +717,7 @@ This section records the project's publication scope and release information. Pu
 
 ### 18.5 Withdrawal or Change of Scope
 
-[Record a withdrawal, material change, or superseding release where applicable. Follow `PUBLICATION-POLICY.md`.]
+[Record a withdrawal, material change, or superseding release where applicable. Follow `PUBLICATION-POLICY-v2.0.md`.]
 
 ---
 
@@ -741,7 +741,7 @@ This section records the project's publication scope and release information. Pu
 
 ### 19.5 Archival or Discontinuation Conditions
 
-[Describe relevant conditions and refer to `PROJECT-LIFECYCLE.md` for the formal archival or discontinuation process.]
+[Describe relevant conditions and refer to `PROJECT-LIFECYCLE-v2.0.md` for the formal archival or discontinuation process.]
 
 ---
 
@@ -824,16 +824,16 @@ Use concise entries here and link to detailed records when they exist.
 
 | Document | Relationship to this project |
 |---|---|
-| `LAB-CHARTER.md` | Lab identity, mission, and foundational principles |
-| `GOVERNANCE.md` | Decision-making, authority, and governance responsibilities |
-| `PROJECT-LIFECYCLE.md` | Canonical lifecycle stages and Project Status definitions |
-| `QUALITY-STANDARDS.md` | Technical Maturity, Operational Readiness, and quality expectations |
-| `PUBLICATION-POLICY.md` | Publication Classification, Publication Status, and release requirements |
-| `RESEARCH-METHODOLOGY.md` | Research and experimentation principles |
-| `RESPONSIBLE-AI.md` | Responsible AI requirements, where applicable |
-| `SECURITY.md` | Security expectations and vulnerability reporting |
-| `CONTRIBUTING.md` | General contribution requirements |
-| `CODE-OF-CONDUCT.md` | Conduct expectations for participation |
+| `LAB-CHARTER-v2.0.md` | Lab identity, mission, and foundational principles |
+| `GOVERNANCE-v2.0.md` | Decision-making, authority, and governance responsibilities |
+| `PROJECT-LIFECYCLE-v2.0.md` | Canonical lifecycle stages and Project Status definitions |
+| `QUALITY-STANDARDS-v2.0.md` | Technical Maturity, Operational Readiness, and quality expectations |
+| `PUBLICATION-POLICY-v2.0.md` | Publication Classification, Publication Status, and release requirements |
+| `RESEARCH-METHODOLOGY-v2.0.md` | Research and experimentation principles |
+| `RESPONSIBLE-AI-v2.0.md` | Responsible AI requirements, where applicable |
+| `SECURITY-v2.0.md` | Security expectations and vulnerability reporting |
+| `CONTRIBUTING-v2.0.md` | General contribution requirements |
+| `CODE-OF-CONDUCT-v2.0.md` | Conduct expectations for participation |
 
 Include additional policies only where they apply to the project.
 

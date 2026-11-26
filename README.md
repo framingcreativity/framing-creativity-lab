@@ -107,7 +107,7 @@ A typical investigation may follow this sequence:
 
 Not every experiment needs to become a finished product. A negative result can be valuable when it is supported by evidence and documented clearly.
 
-The detailed research and lifecycle frameworks are documented in the repository's [Research Methodology](RESEARCH-METHODOLOGY.md) and [Project Lifecycle](PROJECT-LIFECYCLE.md). Revised v2.0 drafts are listed separately in the documentation index below.
+The detailed research and lifecycle frameworks are documented in the repository's [Research Methodology v2.0](RESEARCH-METHODOLOGY-v2.0.md) and [Project Lifecycle v2.0](PROJECT-LIFECYCLE-v2.0.md). Revised v2.0 drafts are listed separately in the documentation index below.
 
 ## 05 — Types of Work
 
@@ -153,7 +153,7 @@ Quality is contextual. An exploratory experiment is not expected to meet every r
 
 AI-related work should document relevant model and provider information, configuration, inputs and outputs, evaluation conditions, limitations, and human oversight where applicable. AI-generated or model-produced material must not be presented as independently verified without appropriate review.
 
-The documentation library includes the original [Quality Standards](QUALITY-STANDARDS.md) and [Responsible AI](RESPONSIBLE-AI.md), alongside revised v2.0 drafts that remain under maintainer review.
+The original [Quality Standards v1.0](docs/archives/QUALITY-STANDARDS-v1.0.md) and [Responsible AI v1.0](docs/archives/RESPONSIBLE-AI-v1.0.md) are preserved in the archive. Their revised v2.0 counterparts remain drafts under maintainer review.
 
 ## 08 — Documentation Versioning and Status
 
@@ -161,7 +161,7 @@ The repository currently maintains two parallel documentation sets.
 
 ### 8.1 Original documentation — v1.0 baseline
 
-The original documents remain at their existing root paths. They are preserved as the earlier documentation baseline and have not been overwritten or deleted as part of the revision process.
+The original documents are preserved under `docs/archives/` with the `-v1.0.md` suffix. Their contents have been retained as the historical documentation baseline.
 
 ### 8.2 Revised documentation — v2.0 drafts
 
@@ -185,17 +185,17 @@ The table below provides direct access to both document sets. The original files
 
 | Subject | Original document | Revised v2.0 draft |
 |---|---|---|
-| Lab Charter | [LAB-CHARTER.md](LAB-CHARTER.md) | [LAB-CHARTER-v2.0.md](LAB-CHARTER-v2.0.md) |
-| Governance | [GOVERNANCE.md](GOVERNANCE.md) | [GOVERNANCE-v2.0.md](GOVERNANCE-v2.0.md) |
-| Project Lifecycle | [PROJECT-LIFECYCLE.md](PROJECT-LIFECYCLE.md) | [PROJECT-LIFECYCLE-v2.0.md](PROJECT-LIFECYCLE-v2.0.md) |
-| Project Documentation Template | [PROJECT-TEMPLATE.md](PROJECT-TEMPLATE.md) | [PROJECT-TEMPLATE-v2.0.md](PROJECT-TEMPLATE-v2.0.md) |
-| Quality Standards | [QUALITY-STANDARDS.md](QUALITY-STANDARDS.md) | [QUALITY-STANDARDS-v2.0.md](QUALITY-STANDARDS-v2.0.md) |
-| Research Methodology | [RESEARCH-METHODOLOGY.md](RESEARCH-METHODOLOGY.md) | [RESEARCH-METHODOLOGY-v2.0.md](RESEARCH-METHODOLOGY-v2.0.md) |
-| Publication Policy | [PUBLICATION-POLICY.md](PUBLICATION-POLICY.md) | [PUBLICATION-POLICY-v2.0.md](PUBLICATION-POLICY-v2.0.md) |
-| Responsible AI | [RESPONSIBLE-AI.md](RESPONSIBLE-AI.md) | [RESPONSIBLE-AI-v2.0.md](RESPONSIBLE-AI-v2.0.md) |
-| Contributions | [CONTRIBUTING.md](CONTRIBUTING.md) | [CONTRIBUTING-v2.0.md](CONTRIBUTING-v2.0.md) |
-| Security | [SECURITY.md](SECURITY.md) | [SECURITY-v2.0.md](SECURITY-v2.0.md) |
-| Code of Conduct | [CODE-OF-CONDUCT.md](CODE-OF-CONDUCT.md) | [CODE-OF-CONDUCT-v2.0.md](CODE-OF-CONDUCT-v2.0.md) |
+| Lab Charter | [LAB-CHARTER-v1.0.md](docs/archives/LAB-CHARTER-v1.0.md) | [LAB-CHARTER-v2.0.md](LAB-CHARTER-v2.0.md) |
+| Governance | [GOVERNANCE-v1.0.md](docs/archives/GOVERNANCE-v1.0.md) | [GOVERNANCE-v2.0.md](GOVERNANCE-v2.0.md) |
+| Project Lifecycle | [PROJECT-LIFECYCLE-v1.0.md](docs/archives/PROJECT-LIFECYCLE-v1.0.md) | [PROJECT-LIFECYCLE-v2.0.md](PROJECT-LIFECYCLE-v2.0.md) |
+| Project Documentation Template | [PROJECT-TEMPLATE-v1.0.md](docs/archives/PROJECT-TEMPLATE-v1.0.md) | [PROJECT-TEMPLATE-v2.0.md](PROJECT-TEMPLATE-v2.0.md) |
+| Quality Standards | [QUALITY-STANDARDS-v1.0.md](docs/archives/QUALITY-STANDARDS-v1.0.md) | [QUALITY-STANDARDS-v2.0.md](QUALITY-STANDARDS-v2.0.md) |
+| Research Methodology | [RESEARCH-METHODOLOGY-v1.0.md](docs/archives/RESEARCH-METHODOLOGY-v1.0.md) | [RESEARCH-METHODOLOGY-v2.0.md](RESEARCH-METHODOLOGY-v2.0.md) |
+| Publication Policy | [PUBLICATION-POLICY-v1.0.md](docs/archives/PUBLICATION-POLICY-v1.0.md) | [PUBLICATION-POLICY-v2.0.md](PUBLICATION-POLICY-v2.0.md) |
+| Responsible AI | [RESPONSIBLE-AI-v1.0.md](docs/archives/RESPONSIBLE-AI-v1.0.md) | [RESPONSIBLE-AI-v2.0.md](RESPONSIBLE-AI-v2.0.md) |
+| Contributions | [CONTRIBUTING-v1.0.md](docs/archives/CONTRIBUTING-v1.0.md) | [CONTRIBUTING-v2.0.md](CONTRIBUTING-v2.0.md) |
+| Security | [SECURITY-v1.0.md](docs/archives/SECURITY-v1.0.md) | [SECURITY-v2.0.md](SECURITY-v2.0.md) |
+| Code of Conduct | [CODE-OF-CONDUCT-v1.0.md](docs/archives/CODE-OF-CONDUCT-v1.0.md) | [CODE-OF-CONDUCT-v2.0.md](CODE-OF-CONDUCT-v2.0.md) |
 
 For the audit history, remediation records, and validation checkpoints, consult the [Documentation Audit Index](docs/audits/README.md).
 
@@ -208,32 +208,31 @@ The repository currently provides the Lab's foundational documentation and a pub
 ```text
 framing-creativity-lab/
 ├── README.md
-│
-├── LAB-CHARTER.md
 ├── LAB-CHARTER-v2.0.md
-├── GOVERNANCE.md
 ├── GOVERNANCE-v2.0.md
-├── PROJECT-LIFECYCLE.md
 ├── PROJECT-LIFECYCLE-v2.0.md
-├── PROJECT-TEMPLATE.md
 ├── PROJECT-TEMPLATE-v2.0.md
-├── QUALITY-STANDARDS.md
 ├── QUALITY-STANDARDS-v2.0.md
-├── RESEARCH-METHODOLOGY.md
 ├── RESEARCH-METHODOLOGY-v2.0.md
-├── PUBLICATION-POLICY.md
 ├── PUBLICATION-POLICY-v2.0.md
-├── RESPONSIBLE-AI.md
 ├── RESPONSIBLE-AI-v2.0.md
-├── CONTRIBUTING.md
 ├── CONTRIBUTING-v2.0.md
-├── SECURITY.md
 ├── SECURITY-v2.0.md
-├── CODE-OF-CONDUCT.md
 ├── CODE-OF-CONDUCT-v2.0.md
-│
 └── docs/
     ├── archives/
+    │   ├── README.md
+    │   ├── CODE-OF-CONDUCT-v1.0.md
+    │   ├── CONTRIBUTING-v1.0.md
+    │   ├── GOVERNANCE-v1.0.md
+    │   ├── LAB-CHARTER-v1.0.md
+    │   ├── PROJECT-LIFECYCLE-v1.0.md
+    │   ├── PROJECT-TEMPLATE-v1.0.md
+    │   ├── PUBLICATION-POLICY-v1.0.md
+    │   ├── QUALITY-STANDARDS-v1.0.md
+    │   ├── RESEARCH-METHODOLOGY-v1.0.md
+    │   ├── RESPONSIBLE-AI-v1.0.md
+    │   └── SECURITY-v1.0.md
     └── audits/
         ├── README.md
         └── FCL-DOC-AUDIT-2026-001/

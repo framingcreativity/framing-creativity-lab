@@ -125,7 +125,7 @@ The level of confidence communicated must remain proportional to the scope and q
 
 ## 4. Technical Maturity and Operational Readiness
 
-Technical Maturity and Operational Readiness are separate assessment dimensions. Publication is a third, independent decision governed by `PUBLICATION-POLICY.md`.
+Technical Maturity and Operational Readiness are separate assessment dimensions. Publication is a third, independent decision governed by `PUBLICATION-POLICY-v2.0.md`.
 
 These dimensions answer different questions:
 
@@ -238,13 +238,13 @@ Production-Oriented is an internal readiness descriptor. It is not a certificati
 
 Publication Classification and Publication Status are not Technical Maturity or Operational Readiness values.
 
-- **Publication Classification (`P0`–`P3`)** is defined in `PUBLICATION-POLICY.md` and determines the applicable publication scrutiny and restrictions.
-- **Publication Status (`PENDING`, `APPROVED`, `REJECTED`, or `WITHDRAWN`)** records the current publication review state or final decision under `PUBLICATION-POLICY.md`.
+- **Publication Classification (`P0`–`P3`)** is defined in `PUBLICATION-POLICY-v2.0.md` and determines the applicable publication scrutiny and restrictions.
+- **Publication Status (`PENDING`, `APPROVED`, `REJECTED`, or `WITHDRAWN`)** records the current publication review state or final decision under `PUBLICATION-POLICY-v2.0.md`.
 - A public release does not automatically establish Validated Technical Maturity or Production-Oriented Operational Readiness.
 - Publication approval does not itself mean that the material has already been released.
 - A project must not be described as Published until the approved material has actually been made publicly available.
 
-The Quality Standards document does not redefine P0–P3 or the publication decision process. Use `PUBLICATION-POLICY.md` as the authoritative source for publication classification, approval, release, and withdrawal.
+The Quality Standards document does not redefine P0–P3 or the publication decision process. Use `PUBLICATION-POLICY-v2.0.md` as the authoritative source for publication classification, approval, release, and withdrawal.
 
 ### 4.4 Recording and Reassessing Assessments
 
@@ -728,7 +728,7 @@ Performance optimisation should preserve correctness, accessibility, and compreh
 
 Security and privacy are fundamental quality dimensions. They must be considered throughout development rather than added only before publication.
 
-This section defines quality expectations. Detailed vulnerability reporting, incident response, and security handling procedures remain governed by `SECURITY.md`. Publication and confidentiality decisions remain governed by `PUBLICATION-POLICY.md`.
+This section defines quality expectations. Detailed vulnerability reporting, incident response, and security handling procedures remain governed by `SECURITY-v2.0.md`. Publication and confidentiality decisions remain governed by `PUBLICATION-POLICY-v2.0.md`.
 
 ### 10.1 Secure Development
 
@@ -924,7 +924,7 @@ A limitation should not be hidden by broad claims that an interface is accessibl
 
 AI-enabled projects require additional technical evaluation because their outputs may be variable, probabilistic, context-dependent, or difficult to predict.
 
-This section addresses technical quality and evaluation. The Lab's broader AI principles, risk classifications, human oversight requirements, and restrictions are defined in `RESPONSIBLE-AI.md`.
+This section addresses technical quality and evaluation. The Lab's broader AI principles, risk classifications, human oversight requirements, and restrictions are defined in `RESPONSIBLE-AI-v2.0.md`.
 
 ### 13.1 Clear AI Functionality
 
@@ -1007,7 +1007,7 @@ Where exact reproduction is impossible, the project should document the factors 
 
 ### 13.6 Human Review and Output Boundaries
 
-Where AI outputs influence important decisions or actions, the project should define the relevant review and permission boundaries in accordance with `RESPONSIBLE-AI.md`.
+Where AI outputs influence important decisions or actions, the project should define the relevant review and permission boundaries in accordance with `RESPONSIBLE-AI-v2.0.md`.
 
 Model-generated code, scripts, queries, configurations, and commands should be treated as untrusted until reviewed and validated.
 
@@ -1017,7 +1017,7 @@ Security, data access, and operational permissions must be enforced independentl
 
 A technically accurate or high-performing AI system is not automatically appropriate to deploy.
 
-Technical quality evaluation does not replace the AI-specific governance, risk assessment, and restrictions defined in `RESPONSIBLE-AI.md`.
+Technical quality evaluation does not replace the AI-specific governance, risk assessment, and restrictions defined in `RESPONSIBLE-AI-v2.0.md`.
 
 ---
 
@@ -1025,7 +1025,7 @@ Technical quality evaluation does not replace the AI-specific governance, risk a
 
 Research quality depends on the reliability of its methods, evidence, interpretation, and reporting.
 
-Detailed research design, experimental methodology, and the Lab's internal evidence framework are governed by `RESEARCH-METHODOLOGY.md`. This section establishes the quality expectations that apply to research outputs.
+Detailed research design, experimental methodology, and the Lab's internal evidence framework are governed by `RESEARCH-METHODOLOGY-v2.0.md`. This section establishes the quality expectations that apply to research outputs.
 
 Projects involving research or structured experimentation should:
 
@@ -1109,11 +1109,11 @@ Where relevant, project documentation should include:
 - licensing and attribution information; and
 - relevant security and privacy considerations.
 
-Use the canonical Project Status and Lifecycle Stage values defined in `PROJECT-LIFECYCLE.md`.
+Use the canonical Project Status and Lifecycle Stage values defined in `PROJECT-LIFECYCLE-v2.0.md`.
 
 Use the Technical Maturity and Operational Readiness values defined in this document.
 
-Publication Classification and Publication Status must follow `PUBLICATION-POLICY.md`.
+Publication Classification and Publication Status must follow `PUBLICATION-POLICY-v2.0.md`.
 
 ### 15.2 Technical Documentation
 
@@ -1301,7 +1301,7 @@ The review method should reflect the actual risk and complexity of the change.
 
 ### 18.3 Acceptance
 
-The maintainer determines whether a contribution meets the relevant project requirements in accordance with `GOVERNANCE-v2.0.md` and `CONTRIBUTING.md`.
+The maintainer determines whether a contribution meets the relevant project requirements in accordance with `GOVERNANCE-v2.0.md` and `CONTRIBUTING-v2.0.md`.
 
 Acceptance into a repository does not automatically establish Validated Technical Maturity, Production-Oriented Operational Readiness, publication approval for separate material, or authorisation for commercial or external use.
 
@@ -1364,7 +1364,7 @@ Passing a checklist does not replace project-specific risk assessment or profess
 
 ### 19.4 Public Release Readiness
 
-This checklist concerns the technical quality of a proposed public release. Publication Classification, publication approval, and release authorisation remain governed by `PUBLICATION-POLICY.md`.
+This checklist concerns the technical quality of a proposed public release. Publication Classification, publication approval, and release authorisation remain governed by `PUBLICATION-POLICY-v2.0.md`.
 
 - [ ] Publication has been explicitly reviewed and approved through the applicable process.
 - [ ] No unauthorised confidential material is included.
@@ -1467,14 +1467,14 @@ This document establishes the Lab's general engineering and quality expectations
 | `README.md` | Lab identity, mission, scope, and public overview |
 | `LAB-CHARTER-v2.0.md` | Foundational principles and institutional direction |
 | `GOVERNANCE-v2.0.md` | Decision-making authority and responsibilities |
-| `PROJECT-LIFECYCLE.md` | Lifecycle stages and canonical Project Status definitions |
+| `PROJECT-LIFECYCLE-v2.0.md` | Lifecycle stages and canonical Project Status definitions |
 | `PROJECT-TEMPLATE-v2.0.md` | Standard structure for project records and assessment fields |
-| `RESEARCH-METHODOLOGY.md` | Research design, experimental methods, and evidence practices |
-| `PUBLICATION-POLICY.md` | Publication Classification, publication decisions, confidentiality, and release approval |
-| `CONTRIBUTING.md` | Contribution workflow and contributor responsibilities |
-| `SECURITY.md` | Security practices, vulnerability reporting, and incident handling |
-| `CODE-OF-CONDUCT.md` | Collaboration expectations and conduct reporting |
-| `RESPONSIBLE-AI.md` | AI-specific principles, risk classification, oversight, and restrictions |
+| `RESEARCH-METHODOLOGY-v2.0.md` | Research design, experimental methods, and evidence practices |
+| `PUBLICATION-POLICY-v2.0.md` | Publication Classification, publication decisions, confidentiality, and release approval |
+| `CONTRIBUTING-v2.0.md` | Contribution workflow and contributor responsibilities |
+| `SECURITY-v2.0.md` | Security practices, vulnerability reporting, and incident handling |
+| `CODE-OF-CONDUCT-v2.0.md` | Collaboration expectations and conduct reporting |
+| `RESPONSIBLE-AI-v2.0.md` | AI-specific principles, risk classification, oversight, and restrictions |
 
 The authoritative ownership of a subject remains with its specialist document.
 

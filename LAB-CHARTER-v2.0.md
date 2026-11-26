@@ -240,12 +240,12 @@ Project records must keep the following six attributes separate. They answer dif
 
 | Attribute | Question answered | Canonical source |
 |---|---|---|
-| Lifecycle Stage | Where is the project in the Lab's workflow? | `PROJECT-LIFECYCLE.md` |
-| Project Status | What is the project's current state? | `PROJECT-LIFECYCLE.md` |
+| Lifecycle Stage | Where is the project in the Lab's workflow? | `PROJECT-LIFECYCLE-v2.0.md` |
+| Project Status | What is the project's current state? | `PROJECT-LIFECYCLE-v2.0.md` |
 | Technical Maturity | How far has the technical work been assessed and validated? | `QUALITY-STANDARDS-v2.0.md` |
 | Operational Readiness | What operating context has the work been assessed for? | `QUALITY-STANDARDS-v2.0.md` |
-| Publication Classification | What level of publication scrutiny or restriction applies? | `PUBLICATION-POLICY.md` |
-| Publication Status | What is the current publication review state or recorded decision? | `PUBLICATION-POLICY.md` |
+| Publication Classification | What level of publication scrutiny or restriction applies? | `PUBLICATION-POLICY-v2.0.md` |
+| Publication Status | What is the current publication review state or recorded decision? | `PUBLICATION-POLICY-v2.0.md` |
 
 The canonical values are:
 
@@ -322,7 +322,7 @@ Before release, the responsible maintainer must ensure that the applicable requi
 - Sufficient installation, use, and reproduction information for the declared release.
 - Appropriate attribution, licensing, and rights statements.
 
-The detailed classification levels, review workflow, approval record, release requirements, withdrawal conditions, and post-publication responsibilities are governed by `PUBLICATION-POLICY.md`.
+The detailed classification levels, review workflow, approval record, release requirements, withdrawal conditions, and post-publication responsibilities are governed by `PUBLICATION-POLICY-v2.0.md`.
 
 No project is approved for publication solely because it is technically complete, publicly accessible, listed in the repository, or marked `Published` in a project record. The actual publication decision must be recorded under the applicable policy.
 
@@ -342,7 +342,7 @@ Where AI materially contributes to a project, relevant documentation should iden
 
 AI-generated output must not automatically be treated as correct or verified. Claims about accuracy, reliability, autonomy, fairness, or safety must be supported by evidence appropriate to the claim.
 
-The detailed requirements are established in `RESPONSIBLE-AI.md` and the relevant quality, research, security, and publication policies.
+The detailed requirements are established in `RESPONSIBLE-AI-v2.0.md` and the relevant quality, research, security, and publication policies.
 
 ## 12. Technical Quality, Data, and External Dependencies
 
@@ -358,7 +358,7 @@ Projects should follow engineering and quality practices proportionate to their 
 
 Projects involving data or external services must identify relevant sources, usage rights, processing conditions, dependencies, and constraints. Personal, sensitive, confidential, or restricted data must not be used or disclosed without an appropriate basis and safeguards.
 
-The detailed technical expectations are defined in `QUALITY-STANDARDS-v2.0.md`, `RESEARCH-METHODOLOGY.md`, `RESPONSIBLE-AI.md`, and `SECURITY.md`.
+The detailed technical expectations are defined in `QUALITY-STANDARDS-v2.0.md`, `RESEARCH-METHODOLOGY-v2.0.md`, `RESPONSIBLE-AI-v2.0.md`, and `SECURITY-v2.0.md`.
 
 ## 13. Contributions and Collaboration
 
@@ -375,7 +375,7 @@ Submitting a contribution does not automatically:
 
 Contributors must have the right to submit the material they provide and must disclose relevant third-party dependencies or restrictions. Substantive collaboration involving confidential information, commercial rights, financial commitments, or joint ownership should be documented explicitly before work begins.
 
-The practical contribution workflow and behavioural expectations are defined in `CONTRIBUTING.md` and `CODE-OF-CONDUCT.md`.
+The practical contribution workflow and behavioural expectations are defined in `CONTRIBUTING-v2.0.md` and `CODE-OF-CONDUCT-v2.0.md`.
 
 ## 14. Documentation and Knowledge Preservation
 
@@ -385,7 +385,7 @@ Substantial projects should document their purpose, scope, methods, relevant tec
 
 Important findings should not remain only in informal conversations or undocumented development environments when they are intended to inform future work. Records should be preserved in suitable locations, with restricted information kept out of public repositories.
 
-The Lab's project documentation structure is maintained in `PROJECT-TEMPLATE-v2.0.md`. Research-specific expectations are maintained in `RESEARCH-METHODOLOGY.md`.
+The Lab's project documentation structure is maintained in `PROJECT-TEMPLATE-v2.0.md`. Research-specific expectations are maintained in `RESEARCH-METHODOLOGY-v2.0.md`.
 
 ## 15. Lifecycle, Maintenance, and Discontinuation
 
@@ -393,7 +393,7 @@ Projects may progress, pause, repeat earlier work, remain experimental, be publi
 
 A project may be valuable without being published or maintained indefinitely. A negative feasibility result or a decision to discontinue is a legitimate outcome when supported by the available evidence and recorded appropriately.
 
-The nine lifecycle stages and ten canonical project statuses are defined only in `PROJECT-LIFECYCLE.md`. Maintenance expectations, technical maturity, and operational readiness are addressed by their respective specialist documents.
+The nine lifecycle stages and ten canonical project statuses are defined only in `PROJECT-LIFECYCLE-v2.0.md`. Maintenance expectations, technical maturity, and operational readiness are addressed by their respective specialist documents.
 
 ## 16. Change Management and Charter Review
 
@@ -415,15 +415,15 @@ This Charter should be read alongside the Lab's specialist documents:
 |---|---|
 | `README.md` | Public identity, mission, repository overview, and navigation. |
 | `GOVERNANCE-v2.0.md` | Decision authority, responsibilities, delegation, access, and governance records. |
-| `PROJECT-LIFECYCLE.md` | Canonical lifecycle stages and project statuses. |
+| `PROJECT-LIFECYCLE-v2.0.md` | Canonical lifecycle stages and project statuses. |
 | `QUALITY-STANDARDS-v2.0.md` | Technical maturity, operational readiness, and quality expectations. |
 | `PROJECT-TEMPLATE-v2.0.md` | Standard structure for project records. |
-| `RESEARCH-METHODOLOGY.md` | Research design, experimentation, evaluation, and reproducibility. |
-| `PUBLICATION-POLICY.md` | Publication classification, review, approval, release, and withdrawal. |
-| `RESPONSIBLE-AI.md` | Responsible AI principles and requirements. |
-| `SECURITY.md` | Security practices and vulnerability reporting. |
-| `CONTRIBUTING.md` | Contribution process and contributor expectations. |
-| `CODE-OF-CONDUCT.md` | Behavioural expectations and conduct concerns. |
+| `RESEARCH-METHODOLOGY-v2.0.md` | Research design, experimentation, evaluation, and reproducibility. |
+| `PUBLICATION-POLICY-v2.0.md` | Publication classification, review, approval, release, and withdrawal. |
+| `RESPONSIBLE-AI-v2.0.md` | Responsible AI principles and requirements. |
+| `SECURITY-v2.0.md` | Security practices and vulnerability reporting. |
+| `CONTRIBUTING-v2.0.md` | Contribution process and contributor expectations. |
+| `CODE-OF-CONDUCT-v2.0.md` | Behavioural expectations and conduct concerns. |
 
 These documents should remain consistent with the Charter. Where a specialist document provides detailed requirements for its subject, those requirements should be followed rather than creating duplicate definitions in this Charter. Applicable laws, contractual obligations, and third-party licences remain controlling where relevant.
 
