@@ -1301,7 +1301,7 @@ The review method should reflect the actual risk and complexity of the change.
 
 ### 18.3 Acceptance
 
-The maintainer determines whether a contribution meets the relevant project requirements in accordance with `GOVERNANCE.md` and `CONTRIBUTING.md`.
+The maintainer determines whether a contribution meets the relevant project requirements in accordance with `GOVERNANCE-v2.0.md` and `CONTRIBUTING.md`.
 
 Acceptance into a repository does not automatically establish Validated Technical Maturity, Production-Oriented Operational Readiness, publication approval for separate material, or authorisation for commercial or external use.
 
@@ -1465,9 +1465,10 @@ This document establishes the Lab's general engineering and quality expectations
 | Document | Primary responsibility |
 |---|---|
 | `README.md` | Lab identity, mission, scope, and public overview |
-| `LAB-CHARTER.md` | Foundational principles and institutional direction |
-| `GOVERNANCE.md` | Decision-making authority and responsibilities |
+| `LAB-CHARTER-v2.0.md` | Foundational principles and institutional direction |
+| `GOVERNANCE-v2.0.md` | Decision-making authority and responsibilities |
 | `PROJECT-LIFECYCLE.md` | Lifecycle stages and canonical Project Status definitions |
+| `PROJECT-TEMPLATE-v2.0.md` | Standard structure for project records and assessment fields |
 | `RESEARCH-METHODOLOGY.md` | Research design, experimental methods, and evidence practices |
 | `PUBLICATION-POLICY.md` | Publication Classification, publication decisions, confidentiality, and release approval |
 | `CONTRIBUTING.md` | Contribution workflow and contributor responsibilities |
@@ -1487,7 +1488,7 @@ If a project-specific document appears to conflict with a Lab policy, the confli
 
 This document may be revised as the Lab's technical practices, project scope, and operating model evolve.
 
-The Founder and Maintainer is responsible for approving and documenting changes in accordance with `GOVERNANCE.md`.
+The Founder and Maintainer is responsible for approving and documenting changes in accordance with `GOVERNANCE-v2.0.md`.
 
 Revisions should:
 
